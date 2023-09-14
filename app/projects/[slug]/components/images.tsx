@@ -1,19 +1,27 @@
+import Image from 'next/image'
+
 export default function Images() {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-full px-6 lg:px-16">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
           <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-sm tracking-wide font-light leading-6 text-[#666] lg:max-w-none lg:grid-cols-2">
-            <img
+            <Image
               src="https://yodezeen.com/wp-content/uploads/2023/04/Untitled-2-05.jpg"
+              width="640"
+              height="905"
               alt=""
             />
-            <img
+            <Image
               src="https://yodezeen.com/wp-content/uploads/2023/04/Untitled-211111111-02.jpg"
+              width="640"
+              height="905"
               alt=""
             />
-            <img
+            <Image
               src="https://yodezeen.com/wp-content/uploads/2023/04/55555.jpg"
+              width="640"
+              height="905"
               alt=""
             />
             <div className="flex flex-col justify-center px-28">
@@ -37,12 +45,16 @@ export default function Images() {
                 a kids’ unit, and a bedroom exclusively for the owner’s parents.
               </p>
             </div>
-            <img
+            <Image
               src="https://yodezeen.com/wp-content/uploads/2023/04/%D0%BD%D0%BE%D1%80%D0%BC-02.jpg"
+              width="640"
+              height="905"
               alt=""
             />
-            <img
+            <Image
               src="https://yodezeen.com/wp-content/uploads/2023/04/%D0%BD%D0%BE%D1%80%D0%BC-01.jpg"
+              width="640"
+              height="905"
               alt=""
             />
           </div>

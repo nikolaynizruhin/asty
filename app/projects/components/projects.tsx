@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Projects() {
   return (
     <div className="bg-white py-24 sm:py-56">
@@ -14,74 +16,74 @@ export default function Projects() {
       </div>
       <div className="grid grid-cols-4 gap-[2px] px-16 mt-5">
         <a href="#">
-          <img
+          <Image
             className="object-cover h-[232px] w-full"
             src="https://yodezeen.com/wp-content/uploads/2023/06/View_View010003-1024x751.jpg"
-            width={325}
-            height={232}
+            width="325"
+            height="232"
             alt=""
           />
         </a>
         <a href="#">
-          <img
+          <Image
             className="object-cover h-[232px] w-full"
             src="https://yodezeen.com/wp-content/uploads/2023/04/main-02-1024x725.jpg"
-            width={325}
-            height={232}
+            width="325"
+            height="232"
             alt=""
           />
         </a>
         <a href="#">
-          <img
+          <Image
             className="object-cover h-[232px] w-full"
             src="https://yodezeen.com/wp-content/uploads/2023/04/mainmainmain-06-1024x724.jpg"
-            width={325}
-            height={232}
+            width="325"
+            height="232"
             alt=""
           />
         </a>
         <a href="#">
-          <img
+          <Image
             className="object-cover h-[232px] w-full"
             src="https://yodezeen.com/wp-content/uploads/2023/04/DIAMOND-66-1024x682.jpg"
-            width={325}
-            height={232}
+            width="325"
+            height="232"
             alt=""
           />
         </a>
         <a href="#">
-          <img
+          <Image
             className="object-cover h-[232px] w-full"
             src="https://yodezeen.com/wp-content/uploads/2023/06/View_View010003-1024x751.jpg"
-            width={325}
-            height={232}
+            width="325"
+            height="232"
             alt=""
           />
         </a>
         <a href="#">
-          <img
+          <Image
             className="object-cover h-[232px] w-full"
             src="https://yodezeen.com/wp-content/uploads/2023/04/main-02-1024x725.jpg"
-            width={325}
-            height={232}
+            width="325"
+            height="232"
             alt=""
           />
         </a>
         <a href="#">
-          <img
+          <Image
             className="object-cover h-[232px] w-full"
             src="https://yodezeen.com/wp-content/uploads/2023/04/mainmainmain-06-1024x724.jpg"
-            width={325}
-            height={232}
+            width="325"
+            height="232"
             alt=""
           />
         </a>
         <a href="#">
-          <img
+          <Image
             className="object-cover h-[232px] w-full"
             src="https://yodezeen.com/wp-content/uploads/2023/04/DIAMOND-66-1024x682.jpg"
-            width={325}
-            height={232}
+            width="325"
+            height="232"
             alt=""
           />
         </a>

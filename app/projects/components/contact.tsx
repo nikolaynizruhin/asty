@@ -4,7 +4,7 @@ export default function Contact() {
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
           <h2 className="mt-2 text-3xl font-semibold text-gray-900 sm:text-3xl max-w-[300px] tracking-wide">
-            Let's talk about your project!
+            Lets talk about your project!
           </h2>
           <p className="text-[#666] font-light max-w-[350px] mt-7 mb-24">
             We are ready to lead you into the exciting world of architecture and
