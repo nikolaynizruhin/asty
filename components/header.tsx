@@ -4,6 +4,13 @@ import Image from 'next/image'
 import { Dialog } from '@headlessui/react'
 import { useState } from 'react'
 
+const navigation = [
+  { name: 'Проєкти', href: '#' },
+  { name: 'Про нас', href: '#' },
+  { name: 'Кар’єра', href: '#' },
+  { name: 'Контакти', href: '#' },
+]
+
 export default function Header({ isDark = false }: { isDark?: boolean }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -43,24 +50,11 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-16 lg:flex-1 lg:justify-end">
-          <a href="#" className={`text-xs font-normal leading-6 ${isDark ? 'text-[#333]' : 'text-white'}`}>
-            Product
-          </a>
-          <a href="#" className={`text-xs font-normal leading-6 ${isDark ? 'text-[#333]' : 'text-white'}`}>
-            Features
-          </a>
-          <a href="#" className={`text-xs font-normal leading-6 ${isDark ? 'text-[#333]' : 'text-white'}`}>
-            Marketplace
-          </a>
-          <a href="#" className={`text-xs font-normal leading-6 ${isDark ? 'text-[#333]' : 'text-white'}`}>
-            Company
-          </a>
-          <a href="#" className={`text-xs font-normal leading-6 ${isDark ? 'text-[#333]' : 'text-white'}`}>
-            About
-          </a>
-          <a href="#" className={`text-xs font-normal leading-6 ${isDark ? 'text-[#333]' : 'text-white'}`}>
-            Log in
-          </a>
+          {navigation.map((item, index) => (
+            <a key={index} href={item.href} className={`text-xs font-normal leading-6 ${isDark ? 'text-[#333]' : 'text-white'}`}>
+              {item.name}
+            </a>
+          ))}
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -96,38 +90,11 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/25">
               <div className="space-y-2 py-6">
-                <a
-                  href="#"
-                  className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-800 ${isDark ? 'text-[#333]' : 'text-white'}`}
-                >
-                  Product
-                </a>
-                <a
-                  href="#"
-                  className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-800 ${isDark ? 'text-[#333]' : 'text-white'}`}
-                >
-                  Features
-                </a>
-                <a
-                  href="#"
-                  className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-800 ${isDark ? 'text-[#333]' : 'text-white'}`}
-                >
-                  Marketplace
-                </a>
-                <a
-                  href="#"
-                  className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-800 ${isDark ? 'text-[#333]' : 'text-white'}`}
-                >
-                  Company
-                </a>
-              </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className={`-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 hover:bg-gray-800 ${isDark ? 'text-[#333]' : 'text-white'}`}
-                >
-                  Log in
-                </a>
+                {navigation.map((item, index) => (
+                  <a key={index} href={item.href} className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:bg-gray-800 ${isDark ? 'text-[#333]' : 'text-white'}`}>
+                    {item.name}
+                  </a>
+                ))}
               </div>
             </div>
           </div>
