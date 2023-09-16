@@ -63,7 +63,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">ASTY</span>
-              <Image src="/logo-light.svg" alt="Logo" width="797" height="236" className="h-8 w-auto" />
+              <Image src="/logo-light.svg" alt="Logo" width="797" height="236" className="h-14 w-auto" />
             </a>
             <button
               type="button"
