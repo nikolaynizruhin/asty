@@ -4,7 +4,8 @@ import About from '@/app/components/about'
 import Projects from '@/app/components/projects'
 import Steps from '@/app/components/steps'
 import Career from '@/app/components/career'
-import Contact from './components/contact'
+import Contact from '@/app/components/contact'
+import Services from '@/app/components/services'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Projects />
       <Steps />
+      <Services />
       <Career />
       <Contact />
       <Footer isDark />
