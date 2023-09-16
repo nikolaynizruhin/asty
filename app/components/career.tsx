@@ -14,6 +14,11 @@ export default function Career() {
           <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-sm tracking-wide font-light leading-6 text-[#666] lg:max-w-none lg:grid-cols-2">
             <div>
               Завжди раді бачити у своїй команді талановитих людей. Давай разом будемо розвиватися, шукати та знаходити нестандартні рішення, слідувати ритму компанії та створювати таку атмосферу, в якій хочеться творити кожного дня.
+              Maecenas efficitur, ligula et euismod consequat, enim nibh tincidunt magna, sit amet hendrerit nulla massa in metus. Aenean ullamcorper orci sit amet sem consequat eleifend. Donec turpis enim, feugiat sed ante id, ornare faucibus arcu.
+            </div>
+            <div>
+              Завжди раді бачити у своїй команді талановитих людей. Давай разом будемо розвиватися, шукати та знаходити нестандартні рішення, слідувати ритму компанії та створювати таку атмосферу, в якій хочеться творити кожного дня.
+              Maecenas efficitur, ligula et euismod consequat, enim nibh tincidunt magna, sit amet hendrerit nulla massa in metus. Aenean ullamcorper orci sit amet sem consequat eleifend. Donec turpis enim, feugiat sed ante id, ornare faucibus arcu.
             </div>
           </div>
           <div className="mt-10 flex">
