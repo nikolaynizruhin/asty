@@ -22,7 +22,7 @@ export default function Projects() {
   return (
     <div className="mx-auto grid auto-rows-fr grid-cols-1 lg:max-w-none lg:grid-cols-3">
       {projects.map((project, index) => (
-        <div className="relative isolate flex flex-col justify-end overflow-hidden bg-gray-900 px-8 py-96">
+        <div key={index} className="relative isolate flex flex-col justify-end overflow-hidden bg-gray-900 px-8 py-96">
           <Image
             src={project.image}
             width="480"
