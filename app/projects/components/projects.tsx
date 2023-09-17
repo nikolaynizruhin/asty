@@ -51,7 +51,7 @@ export default function Projects() {
       </div>
       <div className="grid grid-cols-4 gap-[2px] px-16 mt-5">
         {projects.map((project, index) => (
-          <a href={project.href}>
+          <a key={index} href={project.href}>
             <Image
               className="object-cover h-[232px] w-full"
               src={project.image}
