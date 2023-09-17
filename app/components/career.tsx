@@ -3,8 +3,8 @@ import Title from "@/components/title";
 export default function Career() {
   return (
     <div className="bg-white py-24 sm:py-32">
+      <Title text="КАР’ЄРА" className="-mb-28 mx-[9vw]" />
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
-        <Title text="КАР’ЄРА" className="-mb-28 -mx-44" />
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
           <h2 className="mt-2 text-3xl font-semibold text-gray-900 sm:text-3xl max-w-[250px] tracking-wide">
             Стати частинкою нашої команди

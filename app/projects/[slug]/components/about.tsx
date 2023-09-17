@@ -3,8 +3,8 @@ import Title from "@/components/title"
 export default function About() {
   return (
     <div className="bg-white py-24 sm:py-32">
+      <Title text="ABOUT" className="-mb-28 mx-[9vw]" />
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
-        <Title text="ABOUT" className="-mb-40 -mx-44" />
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
           <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 tracking-wide lg:max-w-none lg:grid-cols-2">
             <div>
