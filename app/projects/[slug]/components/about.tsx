@@ -1,16 +1,14 @@
+import Title from "@/components/title"
+
 export default function About() {
   return (
     <div className="bg-white py-24 sm:py-32">
-      <div className="flex justify-center">
-        <h1 className="text-[180px] font-bold tracking-[.6em] leading-none text-black opacity-[0.02] -mb-40 -mr-[.6em]">
-          ABOUT
-        </h1>
-      </div>
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
+        <Title text="ABOUT" className="-mb-40 -mx-44" />
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
           <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 tracking-wide lg:max-w-none lg:grid-cols-2">
             <div>
-              <h2 className="mb-6 text-3xl font-semibold text-gray-900 sm:text-3xl max-w-[300px]">
+              <h2 className="mb-12 text-3xl font-semibold text-gray-900 sm:text-3xl max-w-[300px]">
                 Brief
               </h2>
               <p className="text-sm font-light leading-6 text-[#666]">
