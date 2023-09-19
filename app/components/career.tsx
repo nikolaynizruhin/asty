@@ -4,7 +4,7 @@ export default function Career() {
   return (
     <div className="bg-white py-14 sm:py-32">
       <Title text="КАР’ЄРА" className="-mb-[8vw] 2xl:-mb-[10vw] mx-[9vw] hidden md:flex" />
-      <div className="mx-auto max-w-lg xl:max-w-4xl px-4 lg:px-8">
+      <div className="mx-auto max-w-lg xl:max-w-4xl px-4">
         <h2 className="mt-2 text-2xl font-semibold text-gray-900 sm:leading-10 md:text-3xl max-w-[250px] tracking-wide">
           Стати частинкою нашої команди
         </h2>
