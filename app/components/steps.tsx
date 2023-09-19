@@ -60,34 +60,32 @@ const steps = [
 export default function Steps() {
   return (
     <div className="py-24 sm:py-32">
-      <div className="mx-auto max-w-4xl px-6 lg:px-8">
-        <div className="pl-[50%]">
+      <div className="mx-auto max-w-lg xl:max-w-4xl px-6 lg:px-8">
+        <div className="xl:pl-[50%]">
           <h2 className="mt-2 text-3xl font-semibold text-gray-900 sm:text-3xl max-w-xs tracking-wide">
             Як ми працюємо
           </h2>
-          <p className="mt-6 text-sm tracking-wide font-light leading-6 text-[#666]">
+          <p className="mt-10 xl:mt-6 text-sm tracking-wide font-extralight leading-6 text-[#666]">
             Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
             Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
             In mi viverra elit nunc.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-20 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-36 gap-y-16 lg:max-w-none lg:grid-cols-3">
+          <dl className="grid max-w-xl grid-cols-1 md:grid-cols-2 gap-x-20 xl:gap-x-32 gap-y-16 xl:gap-y-32 lg:max-w-none xl:grid-cols-3">
             {steps.map(step => (
               <div key={step.index} className="flex flex-col relative">
-                <div className="absolute font-bold text-[180px] text-black opacity-[0.02] -left-24 -top-24 -z-10">
+                <div className="hidden md:block absolute font-bold text-[180px] text-black opacity-[0.02] -left-24 -top-24 -z-10">
                   {step.index}
                 </div>
-                <dt className="flex items-center gap-x-3 text-sm font-medium leading-4 text-gray-900">
+                <dt className="flex items-center gap-x-3 text-[13px] font-medium leading-4 min-h-[48px] text-gray-900">
                   <Icon name={step.icon} width={32} height={32} className="flex-none" />
                   # {step.index}
                   <br />
                   {step.name}
                 </dt>
-                <dd className="mt-6 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto text-sm tracking-wide font-light leading-6 text-[#666]">
-                    {step.description}
-                  </p>
+                <dd className="mt-6 text-sm tracking-wide font-light leading-6 text-[#666]">
+                  {step.description}
                 </dd>
               </div>
             ))}
