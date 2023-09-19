@@ -59,7 +59,7 @@ const steps = [
 
 export default function Steps() {
   return (
-    <div className="py-7 md:py-24 sm:py-32">
+    <div className="py-7 md:py-28 xl:py-48">
       <div className="mx-auto max-w-lg xl:max-w-4xl px-4">
         <div className="xl:pl-[50%]">
           <h2 className="mt-2 text-3xl font-semibold text-gray-900 sm:text-3xl max-w-xs tracking-wide">
