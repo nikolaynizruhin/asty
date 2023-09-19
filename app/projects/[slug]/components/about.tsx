@@ -1,5 +1,6 @@
 import Icon from "@/components/icon"
 import Title from "@/components/title"
+import Detail from "./detail"
 
 export default function About() {
   return (
@@ -22,50 +23,10 @@ export default function About() {
               </p>
             </div>
             <div className="flex flex-col gap-7 pt-10 pl-24">
-              <div className="flex">
-                <Icon name="geo-alt" className="mx-9" />
-                <div>
-                  <h4 className="text-[#333] font-medium tracking-wider mb-1 leading-4 text-sm">
-                    Location:
-                  </h4>
-                  <p className="text-[#666] leading-4 tracking-wider text-sm font-light">
-                    Madrid, Spain
-                  </p>
-                </div>
-              </div>
-              <div className="flex">
-                <Icon name="houses" className="mx-9" />
-                <div>
-                  <h4 className="text-[#333] font-medium tracking-wider mb-1 leading-4 text-sm">
-                    Square meters:
-                  </h4>
-                  <p className="text-[#666] leading-4 tracking-wider text-sm font-light">
-                    13,993 ft² / 1,300m²
-                  </p>
-                </div>
-              </div>
-              <div className="flex">
-                <Icon name="calendar3" className="mx-9" />
-                <div>
-                  <h4 className="text-[#333] font-medium tracking-wider mb-1 leading-4 text-sm">
-                    Date:
-                  </h4>
-                  <p className="text-[#666] leading-4 tracking-wider text-sm font-light">
-                    In progress
-                  </p>
-                </div>
-              </div>
-              <div className="flex">
-                <Icon name="people" className="mx-9" />
-                <div>
-                  <h4 className="text-[#333] font-medium tracking-wider mb-1 leading-4 text-sm">
-                    Team:
-                  </h4>
-                  <p className="text-[#666] leading-4 tracking-wider text-sm font-light">
-                    Artur Sharf
-                  </p>
-                </div>
-              </div>
+              <Detail icon="geo-alt" title="Location" description="Madrid, Spain" />
+              <Detail icon="houses" title="Square meters" description="13,993 ft² / 1,300m²" />
+              <Detail icon="calendar3" title="Date" description="In progress" />
+              <Detail icon="people" title="Team" description="Artur Sharf" />
               <div className="text-sm font-light leading-6 text-[#666] flex items-center mt-16">
                 Share:
                 <Icon name="facebook" width={12} height={12} className="ml-7 mr-6" />
