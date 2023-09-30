@@ -20,9 +20,9 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="mx-auto grid auto-rows-fr grid-cols-1 lg:max-w-none lg:grid-cols-3">
+    <div className="mx-auto grid auto-rows-fr grid-cols-1 lg:max-w-none md:grid-cols-3 max-w-xl md:max-w-none">
       {projects.map((project, index) => (
-        <div key={index} className="relative isolate flex flex-col justify-end overflow-hidden bg-gray-900 px-8 py-96">
+        <div key={index} className="relative isolate flex flex-col justify-end overflow-hidden bg-gray-900 px-4 py-20 md:py-44 xl:py-96">
           <Image
             src={project.image}
             width="480"
@@ -30,7 +30,7 @@ export default function Projects() {
             alt=""
             className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[.3]"
           />
-          <h3 className="text-4xl text-center font-medium leading-10 text-white tracking-wide">
+          <h3 className="text-2xl xl:text-4xl md:text-center font-medium leading-10 text-white tracking-wide">
             <a href={project.href}>{project.name}</a>
           </h3>
         </div>
