@@ -12,7 +12,7 @@ const projects = [
     href: '#'
   },
   {
-    name: 'Комерційна нерухомість',
+    name: 'Комерція',
     image: 'https://yodezeen.com/wp-content/uploads/2020/03/cam_01_View09-1024x640.jpg',
     href: '#'
   }
