@@ -26,7 +26,7 @@ export default function Hero() {
             </p>
           </div>
         </div>
-        <div className="flex gap-8 p-8 lg:px-16 text-white">
+        <div className="flex gap-8 p-12 lg:px-16 text-white">
           <a href="https://www.instagram.com/asty_ua">
             <Icon name="instagram" />
           </a>
