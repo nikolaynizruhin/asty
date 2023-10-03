@@ -16,12 +16,12 @@ export default function Hero() {
         />
         <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
           <div>
-            <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-6xl">
+            <h1 className="text-4xl font-semibold text-white sm:text-7xl">
               Catch seafood
               <br />
               restaurant
             </h1>
-            <p className="mt-8 font-light text-xs leading-8 text-gray-300 tracking-widest">
+            <p className="mt-8 font-light text-sm text-gray-300">
               View project
             </p>
           </div>

@@ -51,7 +51,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
         </div>
         <div className="hidden lg:flex lg:gap-x-16 lg:flex-1 lg:justify-end">
           {navigation.map((item, index) => (
-            <a key={index} href={item.href} className={`text-xs font-normal leading-6 ${isDark ? 'text-[#333]' : 'text-white'}`}>
+            <a key={index} href={item.href} className={`text-sm font-normal leading-6 ${isDark ? 'text-[#333]' : 'text-white'}`}>
               {item.name}
             </a>
           ))}
