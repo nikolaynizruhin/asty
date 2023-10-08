@@ -14,7 +14,7 @@ export default function Hero() {
           height="768"
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-50"
         />
-        <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-3xl px-4 py-32 sm:py-48 lg:py-56">
           <div>
             <h1 className="text-4xl font-semibold text-white sm:text-7xl">
               Catch seafood
@@ -26,7 +26,7 @@ export default function Hero() {
             </p>
           </div>
         </div>
-        <div className="flex gap-8 p-12 lg:px-16 text-white">
+        <div className="flex gap-8 p-4 lg:py-12 lg:px-16 text-white">
           <a href="https://www.instagram.com/asty_ua">
             <Icon name="instagram" />
           </a>

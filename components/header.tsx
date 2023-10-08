@@ -17,13 +17,13 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
   return (
     <header className="absolute inset-x-0 top-0 z-50">
       <nav
-        className="flex items-center justify-between p-8 lg:px-16"
+        className="flex items-center justify-between px-5 py-4 lg:px-16 lg:py-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">ASTY</span>
-            <Image src={isDark ? '/logo-dark.svg' : '/logo-light.svg'} alt="Logo" width="797" height="236" className="h-14 w-auto" />
+            <Image src={isDark ? '/logo-dark.svg' : '/logo-light.svg'} alt="Logo" width="797" height="236" className="h-10 md:h-12 xl:h-14 w-auto" />
           </a>
         </div>
         <div className="flex lg:hidden">
