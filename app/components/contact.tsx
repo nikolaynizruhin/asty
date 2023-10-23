@@ -1,3 +1,5 @@
+import Button from "@/components/button";
+
 export default function Contact() {
   return (
     <div className="bg-[#1a1a1a] py-20 xl:py-32">
@@ -15,12 +17,9 @@ export default function Contact() {
             interior design.
           </p>
           <div className="mt-8 xl:mt-14 flex">
-            <a
-              href="#"
-              className="border border-white py-3 px-10 md:px-8 xl:px-16 xl:py-4 text-xs tracking-wider font-medium text-white hover:text-black hover:bg-white"
-            >
+            <Button href="#" isDark>
               SEND REQUEST
-            </a>
+            </Button>
           </div>
         </div>
       </div>

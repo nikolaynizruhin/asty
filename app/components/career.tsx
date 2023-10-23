@@ -1,3 +1,4 @@
+import Button from "@/components/button";
 import Title from "@/components/title";
 
 export default function Career() {
@@ -19,9 +20,9 @@ export default function Career() {
           </p>
         </div>
         <div className="mt-12 md:mt-14 flex">
-          <a href="#" className="border border-black bg-white py-3 px-10 md:px-8 xl:px-16 xl:py-4 text-xs tracking-wider font-medium text-black hover:text-white hover:bg-black">
+          <Button href="#">
             ДАВАЙТЕ ЗНАЙОМИТИСЬ
-          </a>
+          </Button>
         </div>
       </div>
     </div>
