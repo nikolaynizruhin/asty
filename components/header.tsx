@@ -63,7 +63,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">ASTY</span>
-              <Image src="/logo-light.svg" alt="Logo" width="797" height="236" className="h-14 w-auto" />
+              <Image src="/logo-light.svg" alt="Logo" width="797" height="236" className="h-10 md:h-12 xl:h-14 w-auto" />
             </a>
             <button
               type="button"
@@ -91,7 +91,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
             <div className="-my-6 divide-y divide-gray-500/25">
               <div className="space-y-2 py-6">
                 {navigation.map((item, index) => (
-                  <a key={index} href={item.href} className={`-mx-3 block rounded-lg px-3 text-center py-2 text-base font-semibold leading-7 hover:bg-gray-800 ${isDark ? 'text-[#333]' : 'text-white'}`}>
+                  <a key={index} href={item.href} className={`-mx-3 block px-3 text-center py-2 text-2xl font-medium leading-7 hover:underline ${isDark ? 'text-[#333]' : 'text-white'}`}>
                     {item.name}
                   </a>
                 ))}
