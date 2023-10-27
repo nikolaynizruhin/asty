@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { Dialog } from '@headlessui/react'
 import { useState } from 'react'
+import Icon from './icon'
 
 const navigation = [
   { name: 'Проєкти', href: '#' },
@@ -34,7 +35,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
           >
             <span className="sr-only">Open main menu</span>
             <svg
-              className="h-6 w-6"
+              className="h-8 w-8"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
@@ -59,7 +60,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[rgba(31,31,31,0.99)] px-6 py-6 sm:max-w-sm">
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[rgba(31,31,31,0.99)] px-4 py-4 sm:max-w-sm">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">ASTY</span>
@@ -72,7 +73,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
             >
               <span className="sr-only">Close menu</span>
               <svg
-                className="h-6 w-6"
+                className="h-8 w-8"
                 fill="none"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
@@ -87,14 +88,20 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
               </svg>
             </button>
           </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/25">
-              <div className="space-y-2 py-6">
-                {navigation.map((item, index) => (
-                  <a key={index} href={item.href} className={`-mx-3 block px-3 text-center py-2 text-2xl font-medium leading-7 hover:underline ${isDark ? 'text-[#333]' : 'text-white'}`}>
-                    {item.name}
-                  </a>
-                ))}
+          <div className="mt-24 flow-root">
+            <div className="space-y-2 py-6">
+              {navigation.map((item, index) => (
+                <a key={index} href={item.href} className={`block px-3 text-center py-2 text-2xl font-medium leading-7 hover:underline ${isDark ? 'text-[#333]' : 'text-white'}`}>
+                  {item.name}
+                </a>
+              ))}
+              <div className="mt-2 flex justify-center gap-7 px-3 py-6 text-white">
+                <a href="https://www.instagram.com/asty_ua">
+                  <Icon name="instagram" width={12} height={12} />
+                </a>
+                <a href="https://www.facebook.com/asty.ukraine">
+                  <Icon name="facebook" width={12} height={12} />
+                </a>
               </div>
             </div>
           </div>
