@@ -3,13 +3,13 @@ import Icon from "./icon";
 export default function Footer({ isDark = false }: { isDark?: boolean }) {
   return (
     <footer className={`px-4 pb-11 md:px-8 font-light ${isDark ? 'bg-[#1a1a1a]' : 'bg-white'}`}>
-      <a href="#" className="text-[10px] leading-5 text-white opacity-[0.32] mr-[20px]">
+      <a href="#" className={`text-[10px] leading-5 ${isDark ? 'text-white opacity-[0.32]' : 'text-[#888]'} mr-[20px]`}>
         Privacy Notice
       </a>
-      <a href="#" className="text-[10px] leading-5 text-white opacity-[0.32]">
+      <a href="#" className={`text-[10px] leading-5 ${isDark ? 'text-white opacity-[0.32]' : 'text-[#888]'}`}>
         Terms of use
       </a>
-      <p className="text-[10px] my-3 leading-5 text-white opacity-[0.32] max-w-[460px]">
+      <p className={`text-[10px] my-3 leading-5 ${isDark ? 'text-white opacity-[0.32]' : 'text-[#888]'} max-w-[460px]`}>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
         voluptate officiis veritatis vitae dolor ullam dignissimos nihil placeat
         quisquam ducimus odit amet dolores, ut pariatur voluptas dolorum
