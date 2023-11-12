@@ -1,5 +1,26 @@
 import Button from "@/components/button";
 
+const contacts = [
+  {
+    index: 1,
+    name: 'General Inquiries',
+    href: '#',
+    text: 'info@asty.com.ua',
+  },
+  {
+    index: 2,
+    name: 'Phone',
+    href: '#',
+    text: '+38 063 123 4567',
+  },
+  {
+    index: 3,
+    name: 'Address',
+    href: '#',
+    text: 'Kyiv, Zoloti Vorota, 12',
+  }
+]
+
 export default function Contact() {
   return (
     <div className="bg-[#1a1a1a] py-20 xl:py-32">
@@ -8,10 +29,16 @@ export default function Contact() {
           <h2 className="text-[26px] font-semibold text-white md:text-[34px] max-w-[250px] tracking-wide mb-12 xl:mb-14">
             Get in touch with us
           </h2>
-          <h4 className="text-[#666] font-light text-sm">General Inquiries:</h4>
-          <a href="#" className="text-white font-light text-sm">
-            info@asty.com.ua
-          </a>
+          <div className="flex justify-between">
+            {contacts.map(contact => (
+              <div key={contact.index} className="w-1/3">
+                <h4 className="text-[#666] font-light text-sm">{contact.name}:</h4>
+                <a href={contact.href} className="text-white font-light text-sm">
+                  {contact.text}
+                </a>
+              </div>
+            ))}
+          </div>
           <p className="text-[#666] font-light max-w-[350px] mt-11 xl:mt-16">
             We are ready to lead you into the exciting world of architecture and
             interior design.
