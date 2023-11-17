@@ -1,5 +1,5 @@
-import Header from "@/components/header"
-import Icon from "@/components/icon"
+import Header from "@/src/components/header"
+import Icon from "@/src/components/icon"
 import Image from "next/image"
 
 export default function Hero() {

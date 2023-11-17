@@ -1,4 +1,4 @@
-import Icon from "@/components/icon"
+import Icon from "@/src/components/icon"
 
 export default function Detail({ title, description, icon }: { title: string, description: string, icon: string }) {
   return (

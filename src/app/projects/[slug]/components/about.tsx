@@ -1,5 +1,5 @@
-import Icon from "@/components/icon"
-import Title from "@/components/title"
+import Icon from "@/src/components/icon"
+import Title from "@/src/components/title"
 import Detail from "./detail"
 
 export default function About() {

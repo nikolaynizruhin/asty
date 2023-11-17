@@ -1,4 +1,4 @@
-import Title from '@/components/title'
+import Title from '@/src/components/title'
 import Image from 'next/image'
 
 const projects = [

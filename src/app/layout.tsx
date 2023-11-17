@@ -5,19 +5,19 @@ import localFont from 'next/font/local'
 const circe = localFont({
   src: [
     {
-      path: '../public/fonts/Circe-Bold.woff',
+      path: '../../public/fonts/Circe-Bold.woff',
       weight: '700',
     },
     {
-      path: '../public/fonts/Circe-Regular.woff',
+      path: '../../public/fonts/Circe-Regular.woff',
       weight: '400',
     },
     {
-      path: '../public/fonts/Circe-Light.woff',
+      path: '../../public/fonts/Circe-Light.woff',
       weight: '300',
     },
     {
-      path: '../public/fonts/Circe-ExtraLight.woff',
+      path: '../../public/fonts/Circe-ExtraLight.woff',
       weight: '100',
     },
   ],

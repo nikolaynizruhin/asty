@@ -1,4 +1,4 @@
-import Icon from "@/components/icon"
+import Icon from "@/src/components/icon"
 
 const services = [
   {
