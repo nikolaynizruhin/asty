@@ -41,6 +41,9 @@ export default function Services() {
           <dl className="grid max-w-xl grid-cols-1 gap-x-36 gap-y-16 lg:max-w-none lg:grid-cols-2">
             {services.map((service, index) => (
               <div key={index} className="flex flex-col relative">
+                <div className="hidden md:block absolute text-black opacity-[0.02] -left-14 -top-4 -z-10">
+                  <Icon name={service.icon} width={80} height={80} />
+                </div>
                 <dt className="flex items-center gap-x-3 text-sm font-medium leading-4 text-gray-900">
                   <Icon name={service.icon} width={32} height={32} className="flex-none" />
                   <br />
