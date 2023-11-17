@@ -38,19 +38,19 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="bg-white py-24 sm:py-56 px-16">
-      <Title text="ПРОЄКТИ" className="px-[3vw]" />
+    <div className="bg-white py-24 xl:py-56 px-8 xl:px-16">
+      <Title text="ПРОЄКТИ" className="px-[3vw] hidden xl:flex" />
       <div className="text-xs text-[#828282] mt-11">
-        <button className="text-[#121212] mr-24 pr-4">ALL</button>
-        <button className="mr-24 pr-4">ARCHITECTURE</button>
-        <button className="mr-24 pr-4">RESIDENTAL</button>
-        <button>COMMERCIAL</button>
+        <button className="text-[#121212] mr-24 pr-4 xl:uppercase">All</button>
+        <button className="mr-24 pr-4 xl:uppercase">Architecture</button>
+        <button className="mr-24 pr-4 xl:uppercase">Residental</button>
+        <button className="xl:uppercase">Commercial</button>
       </div>
-      <div className="grid grid-cols-4 gap-[2px] mt-5">
+      <div className="grid grid-cols-4 gap-[2px] mt-8">
         {projects.map((project, index) => (
           <a key={index} href={project.href}>
             <Image
-              className="object-cover h-[232px] w-full"
+              className="object-cover aspect-[325/232] w-full"
               src={project.image}
               width="325"
               height="232"
