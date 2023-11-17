@@ -38,7 +38,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="bg-white py-24 xl:py-56 px-8 xl:px-16">
+    <div className="bg-white py-24 xl:pt-56 px-8 xl:px-16">
       <Title text="ПРОЄКТИ" className="px-[3vw] hidden xl:flex" />
       <div className="text-xs text-[#828282] mt-11">
         <button className="text-[#121212] mr-24 pr-4 xl:uppercase">All</button>
