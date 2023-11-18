@@ -18,7 +18,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
   return (
     <header className="absolute inset-x-0 top-0 z-50">
       <nav
-        className="flex items-center justify-between px-5 py-4 lg:px-16 lg:py-8"
+        className="flex items-center justify-between px-4 md:px-8 py-4 xl:px-16 lg:py-8 max-w-[550px] mx-auto md:max-w-none"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
