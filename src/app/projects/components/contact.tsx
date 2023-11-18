@@ -2,7 +2,7 @@ import Button from "@/src/components/button";
 
 export default function Contact() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white pt-12 pb-14 md:pb-24 md:pt-36 xl:pb-44 xl:pt-52">
       <div className="mx-auto max-w-xl xl:max-w-4xl px-6 lg:px-8">
         <div className="mx-auto max-w-[550px] md:max-w-[464px] lg:mx-0 lg:max-w-none">
           <h2 className="mt-2 text-[28px] font-semibold text-gray-900 md:text-4xl max-w-[300px] tracking-wide">
