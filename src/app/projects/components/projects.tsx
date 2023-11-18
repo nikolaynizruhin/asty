@@ -46,7 +46,7 @@ export default function Projects() {
         <button className="mr-5 md:mr-12 xl:mr-24 pr-4 xl:uppercase font-semibold">Residental</button>
         <button className="xl:uppercase font-semibold">Commercial</button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-[2px] mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-[2px] mt-8">
         {projects.map((project, index) => (
           <a key={index} href={project.href}>
             <Image
