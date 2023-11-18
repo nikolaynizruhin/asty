@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-xl xl:max-w-4xl px-6 lg:px-8">
-        <div className="mx-auto px-4 max-w-[550px] md:max-w-[464px] lg:mx-0 lg:max-w-none">
+        <div className="mx-auto max-w-[550px] md:max-w-[464px] lg:mx-0 lg:max-w-none">
           <h2 className="mt-2 text-[28px] font-semibold text-gray-900 md:text-4xl max-w-[300px] tracking-wide">
             Lets talk about your project!
           </h2>
