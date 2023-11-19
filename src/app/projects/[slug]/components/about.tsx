@@ -27,11 +27,11 @@ const details = [
 
 export default function About() {
   return (
-    <div className="bg-white py-24 sm:py-52">
-      <Title text="ABOUT" className="-mb-40 mx-[9vw]" />
-      <div className="mx-auto max-w-lg xl:max-w-4xl px-4 mt-10 grid grid-cols-1 gap-8 tracking-wide xl:grid-cols-2">
+    <div className="bg-white py-6 md:py-48 xl:py-52">
+      <Title text="ABOUT" className="-mb-40 mx-[9vw] hidden md:flex" />
+      <div className="mx-auto max-w-lg xl:max-w-4xl px-4 mt-10 grid grid-cols-1 gap-3 xl:gap-8 tracking-wide xl:grid-cols-2">
         <div>
-          <h2 className="mb-6 text-3xl font-semibold text-gray-900 sm:text-4xl max-w-[300px]">
+          <h2 className="mb-10 xl:mb-9 text-3xl font-semibold text-gray-900 md:text-4xl max-w-[300px]">
             Brief
           </h2>
           <p className="text-base font-light leading-6 text-[#666]">
@@ -43,9 +43,11 @@ export default function About() {
             and relaxation.
           </p>
         </div>
-        <div className="flex flex-col gap-7 pt-10 pl-24">
-          {details.map((detail, index) => <Detail key={index} {...detail} />)}
-          <div className="text-base font-light leading-6 text-[#666] flex items-center mt-16">
+        <div className="flex flex-col pt-10 xl:pl-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-7 xl:grid-cols-1">
+            {details.map((detail, index) => <Detail key={index} {...detail} />)}
+          </div>
+          <div className="text-base font-light leading-6 text-[#666] flex items-center mt-16 xl:mt-24">
             Share:
             <Icon name="facebook" width={12} height={12} className="ml-7 mr-6" />
             <Icon name="instagram" width={12} height={12} />
