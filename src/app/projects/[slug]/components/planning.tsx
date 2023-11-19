@@ -14,8 +14,8 @@ export default function Planning() {
                 alt=""
               />
             </div>
-            <div className="py-10 px-28 ml-10">
-              <h2 className="text-3xl font-semibold text-gray-900 sm:text-3xl tracking-wide mb-7">
+            <div className="py-10 px-28 ml-10 text-base">
+              <h2 className="text-3xl font-semibold text-gray-900 sm:text-4xl tracking-wide mb-7">
                 Planning
               </h2>
               <p>
