@@ -2,7 +2,7 @@ import Icon from "./icon";
 
 export default function Footer({ isDark = false }: { isDark?: boolean }) {
   return (
-    <footer className={`px-4 md:px-8 py-4 xl:px-16 lg:py-8 max-w-[550px] mx-auto md:max-w-none pb-11 font-light ${isDark ? 'bg-[#1a1a1a]' : 'bg-white'}`}>
+    <footer className={`px-4 md:px-8 xl:px-16 lg:pb-9 max-w-[550px] mx-auto md:max-w-none pb-11 font-light ${isDark ? 'bg-[#1a1a1a]' : 'bg-white'}`}>
       <a href="#" className={`text-[10px] leading-5 ${isDark ? 'text-white opacity-[0.32]' : 'text-[#888]'} mr-[20px]`}>
         Privacy Notice
       </a>
