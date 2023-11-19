@@ -13,7 +13,7 @@ export default function Hero() {
           height="748"
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[.3]"
         />
-        <div className="mx-auto max-w-lg xl:max-w-3xl px-4 sm:px-0 pb-96 pt-60 sm:pb-44 sm:pt-36 xl:pb-96 xl:pt-60">
+        <div className="mx-auto max-w-lg xl:max-w-4xl px-4 pb-96 pt-60 sm:pb-44 sm:pt-36 xl:pb-96 xl:pt-60">
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-white xl:text-6xl">
             Passeridae
           </h1>
