@@ -15,16 +15,14 @@ export default function Hero() {
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-50"
         />
         <div className="mx-auto max-w-3xl px-4 py-60 sm:py-48 lg:py-56">
-          <div>
-            <h1 className="text-4xl font-semibold text-white sm:text-7xl">
-              Catch seafood
-              <br />
-              restaurant
-            </h1>
-            <p className="mt-8 font-light text-sm text-gray-300">
-              View project
-            </p>
-          </div>
+          <h1 className="text-4xl font-semibold text-white sm:text-7xl">
+            Catch seafood
+            <br />
+            restaurant
+          </h1>
+          <p className="mt-8 font-light text-sm text-gray-300">
+            View project
+          </p>
         </div>
         <div className="flex gap-8 p-4 lg:py-12 lg:px-16 text-white">
           <a href="https://www.instagram.com/asty_ua">

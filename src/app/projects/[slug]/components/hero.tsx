@@ -13,15 +13,13 @@ export default function Hero() {
           height="748"
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[.3]"
         />
-        <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-72">
-          <div>
-            <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-6xl">
-              Passeridae
-            </h1>
-            <p className="mt-6 font-light text-base leading-8 text-white">
-              Monochrome interior in the shade of the Spanish sun
-            </p>
-          </div>
+        <div className="mx-auto max-w-lg xl:max-w-3xl px-4 sm:px-0 pb-96 pt-60 sm:pb-44 sm:pt-36 xl:pb-96 xl:pt-60">
+          <h1 className="text-4xl md:text-5xl font-semibold tracking-tight text-white xl:text-6xl">
+            Passeridae
+          </h1>
+          <p className="mt-4 md:mt-6 font-light text-sm xl:text-base leading-8 text-white">
+            Monochrome interior in the shade of the Spanish sun
+          </p>
         </div>
       </div>
     </div>
