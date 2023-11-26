@@ -22,7 +22,7 @@ export default function Images() {
           height="905"
           alt=""
         />
-        <div className="flex flex-col justify-center px-28">
+        <div className="flex flex-col justify-center md:px-28 py-10 md:py-0">
           <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl mb-7">
             Concept
           </h2>
