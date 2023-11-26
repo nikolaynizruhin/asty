@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Planning() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white">
       <div className="mx-auto px-6 lg:px-16 mt-10 grid max-w-xl grid-cols-1 justify-items-center gap-8 md:max-w-none xl:grid-cols-2">
         <Image
           src="https://yodezeen.com/wp-content/uploads/2023/04/Villa-Madri.png"

@@ -27,7 +27,7 @@ const details = [
 
 export default function About() {
   return (
-    <div className="bg-white py-6 md:py-48 xl:py-52">
+    <div className="bg-white py-12 md:py-48 xl:py-64">
       <Title text="ABOUT" className="-mb-40 mx-[9vw] hidden md:flex" />
       <div className="mx-auto max-w-lg xl:max-w-4xl px-4 mt-10 grid grid-cols-1 gap-3 xl:gap-8 tracking-wide xl:grid-cols-2">
         <div>
