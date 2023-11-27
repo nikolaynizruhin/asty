@@ -52,7 +52,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
         </div>
         <div className="hidden lg:flex lg:gap-x-16 lg:flex-1 lg:justify-end">
           {navigation.map((item, index) => (
-            <a key={index} href={item.href} className={`text-sm font-semibold leading-6 ${isDark ? 'text-[#333]' : 'text-white'}`}>
+            <a key={index} href={item.href} className={`text-sm font-bold ${isDark ? 'text-[#333]' : 'text-white'}`}>
               {item.name}
             </a>
           ))}
@@ -91,7 +91,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
           <div className="mt-24 flow-root">
             <div className="space-y-2 py-6">
               {navigation.map((item, index) => (
-                <a key={index} href={item.href} className={`block px-3 text-center py-2 text-2xl font-medium leading-7 hover:underline ${isDark ? 'text-[#333]' : 'text-white'}`}>
+                <a key={index} href={item.href} className={`block px-3 text-center py-2 text-2xl font-normal hover:underline ${isDark ? 'text-[#333]' : 'text-white'}`}>
                   {item.name}
                 </a>
               ))}

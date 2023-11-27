@@ -29,7 +29,7 @@ export default function About() {
   return (
     <div className="bg-white py-12 md:py-48 xl:py-64">
       <Title text="ABOUT" className="-mb-40 mx-[9vw] hidden md:flex" />
-      <div className="mx-auto max-w-lg xl:max-w-4xl px-4 mt-10 grid grid-cols-1 gap-3 xl:gap-8 tracking-wide xl:grid-cols-2">
+      <div className="mx-auto max-w-lg xl:max-w-4xl px-4 mt-10 grid grid-cols-1 gap-3 xl:gap-8 xl:grid-cols-2">
         <div>
           <h2 className="mb-10 xl:mb-9 text-3xl font-bold text-gray-900 md:text-4xl max-w-[300px]">
             Brief
