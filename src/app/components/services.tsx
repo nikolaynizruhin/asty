@@ -28,10 +28,10 @@ export default function Services() {
     <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         <div className="pl-[50%]">
-          <h2 className="mt-2 text-3xl font-semibold text-gray-900 sm:text-3xl max-w-xs tracking-wide">
+          <h2 className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl max-w-xs">
             Наші послуги
           </h2>
-          <p className="mt-6 text-sm tracking-wide font-light leading-6 text-[#666]">
+          <p className="mt-7 md:mt-10 xl:mt-6 text-base font-light text-[#666]">
             Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
             Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
             In mi viverra elit nunc.
@@ -44,15 +44,12 @@ export default function Services() {
                 <div className="hidden md:block absolute text-black opacity-[0.02] -left-14 -top-4 -z-10">
                   <Icon name={service.icon} width={80} height={80} />
                 </div>
-                <dt className="flex items-center gap-x-3 text-sm font-medium leading-4 text-gray-900">
+                <dt className="flex items-center gap-x-3 text-sm font-bold text-gray-900">
                   <Icon name={service.icon} width={32} height={32} className="flex-none" />
-                  <br />
                   {service.name}
                 </dt>
-                <dd className="mt-6 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto text-sm tracking-wide font-light leading-6 text-[#666]">
-                    {service.description}
-                  </p>
+                <dd className="mt-6 text-base font-light text-[#666]">
+                  {service.description}
                 </dd>
               </div>
             ))}
