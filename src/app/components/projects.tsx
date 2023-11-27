@@ -30,7 +30,7 @@ export default function Projects() {
             alt=""
             className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[.3]"
           />
-          <h3 className="text-2xl xl:text-4xl md:text-center font-medium leading-10 text-white tracking-wide">
+          <h3 className="text-2xl xl:text-4xl md:text-center font-bold text-white">
             <a href={project.href}>{project.name}</a>
           </h3>
         </div>

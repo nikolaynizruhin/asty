@@ -44,10 +44,10 @@ export default function Steps() {
     <div className="py-7 md:py-28 xl:py-48">
       <div className="mx-auto max-w-lg xl:max-w-4xl px-4">
         <div className="xl:pl-[50%]">
-          <h2 className="mt-2 text-3xl font-semibold text-gray-900 sm:text-3xl max-w-xs tracking-wide">
+          <h2 className="mt-2 text-3xl font-bold text-gray-900 md:text-4xl max-w-xs">
             Як ми працюємо
           </h2>
-          <p className="mt-7 md:mt-10 xl:mt-6 text-sm tracking-wide font-extralight leading-6 text-[#666]">
+          <p className="mt-7 md:mt-10 xl:mt-6 text-base font-light text-[#666]">
             Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
             Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
             In mi viverra elit nunc.
@@ -60,7 +60,7 @@ export default function Steps() {
                 <div className="hidden md:block absolute font-bold text-[180px] text-black opacity-[0.02] -left-24 -top-24 -z-10">
                   {step.index}
                 </div>
-                <dt className="flex md:items-center gap-x-3 text-[13px] font-medium leading-4 min-h-[48px] text-gray-900">
+                <dt className="flex md:items-center gap-x-3 text-sm font-bold min-h-[48px] text-gray-900">
                   <Icon name={step.icon} width={32} height={32} className="flex-none h-9 w-9 md:h-8 md:w-8" />
                   <span className="hidden md:inline">
                     # {step.index}
@@ -68,10 +68,10 @@ export default function Steps() {
                     {step.name}
                   </span>
                 </dt>
-                <dd className="md:mt-6 text-sm tracking-wide font-light leading-6 text-[#666]">
-                  <p className="md:hidden mb-[10px] text-[13px] font-medium leading-4 text-gray-900">
+                <dd className="md:mt-6 text-base font-light text-[#666]">
+                  <p className="md:hidden mb-[10px] text-sm font-bold text-gray-900">
                     #{step.index} {step.name}
-                    </p>
+                  </p>
                   {step.description}
                 </dd>
               </div>
