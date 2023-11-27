@@ -31,10 +31,10 @@ export default function About() {
       <Title text="ABOUT" className="-mb-40 mx-[9vw] hidden md:flex" />
       <div className="mx-auto max-w-lg xl:max-w-4xl px-4 mt-10 grid grid-cols-1 gap-3 xl:gap-8 tracking-wide xl:grid-cols-2">
         <div>
-          <h2 className="mb-10 xl:mb-9 text-3xl font-semibold text-gray-900 md:text-4xl max-w-[300px]">
+          <h2 className="mb-10 xl:mb-9 text-3xl font-bold text-gray-900 md:text-4xl max-w-[300px]">
             Brief
           </h2>
-          <p className="text-base font-light leading-6 text-[#666]">
+          <p className="text-base font-light text-[#666]">
             ASTY created this design project for a young family. The customer
             and his wife love and adore Spain, and they also consider their
             home a place with a warm atmosphere for leisure time. That is why
@@ -47,7 +47,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7 xl:grid-cols-1">
             {details.map((detail, index) => <Detail key={index} {...detail} />)}
           </div>
-          <div className="text-base font-light leading-6 text-[#666] flex items-center mt-16 xl:mt-24">
+          <div className="text-base font-light text-[#666] flex items-center mt-16 xl:mt-24">
             Share:
             <Icon name="facebook" width={12} height={12} className="ml-7 mr-6" />
             <Icon name="instagram" width={12} height={12} />
