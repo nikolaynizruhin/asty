@@ -35,9 +35,9 @@ export default function Services() {
           height="768"
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[0.25]"
         />
-        <div className="mx-auto max-w-4xl px-6 lg:px-8 py-24 sm:py-32">
-          <div className="w-1/2">
-            <h2 className="mt-2 text-3xl font-bold text-white sm:text-4xl max-w-xs">
+        <div className="mx-auto max-w-lg xl:max-w-4xl px-4 py-7 md:py-28 xl:py-48">
+          <div className="xl:w-1/2">
+            <h2 className="mt-2 text-3xl font-bold text-white md:text-4xl max-w-xs">
               Наші послуги
             </h2>
             <p className="mt-7 md:mt-10 xl:mt-6 text-base font-light text-white">
@@ -46,18 +46,23 @@ export default function Services() {
               In mi viverra elit nunc.
             </p>
           </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-20 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-36 gap-y-16 lg:max-w-none lg:grid-cols-2">
+          <div className="mx-auto mt-12 md:mt-16 max-w-2xl sm:mt-20 lg:mt-20 lg:max-w-none">
+            <dl className="grid max-w-xl grid-cols-1 gap-x-20 xl:gap-x-32 gap-y-6 md:gap-y-16 xl:gap-y-32 lg:max-w-none md:grid-cols-2">
               {services.map((service, index) => (
-                <div key={index} className="flex flex-col relative">
+                <div key={index} className="flex gap-7 md:gap-0 md:flex-col relative">
                   <div className="hidden md:block absolute text-white opacity-[0.075] -left-14 -top-4">
                     <Icon name={service.icon} width={80} height={80} />
                   </div>
-                  <dt className="flex items-center gap-x-3 text-sm font-bold text-white">
+                  <dt className="flex md:items-center gap-x-3 text-sm font-bold min-h-[48px] text-white">
                     <Icon name={service.icon} width={32} height={32} className="flex-none" />
-                    {service.name}
+                    <span className="hidden md:inline">
+                      {service.name}
+                    </span>
                   </dt>
-                  <dd className="mt-6 text-base font-light text-white">
+                  <dd className="md:mt-6 text-base font-light text-white">
+                    <p className="md:hidden mb-[10px] text-sm font-bold text-white">
+                      {service.name}
+                    </p>
                     {service.description}
                   </dd>
                 </div>
