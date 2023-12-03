@@ -25,10 +25,10 @@ const services = [
 
 export default function Services() {
   return (
-    <div className="py-24 sm:py-32">
+    <div className="bg-[#1a1a1a] py-24 sm:py-32">
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         <div className="pl-[50%]">
-          <h2 className="mt-2 text-3xl font-bold text-gray-900 sm:text-4xl max-w-xs">
+          <h2 className="mt-2 text-3xl font-bold text-white sm:text-4xl max-w-xs">
             Наші послуги
           </h2>
           <p className="mt-7 md:mt-10 xl:mt-6 text-base font-light text-[#666]">
@@ -41,10 +41,10 @@ export default function Services() {
           <dl className="grid max-w-xl grid-cols-1 gap-x-36 gap-y-16 lg:max-w-none lg:grid-cols-2">
             {services.map((service, index) => (
               <div key={index} className="flex flex-col relative">
-                <div className="hidden md:block absolute text-black opacity-[0.02] -left-14 -top-4 -z-10">
+                <div className="hidden md:block absolute text-white opacity-[0.03] -left-14 -top-4">
                   <Icon name={service.icon} width={80} height={80} />
                 </div>
-                <dt className="flex items-center gap-x-3 text-sm font-bold text-gray-900">
+                <dt className="flex items-center gap-x-3 text-sm font-bold text-white">
                   <Icon name={service.icon} width={32} height={32} className="flex-none" />
                   {service.name}
                 </dt>
