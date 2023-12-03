@@ -1,4 +1,5 @@
 import Icon from "@/src/components/icon"
+import Image from "next/image"
 
 const services = [
   {
@@ -25,35 +26,44 @@ const services = [
 
 export default function Services() {
   return (
-    <div className="bg-[#1a1a1a] py-24 sm:py-32">
-      <div className="mx-auto max-w-4xl px-6 lg:px-8">
-        <div className="pl-[50%]">
-          <h2 className="mt-2 text-3xl font-bold text-white sm:text-4xl max-w-xs">
-            Наші послуги
-          </h2>
-          <p className="mt-7 md:mt-10 xl:mt-6 text-base font-light text-[#666]">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-            Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
-            In mi viverra elit nunc.
-          </p>
-        </div>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-20 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-36 gap-y-16 lg:max-w-none lg:grid-cols-2">
-            {services.map((service, index) => (
-              <div key={index} className="flex flex-col relative">
-                <div className="hidden md:block absolute text-white opacity-[0.03] -left-14 -top-4">
-                  <Icon name={service.icon} width={80} height={80} />
+    <div className="bg-[#1a1a1a]">
+      <div className="relative isolate overflow-hidden pt-14">
+        <Image
+          src="https://yodezeen.com/wp-content/uploads/2020/03/cam_01_View09-1024x640.jpg"
+          alt=""
+          width="1440"
+          height="768"
+          className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[0.25]"
+        />
+        <div className="mx-auto max-w-4xl px-6 lg:px-8 py-24 sm:py-32">
+          <div className="w-1/2">
+            <h2 className="mt-2 text-3xl font-bold text-white sm:text-4xl max-w-xs">
+              Наші послуги
+            </h2>
+            <p className="mt-7 md:mt-10 xl:mt-6 text-base font-light text-white">
+              Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
+              Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
+              In mi viverra elit nunc.
+            </p>
+          </div>
+          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-20 lg:max-w-none">
+            <dl className="grid max-w-xl grid-cols-1 gap-x-36 gap-y-16 lg:max-w-none lg:grid-cols-2">
+              {services.map((service, index) => (
+                <div key={index} className="flex flex-col relative">
+                  <div className="hidden md:block absolute text-white opacity-[0.075] -left-14 -top-4">
+                    <Icon name={service.icon} width={80} height={80} />
+                  </div>
+                  <dt className="flex items-center gap-x-3 text-sm font-bold text-white">
+                    <Icon name={service.icon} width={32} height={32} className="flex-none" />
+                    {service.name}
+                  </dt>
+                  <dd className="mt-6 text-base font-light text-white">
+                    {service.description}
+                  </dd>
                 </div>
-                <dt className="flex items-center gap-x-3 text-sm font-bold text-white">
-                  <Icon name={service.icon} width={32} height={32} className="flex-none" />
-                  {service.name}
-                </dt>
-                <dd className="mt-6 text-base font-light text-[#666]">
-                  {service.description}
-                </dd>
-              </div>
-            ))}
-          </dl>
+              ))}
+            </dl>
+          </div>
         </div>
       </div>
     </div>
