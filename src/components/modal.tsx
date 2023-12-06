@@ -31,7 +31,7 @@ export default function Modal({ open, setOpen, title, children }: { open: boolea
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform overflow-hidden bg-[#1f1f1f] px-4 pb-4 pt-5 text-left transition-all sm:my-8 sm:w-full sm:max-w-5xl sm:px-28 sm:py-20">
+              <Dialog.Panel className="relative transform overflow-hidden bg-[#1f1f1f] text-left transition-all sm:my-8 w-full sm:max-w-md md:max-w-3xl xl:max-w-5xl px-4 py-14 md:px-24 md:py-12 xl:px-28 xl:py-20">
                 <div className="absolute right-0 top-0 pr-7 pt-8">
                   <button
                     type="button"
@@ -43,7 +43,7 @@ export default function Modal({ open, setOpen, title, children }: { open: boolea
                   </button>
                 </div>
                 <div>
-                  <Dialog.Title as="h3" className="text-4xl font-bold text-white max-w-[350px] mb-20">
+                  <Dialog.Title as="h3" className="text-3xl md:text-4xl font-bold text-white md:max-w-[350px] mb-9 xl:mb-20">
                     {title}
                   </Dialog.Title>  
                   {children}
