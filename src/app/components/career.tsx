@@ -1,7 +1,13 @@
-import Button from "@/src/components/button";
+'use client'
+
+import Button from "@/src/components/button"
 import Title from "@/src/components/title";
+import CareerModal from "@/src/app/components/career-modal"
+import { useState } from "react"
 
 export default function Career() {
+  const [open, setOpen] = useState(false)
+
   return (
     <div className="bg-white py-14 sm:py-48">
       <Title text="КАР’ЄРА" className="-mb-[8vw] 2xl:-mb-[10vw] mx-[9vw] hidden md:flex" />
@@ -20,9 +26,10 @@ export default function Career() {
           </p>
         </div>
         <div className="mt-12 md:mt-14 flex">
-          <Button href="#">
+          <Button onClick={() => setOpen(true)}>
             ДАВАЙТЕ ЗНАЙОМИТИСЬ
           </Button>
+          <CareerModal open={open} setOpen={setOpen} />
         </div>
       </div>
     </div>
