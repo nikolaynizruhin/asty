@@ -1,8 +1,8 @@
 'use client'
 
-import Button from "@/src/components/button";
-import ContactModal from "@/src/components/contact-modal";
-import { useState } from "react";
+import Button from "@/src/components/button"
+import ContactModal from "@/src/components/contact-modal"
+import { useState } from "react"
 
 const contacts = [
   {
@@ -26,7 +26,7 @@ const contacts = [
 ]
 
 export default function Contact() {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
 
   return (
     <div className="bg-[#1a1a1a] py-20 xl:py-32">
