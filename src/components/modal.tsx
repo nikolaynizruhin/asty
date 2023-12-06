@@ -1,0 +1,58 @@
+'use client'
+
+import { Fragment } from 'react'
+import { Dialog, Transition } from '@headlessui/react'
+import Icon from './icon'
+
+export default function Modal({ open, setOpen, title, children }: { open: boolean, title: string, children: React.ReactNode, setOpen: (open: boolean) => void }) {
+  return (
+    <Transition.Root show={open} as={Fragment}>
+      <Dialog as="div" className="relative z-10" onClose={setOpen}>
+        <Transition.Child
+          as={Fragment}
+          enter="ease-out duration-300"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="ease-in duration-200"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          <div className="fixed inset-0 bg-[rgba(31,31,31,0.96)] transition-opacity" />
+        </Transition.Child>
+
+        <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
+          <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              enterTo="opacity-100 translate-y-0 sm:scale-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+              leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+            >
+              <Dialog.Panel className="relative transform overflow-hidden bg-[#1f1f1f] px-4 pb-4 pt-5 text-left transition-all sm:my-8 sm:w-full sm:max-w-5xl sm:px-28 sm:py-20">
+                <div className="absolute right-0 top-0 pr-7 pt-8">
+                  <button
+                    type="button"
+                    className="text-white"
+                    onClick={() => setOpen(false)}
+                  >
+                    <span className="sr-only">Close</span>
+                    <Icon name="x-lg" width={24} height={24} />
+                  </button>
+                </div>
+                <div>
+                  <Dialog.Title as="h3" className="text-4xl font-bold text-white max-w-[350px] mb-20">
+                    {title}
+                  </Dialog.Title>  
+                  {children}
+                </div>
+              </Dialog.Panel>
+            </Transition.Child>
+          </div>
+        </div>
+      </Dialog>
+    </Transition.Root>
+  )
+}

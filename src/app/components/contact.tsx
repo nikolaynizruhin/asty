@@ -1,4 +1,8 @@
+'use client'
+
 import Button from "@/src/components/button";
+import ContactModal from "@/src/components/contact-modal";
+import { useState } from "react";
 
 const contacts = [
   {
@@ -22,6 +26,8 @@ const contacts = [
 ]
 
 export default function Contact() {
+  const [open, setOpen] = useState(true)
+
   return (
     <div className="bg-[#1a1a1a] py-20 xl:py-32">
       <div className="mx-auto max-w-lg xl:max-w-4xl px-4">
@@ -43,9 +49,10 @@ export default function Contact() {
           interior design.
         </p>
         <div className="mt-8 xl:mt-14 flex">
-          <Button href="#" isDark>
+          <Button isDark onClick={() => setOpen(true)}>
             SEND REQUEST
           </Button>
+          <ContactModal open={open} setOpen={setOpen} />
         </div>
       </div>
     </div>
