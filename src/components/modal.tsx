@@ -4,7 +4,7 @@ import { Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import Icon from './icon'
 
-export default function Modal({ open, setOpen, title, children }: { open: boolean, title: string, children: React.ReactNode, setOpen: (open: boolean) => void }) {
+export default function Modal({ open, setOpen, children }: { open: boolean, children: React.ReactNode, setOpen: (open: boolean) => void }) {
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-10" onClose={setOpen}>
@@ -42,12 +42,7 @@ export default function Modal({ open, setOpen, title, children }: { open: boolea
                     <Icon className="w-4 h-4 md:h-6 md:w-6" name="x-lg" width={24} height={24} />
                   </button>
                 </div>
-                <div>
-                  <Dialog.Title as="h3" className="text-3xl md:text-4xl font-bold text-white md:max-w-[350px] mb-9 xl:mb-20">
-                    {title}
-                  </Dialog.Title>  
-                  {children}
-                </div>
+                {children}
               </Dialog.Panel>
             </Transition.Child>
           </div>
