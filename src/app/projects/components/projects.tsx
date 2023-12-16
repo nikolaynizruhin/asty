@@ -1,37 +1,38 @@
 import Title from '@/src/components/title'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const projects = [
   {
-    href: '#',
+    href: '/projects/1',
     image: 'https://yodezeen.com/wp-content/uploads/2023/06/View_View010003-1024x751.jpg',
   },
   {
-    href: '#',
+    href: '/projects/2',
     image: 'https://yodezeen.com/wp-content/uploads/2023/04/main-02-1024x725.jpg',
   },
   {
-    href: '#',
+    href: '/projects/3',
     image: 'https://yodezeen.com/wp-content/uploads/2023/04/mainmainmain-06-1024x724.jpg',
   },
   {
-    href: '#',
+    href: '/projects/4',
     image: 'https://yodezeen.com/wp-content/uploads/2023/04/DIAMOND-66-1024x682.jpg',
   },
   {
-    href: '#',
+    href: '/projects/5',
     image: 'https://yodezeen.com/wp-content/uploads/2023/04/mainmainmain-06-1024x724.jpg',
   },
   {
-    href: '#',
+    href: '/projects/6',
     image: 'https://yodezeen.com/wp-content/uploads/2023/04/DIAMOND-66-1024x682.jpg',
   },
   {
-    href: '#',
+    href: '/projects/7',
     image: 'https://yodezeen.com/wp-content/uploads/2023/04/main-02-1024x725.jpg',
   },
   {
-    href: '#',
+    href: '/projects/8',
     image: 'https://yodezeen.com/wp-content/uploads/2023/06/View_View010003-1024x751.jpg',
   },
 ]
@@ -48,7 +49,7 @@ export default function Projects() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-[2px] mt-8">
         {projects.map((project, index) => (
-          <a key={index} href={project.href}>
+          <Link key={index} href={project.href}>
             <Image
               className="object-cover aspect-[325/232] w-full"
               src={project.image}
@@ -56,7 +57,7 @@ export default function Projects() {
               height="232"
               alt=""
             />
-          </a>
+          </Link>
         ))}
       </div>
     </div>

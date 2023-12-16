@@ -4,9 +4,10 @@ import Image from 'next/image'
 import { Dialog } from '@headlessui/react'
 import { useState } from 'react'
 import Icon from './icon'
+import Link from 'next/link'
 
 const navigation = [
-  { name: 'Проєкти', href: '#' },
+  { name: 'Проєкти', href: '/projects' },
   { name: 'Про нас', href: '#' },
   { name: 'Кар’єра', href: '#' },
   { name: 'Контакти', href: '#' },
@@ -22,10 +23,10 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">ASTY</span>
             <Image src={isDark ? '/images/logo-dark.svg' : '/images/logo-light.svg'} alt="Logo" width="797" height="236" className="h-10 md:h-12 xl:h-14 w-auto" />
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -52,9 +53,9 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
         </div>
         <div className="hidden lg:flex lg:gap-x-16 lg:flex-1 lg:justify-end">
           {navigation.map((item, index) => (
-            <a key={index} href={item.href} className={`text-sm font-bold ${isDark ? 'text-[#333]' : 'text-white'}`}>
+            <Link key={index} href={item.href} className={`text-sm font-bold ${isDark ? 'text-[#333]' : 'text-white'}`}>
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
       </nav>
@@ -62,10 +63,10 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
         <div className="fixed inset-0 z-50" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[rgba(31,31,31,0.99)] px-4 py-4 sm:max-w-sm">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">ASTY</span>
               <Image src="/images/logo-light.svg" alt="Logo" width="797" height="236" className="h-10 md:h-12 xl:h-14 w-auto" />
-            </a>
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-400"
@@ -91,9 +92,9 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
           <div className="mt-24 flow-root">
             <div className="space-y-2 py-6">
               {navigation.map((item, index) => (
-                <a key={index} href={item.href} className={`block px-3 text-center py-2 text-2xl font-normal hover:underline ${isDark ? 'text-[#333]' : 'text-white'}`}>
+                <Link key={index} href={item.href} className={`block px-3 text-center py-2 text-2xl font-normal hover:underline ${isDark ? 'text-[#333]' : 'text-white'}`}>
                   {item.name}
-                </a>
+                </Link>
               ))}
               <div className="mt-2 flex justify-center gap-7 px-3 py-6 text-white">
                 <a href="https://www.instagram.com/asty_ua">
