@@ -5,19 +5,19 @@ export default function Images() {
     <div className="bg-white py-12 xl:py-20">
       <div className="mx-auto justify-items-center max-w-[550px] px-4 xl:px-16 grid grid-cols-1 gap-x-5 xl:gap-x-10 gap-y-4 md:gap-y-10 xl:gap-y-16 text-[#666] md:max-w-full md:grid-cols-2">
         <Image
-          src="https://yodezeen.com/wp-content/uploads/2023/04/Untitled-2-05.jpg"
+          src="/images/projects/plavdom/1.jpg"
           width="640"
           height="905"
           alt=""
         />
         <Image
-          src="https://yodezeen.com/wp-content/uploads/2023/04/Untitled-211111111-02.jpg"
+          src="/images/projects/plavdom/2.jpg"
           width="640"
           height="905"
           alt=""
         />
         <Image
-          src="https://yodezeen.com/wp-content/uploads/2023/04/55555.jpg"
+          src="/images/projects/plavdom/3.jpg"
           width="640"
           height="905"
           alt=""
@@ -44,13 +44,39 @@ export default function Images() {
           </p>
         </div>
         <Image
-          src="https://yodezeen.com/wp-content/uploads/2023/04/%D0%BD%D0%BE%D1%80%D0%BC-02.jpg"
+          src="/images/projects/plavdom/4.jpg"
+          width="1304"
+          height="934"
+          alt=""
+          className='col-span-2'
+        />
+        <Image
+          src="/images/projects/plavdom/5.jpg"
           width="640"
           height="905"
           alt=""
         />
         <Image
-          src="https://yodezeen.com/wp-content/uploads/2023/04/%D0%BD%D0%BE%D1%80%D0%BC-01.jpg"
+          src="/images/projects/plavdom/6.jpg"
+          width="640"
+          height="905"
+          alt=""
+        />
+        <Image
+          src="/images/projects/plavdom/7.jpg"
+          width="1304"
+          height="934"
+          alt=""
+          className='col-span-2'
+        />
+        <Image
+          src="/images/projects/plavdom/8.jpg"
+          width="640"
+          height="905"
+          alt=""
+        />
+        <Image
+          src="/images/projects/plavdom/9.jpg"
           width="640"
           height="905"
           alt=""

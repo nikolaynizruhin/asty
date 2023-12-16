@@ -29,7 +29,7 @@ export default function Services() {
     <div className="bg-[#1a1a1a]">
       <div className="relative isolate overflow-hidden pt-14">
         <Image
-          src="https://yodezeen.com/wp-content/uploads/2020/03/cam_01_View09-1024x640.jpg"
+          src="/images/services.jpg"
           alt=""
           width="1440"
           height="768"

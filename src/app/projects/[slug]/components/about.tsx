@@ -5,23 +5,23 @@ import Detail from "./detail"
 const details = [
   {
     icon: "geo-alt",
-    title: "Location",
-    description: "Madrid, Spain"
+    title: "Локація",
+    description: "Goodlife Park"
   },
   {
     icon: "houses",
-    title: "Square meters",
-    description: "13,993 ft² / 1,300m²"
+    title: "Площа",
+    description: "130 кв.м"
   },
   {
     icon: "calendar3",
-    title: "Date",
-    description: "In progress"
+    title: "Термін реалізації",
+    description: "2024"
   },
   {
-    icon: "people",
-    title: "Team",
-    description: "Artur Sharf"
+    icon: "vector-pen",
+    title: "Стиль дизайну",
+    description: "Мінімалізм"
   }
 ]
 
@@ -32,15 +32,11 @@ export default function About() {
       <div className="mx-auto max-w-lg xl:max-w-4xl px-4 mt-10 grid grid-cols-1 gap-3 xl:gap-8 xl:grid-cols-2">
         <div>
           <h2 className="mb-10 xl:mb-9 text-3xl font-bold text-gray-900 md:text-4xl max-w-[300px]">
-            Brief
+            Концепт
           </h2>
           <p className="text-base font-light text-[#666]">
-            ASTY created this design project for a young family. The customer
-            and his wife love and adore Spain, and they also consider their
-            home a place with a warm atmosphere for leisure time. That is why
-            the interior is mostly in beige, milky, and light brown shades,
-            filled with everything necessary for maintaining physical fitness
-            and relaxation.
+            Це один з найулюбленіших проєктів архітектурно-дизайнерського бюро ASTY. Заміський будинок на воді в котеджному містечку. Ми використали для оздоблення спокійну кольорову гаму, дерев’яні меблі та натуральний текстиль, що дають відчуття поєднання з природою. Розташована поряд лаунж зона дає можливість відпочити та розслабитись дивлячись на красиві пейзажі та воду крізь великі панорамні вікна.
+            Зверніть увагу на поєднання міксу дерев’яних кухонних фасадів та фартуху з каменю, які виглядають цілісно та гармонійно. А центральне місце в будинку займає камін.
           </p>
         </div>
         <div className="flex flex-col pt-10 xl:pl-24">

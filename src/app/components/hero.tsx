@@ -8,7 +8,7 @@ export default function Hero() {
       <Header />
       <div className="relative isolate overflow-hidden pt-14">
         <Image
-          src="https://yodezeen.com/wp-content/uploads/2020/03/1.jpg"
+          src="/images/hero.jpg"
           alt=""
           width="1440"
           height="768"
