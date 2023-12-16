@@ -24,7 +24,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">ASTY</span>
-            <Image src={isDark ? '/logo-dark.svg' : '/logo-light.svg'} alt="Logo" width="797" height="236" className="h-10 md:h-12 xl:h-14 w-auto" />
+            <Image src={isDark ? '/images/logo-dark.svg' : '/images/logo-light.svg'} alt="Logo" width="797" height="236" className="h-10 md:h-12 xl:h-14 w-auto" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -64,7 +64,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">ASTY</span>
-              <Image src="/logo-light.svg" alt="Logo" width="797" height="236" className="h-10 md:h-12 xl:h-14 w-auto" />
+              <Image src="/images/logo-light.svg" alt="Logo" width="797" height="236" className="h-10 md:h-12 xl:h-14 w-auto" />
             </a>
             <button
               type="button"
