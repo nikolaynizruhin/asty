@@ -8,9 +8,9 @@ import Link from 'next/link'
 
 const navigation = [
   { name: 'Проєкти', href: '/projects' },
-  { name: 'Про нас', href: '#' },
-  { name: 'Кар’єра', href: '#' },
-  { name: 'Контакти', href: '#' },
+  { name: 'Про нас', href: '/#about' },
+  { name: 'Кар’єра', href: '/#career' },
+  { name: 'Контакти', href: '/#contact' },
 ]
 
 export default function Header({ isDark = false }: { isDark?: boolean }) {

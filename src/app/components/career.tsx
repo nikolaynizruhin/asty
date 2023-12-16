@@ -9,7 +9,7 @@ export default function Career() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="bg-white py-14 sm:py-48">
+    <div id="career" className="bg-white py-14 sm:py-48">
       <Title text="КАР’ЄРА" className="-mb-[8vw] 2xl:-mb-[10vw] mx-[9vw] hidden md:flex" />
       <div className="mx-auto max-w-lg xl:max-w-4xl px-4">
         <h2 className="mt-2 text-2xl font-bold text-gray-900 md:text-4xl max-w-[250px]">

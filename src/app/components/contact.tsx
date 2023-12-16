@@ -29,7 +29,7 @@ export default function Contact() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="bg-[#1a1a1a] py-20 xl:py-32">
+    <div id="contact" className="bg-[#1a1a1a] py-20 xl:py-32">
       <div className="mx-auto max-w-lg xl:max-w-4xl px-4">
         <h2 className="text-3xl font-bold text-white md:text-4xl max-w-[250px] mb-12 xl:mb-14">
           Get in touch with us
