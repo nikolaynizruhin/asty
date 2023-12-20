@@ -39,7 +39,7 @@ export default function Modal({ open, setOpen, children }: { open: boolean, chil
                     onClick={() => setOpen(false)}
                   >
                     <span className="sr-only">Close</span>
-                    <Icon className="w-4 h-4 md:h-6 md:w-6" name="x-lg" width={24} height={24} />
+                    <Icon className="size-4 md:size-6" name="x-lg" width={24} height={24} />
                   </button>
                 </div>
                 {children}
