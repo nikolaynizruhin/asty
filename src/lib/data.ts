@@ -201,6 +201,35 @@ const projects = [
         description: "Модернізм",
       }
     ],
+  },
+  {
+    id: 8,
+    slug: 'sky-avenue',
+    title: 'Sky Avenue',
+    subtitle: 'Monochrome interior in the shade of the Spanish sun',
+    description: "Приваблива та стильна спальня кімната у стилі модернізм. Світлі, теплі кольори з першого погляду налаштовують на релакс та відпочинок, а м‘яке приглушене світло надає кімнаті особливого затишку. Ми використали комбінацію текстур, що ідеально доповнило інтер’єр. Відкриті полиці з підсвіткою акцентами додають інтер'єру структурної складності.  Просто і лаконічно.",
+    details: [
+      {
+        icon: "geo-alt",
+        title: "Локація",
+        description: "ЖК Sky Avenue",
+      },
+      {
+        icon: "houses",
+        title: "Площа",
+        description: "91 кв.м",
+      },
+      {
+        icon: "calendar3",
+        title: "Термін реалізації",
+        description: "2024",
+      },
+      {
+        icon: "vector-pen",
+        title: "Стиль дизайну",
+        description: "Модернізм",
+      }
+    ],
   }
 ]
 
