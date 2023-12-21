@@ -1,23 +1,23 @@
 import Image from 'next/image'
 
-export default function Images() {
+export default function Images({ project }) {
   return (
     <div className="bg-white py-12 xl:py-20">
       <div className="mx-auto justify-items-center max-w-[550px] px-4 xl:px-16 grid grid-cols-1 gap-x-5 xl:gap-x-10 gap-y-4 md:gap-y-10 xl:gap-y-16 text-[#666] md:max-w-full md:grid-cols-2">
         <Image
-          src="/images/projects/plavdom/1.jpg"
+          src={`/images/projects/${project.slug}/1.jpg`}
           width="640"
           height="905"
           alt=""
         />
         <Image
-          src="/images/projects/plavdom/2.jpg"
+          src={`/images/projects/${project.slug}/2.jpg`}
           width="640"
           height="905"
           alt=""
         />
         <Image
-          src="/images/projects/plavdom/3.jpg"
+          src={`/images/projects/${project.slug}/3.jpg`}
           width="640"
           height="905"
           alt=""
@@ -44,39 +44,39 @@ export default function Images() {
           </p>
         </div>
         <Image
-          src="/images/projects/plavdom/4.jpg"
+          src={`/images/projects/${project.slug}/4.jpg`}
           width="1304"
           height="934"
           alt=""
           className='col-span-2'
         />
         <Image
-          src="/images/projects/plavdom/5.jpg"
+          src={`/images/projects/${project.slug}/5.jpg`}
           width="640"
           height="905"
           alt=""
         />
         <Image
-          src="/images/projects/plavdom/6.jpg"
+          src={`/images/projects/${project.slug}/6.jpg`}
           width="640"
           height="905"
           alt=""
         />
         <Image
-          src="/images/projects/plavdom/7.jpg"
+          src={`/images/projects/${project.slug}/7.jpg`}
           width="1304"
           height="934"
           alt=""
           className='col-span-2'
         />
         <Image
-          src="/images/projects/plavdom/8.jpg"
+          src={`/images/projects/${project.slug}/8.jpg`}
           width="640"
           height="905"
           alt=""
         />
         <Image
-          src="/images/projects/plavdom/9.jpg"
+          src={`/images/projects/${project.slug}/9.jpg`}
           width="640"
           height="905"
           alt=""

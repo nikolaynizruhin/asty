@@ -19,7 +19,7 @@ export default function Project({ params }: { params: { slug: string } }) {
       <Hero project={project} />
       <About project={project} />
       {/* <Planning /> */}
-      <Images />
+      <Images project={project} />
       <Pagination />
       <Footer isDark />
     </>
