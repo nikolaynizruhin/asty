@@ -463,6 +463,238 @@ const projects = [
       }
     ],
   },
+  {
+    id: 17,
+    slug: 'goodlife-park-10',
+    title: 'Goodlife Park 10',
+    subtitle: 'Monochrome interior in the shade of the Spanish sun',
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisl euismod, aliquam nisl quis, ultrices nisl. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis.",
+    details: [
+      {
+        icon: "geo-alt",
+        title: "Локація",
+        description: "Goodlife Park",
+      },
+      {
+        icon: "houses",
+        title: "Площа",
+        description: "328 кв.м",
+      },
+      {
+        icon: "calendar3",
+        title: "Термін реалізації",
+        description: "2024",
+      },
+      {
+        icon: "vector-pen",
+        title: "Стиль дизайну",
+        description: "Модернізм",
+      }
+    ],
+  },
+  {
+    id: 18,
+    slug: 'goodlife-park-11',
+    title: 'Goodlife Park 11',
+    subtitle: 'Monochrome interior in the shade of the Spanish sun',
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisl euismod, aliquam nisl quis, ultrices nisl. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis.",
+    details: [
+      {
+        icon: "geo-alt",
+        title: "Локація",
+        description: "Goodlife Park",
+      },
+      {
+        icon: "houses",
+        title: "Площа",
+        description: "328 кв.м",
+      },
+      {
+        icon: "calendar3",
+        title: "Термін реалізації",
+        description: "2024",
+      },
+      {
+        icon: "vector-pen",
+        title: "Стиль дизайну",
+        description: "Модернізм",
+      }
+    ],
+  },
+  {
+    id: 19,
+    slug: 'goodlife-park-12',
+    title: 'Goodlife Park 12',
+    subtitle: 'Monochrome interior in the shade of the Spanish sun',
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisl euismod, aliquam nisl quis, ultrices nisl. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis.",
+    details: [
+      {
+        icon: "geo-alt",
+        title: "Локація",
+        description: "Goodlife Park",
+      },
+      {
+        icon: "houses",
+        title: "Площа",
+        description: "328 кв.м",
+      },
+      {
+        icon: "calendar3",
+        title: "Термін реалізації",
+        description: "2024",
+      },
+      {
+        icon: "vector-pen",
+        title: "Стиль дизайну",
+        description: "Модернізм",
+      }
+    ],
+  },
+  {
+    id: 20,
+    slug: 'goodlife-park-13',
+    title: 'Goodlife Park 13',
+    subtitle: 'Monochrome interior in the shade of the Spanish sun',
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisl euismod, aliquam nisl quis, ultrices nisl. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis.",
+    details: [
+      {
+        icon: "geo-alt",
+        title: "Локація",
+        description: "Goodlife Park",
+      },
+      {
+        icon: "houses",
+        title: "Площа",
+        description: "328 кв.м",
+      },
+      {
+        icon: "calendar3",
+        title: "Термін реалізації",
+        description: "2024",
+      },
+      {
+        icon: "vector-pen",
+        title: "Стиль дизайну",
+        description: "Модернізм",
+      }
+    ],
+  },
+  {
+    id: 21,
+    slug: 'goodlife-park-14',
+    title: 'Goodlife Park 14',
+    subtitle: 'Monochrome interior in the shade of the Spanish sun',
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisl euismod, aliquam nisl quis, ultrices nisl. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis.",
+    details: [
+      {
+        icon: "geo-alt",
+        title: "Локація",
+        description: "Goodlife Park",
+      },
+      {
+        icon: "houses",
+        title: "Площа",
+        description: "328 кв.м",
+      },
+      {
+        icon: "calendar3",
+        title: "Термін реалізації",
+        description: "2024",
+      },
+      {
+        icon: "vector-pen",
+        title: "Стиль дизайну",
+        description: "Модернізм",
+      }
+    ],
+  },
+  {
+    id: 22,
+    slug: 'goodlife-park-15',
+    title: 'Goodlife Park 15',
+    subtitle: 'Monochrome interior in the shade of the Spanish sun',
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisl euismod, aliquam nisl quis, ultrices nisl. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis.",
+    details: [
+      {
+        icon: "geo-alt",
+        title: "Локація",
+        description: "Goodlife Park",
+      },
+      {
+        icon: "houses",
+        title: "Площа",
+        description: "328 кв.м",
+      },
+      {
+        icon: "calendar3",
+        title: "Термін реалізації",
+        description: "2024",
+      },
+      {
+        icon: "vector-pen",
+        title: "Стиль дизайну",
+        description: "Модернізм",
+      }
+    ],
+  },
+  {
+    id: 23,
+    slug: 'landysh-2',
+    title: 'Landysh 2',
+    subtitle: 'Monochrome interior in the shade of the Spanish sun',
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisl euismod, aliquam nisl quis, ultrices nisl. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis.",
+    details: [
+      {
+        icon: "geo-alt",
+        title: "Локація",
+        description: "Козин",
+      },
+      {
+        icon: "houses",
+        title: "Площа",
+        description: "100 кв.м",
+      },
+      {
+        icon: "calendar3",
+        title: "Термін реалізації",
+        description: "2024",
+      },
+      {
+        icon: "vector-pen",
+        title: "Стиль дизайну",
+        description: "Модернізм",
+      }
+    ],
+  },
+  {
+    id: 24,
+    slug: 'riviera-2',
+    title: 'Riviera Village 2',
+    subtitle: 'Monochrome interior in the shade of the Spanish sun',
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisl euismod, aliquam nisl quis, ultrices nisl. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis. Donec auctor, nisl quis aliquam ultricies, nisl nisl aliquet nisl, quis aliquam nisl nisl quis.",
+    details: [
+      {
+        icon: "geo-alt",
+        title: "Локація",
+        description: "Riviera Village",
+      },
+      {
+        icon: "houses",
+        title: "Площа",
+        description: "450 кв.м",
+      },
+      {
+        icon: "calendar3",
+        title: "Термін реалізації",
+        description: "2024",
+      },
+      {
+        icon: "vector-pen",
+        title: "Стиль дизайну",
+        description: "Модернізм",
+      }
+    ],
+  },
 ]
 
 export default projects
