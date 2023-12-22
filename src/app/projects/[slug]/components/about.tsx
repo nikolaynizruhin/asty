@@ -1,8 +1,9 @@
 import Icon from "@/src/components/icon"
 import Title from "@/src/components/title"
 import Detail from "./detail"
+import { Project } from "@/src/lib/data"
 
-export default function About({ project }) {
+export default function About({ project }: { project: Project }) {
   return (
     <div className="bg-white py-12 md:py-48 xl:py-64">
       <Title text="ABOUT" className="-mb-40 mx-[9vw] hidden md:flex" />

@@ -1,6 +1,7 @@
+import { Project } from '@/src/lib/data'
 import Image from 'next/image'
 
-export default function Images({ project }) {
+export default function Images({ project }: { project: Project }) {
   return (
     <div className="bg-white py-12 xl:py-20">
       <div className="mx-auto justify-items-center max-w-[550px] px-4 xl:px-16 grid grid-cols-1 gap-x-5 xl:gap-x-10 gap-y-4 md:gap-y-10 xl:gap-y-16 text-[#666] md:max-w-full md:grid-cols-2">
