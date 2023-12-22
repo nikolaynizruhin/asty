@@ -17,7 +17,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <Link key={index} href={`/projects/${project.slug}`}>
             <Image
-              className="object-cover aspect-[325/232] w-full brightness-[.8]"
+              className="object-cover aspect-[325/232] w-full brightness-[.8] hover:brightness-[0.3] transition-all duration-300"
               src={`/images/projects/${project.slug}/hero.jpg`}
               width="325"
               height="232"
