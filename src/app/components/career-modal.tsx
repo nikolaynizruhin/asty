@@ -10,17 +10,16 @@ export default function ThankModal({ open, setOpen }: { open: boolean; setOpen: 
     <Modal open={open} setOpen={setOpen}>
       <form>
         <Dialog.Title as="h3" className="text-3xl md:text-4xl font-bold text-white md:max-w-[350px] mb-9 xl:mb-20">
-          We are waiting for you in our team!
+          Приєднуйся до нашої команди!
         </Dialog.Title>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-7 gap-x-10 xl:gap-x-40 md:mr-6 xl:mr-24">
-          <Input name="name" label="Name" />
-          <Input name="vacancy" label="Vacancy" />
-          <Input name="email" label="Email" />
-          <Input name="message" label="Message" />
-          <Input name="phone" label="Phone" />
+          <Input name="name" label="Імʼя" />
+          <Input name="email" label="Пошта" />
+          <Input name="phone" label="Телефон" />
+          <Input name="resume" label="Резюме" type="file" />
         </div>
         <Button className="mt-11 md:mt-20 xl:mt-32" isDark onClick={() => setOpen(false)}>
-          SEND REQUEST
+          ВІДПРАВИТИ
         </Button>
       </form>
     </Modal>
