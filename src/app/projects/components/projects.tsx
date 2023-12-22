@@ -8,10 +8,10 @@ export default function Projects() {
     <div className="bg-white pt-24 xl:pt-56 px-4 md:px-8 xl:px-16 max-w-[550px] mx-auto md:max-w-none">
       <Title text="ПРОЄКТИ" className="px-[3vw] hidden xl:flex" />
       <div className="text-xs text-[#828282] mt-11">
-        <button className="text-[#121212] mr-5 md:mr-12 xl:mr-24 pr-4 xl:uppercase font-semibold">All</button>
-        <button className="mr-5 md:mr-12 xl:mr-24 pr-4 xl:uppercase font-semibold">Architecture</button>
-        <button className="mr-5 md:mr-12 xl:mr-24 pr-4 xl:uppercase font-semibold">Residental</button>
-        <button className="xl:uppercase font-semibold">Commercial</button>
+        <button className="text-[#121212] mr-5 md:mr-12 xl:mr-24 pr-4 xl:uppercase font-semibold">Всі</button>
+        <button className="mr-5 md:mr-12 xl:mr-24 pr-4 xl:uppercase font-semibold">Архітектура</button>
+        <button className="mr-5 md:mr-12 xl:mr-24 pr-4 xl:uppercase font-semibold">Інтерʼєр</button>
+        <button className="xl:uppercase font-semibold">Комерція</button>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-[2px] mt-8">
         {projects.map((project, index) => (
