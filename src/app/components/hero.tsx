@@ -21,7 +21,7 @@ export default function Hero() {
             restaurant
           </h1>
           <p className="mt-8 font-light text-sm text-gray-300">
-            View project
+            Коли кожний квадратний метр має значення
           </p>
         </div>
         <div className="flex gap-8 p-4 lg:py-12 lg:px-16 text-white">
