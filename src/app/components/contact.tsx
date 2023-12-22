@@ -50,7 +50,7 @@ export default function Contact() {
         </p>
         <div className="mt-8 xl:mt-14 flex">
           <Button isDark onClick={() => setOpen(true)}>
-            ВІДПРАВИТИ
+            ЗВ’ЯЗАТИСЬ З НАМИ
           </Button>
           <ContactModal open={open} setOpen={setOpen} />
         </div>
