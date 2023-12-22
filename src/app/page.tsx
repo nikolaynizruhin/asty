@@ -1,7 +1,7 @@
 import Footer from '@/src/components/footer'
 import Hero from '@/src/app/components/hero'
 import About from '@/src/app/components/about'
-import Projects from '@/src/app/components/projects'
+import Categories from '@/src/app/components/categories'
 import Steps from '@/src/app/components/steps'
 import Career from '@/src/app/components/career'
 import Contact from '@/src/app/components/contact'
@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Hero />
       <About />
-      <Projects />
+      <Categories />
       <Steps />
       <Services />
       <Career />
