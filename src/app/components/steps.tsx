@@ -48,9 +48,7 @@ export default function Steps() {
             Як ми працюємо
           </h2>
           <p className="mt-7 md:mt-10 xl:mt-6 text-base font-light text-[#666]">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-            Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
-            In mi viverra elit nunc.
+            Ми любимо сприймати ваше бачення, створюючи елегантний, оригінальний і розумний спосіб втілення ваших задумів у життя.
           </p>
         </div>
         <div className="mx-auto mt-12 md:mt-16 max-w-2xl sm:mt-20 lg:mt-20 lg:max-w-none">

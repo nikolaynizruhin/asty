@@ -10,7 +10,7 @@ const services = [
   {
     name: 'Архітектурно-дизайнерське проектування',
     description: 'Розрахунок вартості проєкту, обговорення деталей, укладення договору, авансовий платіж. Розрахунок вартості проєкту, обговорення деталей, укладення договору, авансовий платіж.',
-    icon: 'book',
+    icon: 'file-earmark-easel',
   },
   {
     name: 'Авторський супровід дизайн проєктів',
@@ -41,9 +41,7 @@ export default function Services() {
               Наші послуги
             </h2>
             <p className="mt-7 md:mt-10 xl:mt-6 text-base font-light text-white">
-              Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-              Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
-              In mi viverra elit nunc.
+              Ми ретельно продумуємо всі технічні аспекти проєкту прононуючи скчвасні та функціональні рішення, які ми можемо реалізувати з нашими партнерами.
             </p>
           </div>
           <div className="mx-auto mt-12 md:mt-16 max-w-2xl sm:mt-20 lg:mt-20 lg:max-w-none">
