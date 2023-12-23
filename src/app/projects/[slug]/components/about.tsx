@@ -1,7 +1,7 @@
 import Icon from "@/src/components/icon"
 import Title from "@/src/components/title"
 import Detail from "./detail"
-import { Project } from "@/src/lib/data"
+import { Project } from "@/src/lib/definitions"
 
 export default function About({ project }: { project: Project }) {
   return (

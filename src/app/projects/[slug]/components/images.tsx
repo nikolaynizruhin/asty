@@ -1,4 +1,4 @@
-import { Project } from '@/src/lib/data'
+import { Project } from '@/src/lib/definitions'
 import Image from 'next/image'
 
 export default function Images({ project }: { project: Project }) {
