@@ -3,6 +3,8 @@ export interface Detail {
   name: string;
   description: string;
 }
+
+export type Category = 'architecture' | 'interior' | 'commerce';
   
 export interface Project {
   id: number;
@@ -10,6 +12,6 @@ export interface Project {
   name: string;
   description: string;
   concept: string;
-  category: string;
+  category: Category;
   details: Detail[];
 }
