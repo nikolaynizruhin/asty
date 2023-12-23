@@ -1,6 +1,6 @@
 export interface Detail {
   icon: string;
-  title: string;
+  name: string;
   description: string;
 }
   

@@ -1,17 +1,18 @@
 import Icon from "@/src/components/icon"
+import { Detail } from "@/src/lib/definitions"
 
-export default function Detail({ title, description, icon }: { title: string, description: string, icon: string }) {
+export default function Detail({ detail }: { detail: Detail }) {
   return (
     <div className="flex">
       <div className="flex items-center justify-center xl:w-20 mr-9 xl:mr-0">
-        <Icon name={icon} />
+        <Icon name={detail.icon} />
       </div>
       <div>
         <h4 className="text-[#333] font-bold tracking-wider mb-1 text-sm">
-          {title}:
+          {detail.name}:
         </h4>
         <p className="text-[#666] tracking-wider text-sm font-light">
-          {description}
+          {detail.description}
         </p>
       </div>
     </div>

@@ -10,22 +10,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Goodlife Park",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "130 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Мінімалізм",
       }
     ],
@@ -39,22 +39,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Riviera Village",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "450 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -68,22 +68,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Goodlife Park",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "427 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -97,22 +97,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Козин",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "100 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -126,22 +126,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "ЖК Park Avenue",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "173 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Мінімалізм",
       }
     ],
@@ -155,22 +155,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "ЖК Park Avenue",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "173 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -184,22 +184,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "ЖК Sky Avenue",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "91 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -213,22 +213,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "ЖК Sky Avenue",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "91 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -242,22 +242,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Goodlife Park",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "395 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -271,22 +271,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Goodlife Park",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "395 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -300,22 +300,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Goodlife Park",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "392 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Мінімалізм",
       }
     ],
@@ -329,22 +329,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Goodlife Park",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "392 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Мінімалізм",
       }
     ],
@@ -358,22 +358,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Goodlife Park",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "180 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -387,22 +387,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Goodlife Park",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "180 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -416,22 +416,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Goodlife Park",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "328 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -445,22 +445,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Goodlife Park",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "328 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -474,22 +474,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Goodlife Park",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "328 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -503,22 +503,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Goodlife Park",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "328 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -532,22 +532,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Goodlife Park",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "328 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -561,22 +561,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Goodlife Park",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "328 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -590,22 +590,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Goodlife Park",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "328 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -619,22 +619,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Goodlife Park",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "328 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -648,22 +648,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Козин",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "100 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],
@@ -677,22 +677,22 @@ const projects: Project[] = [
     details: [
       {
         icon: "geo-alt",
-        title: "Локація",
+        name: "Локація",
         description: "Riviera Village",
       },
       {
         icon: "houses",
-        title: "Площа",
+        name: "Площа",
         description: "450 кв.м",
       },
       {
         icon: "calendar3",
-        title: "Термін реалізації",
+        name: "Термін реалізації",
         description: "2024",
       },
       {
         icon: "vector-pen",
-        title: "Стиль дизайну",
+        name: "Стиль дизайну",
         description: "Модернізм",
       }
     ],

@@ -18,7 +18,7 @@ export default function About({ project }: { project: Project }) {
         </div>
         <div className="flex flex-col pt-10 xl:pl-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7 xl:grid-cols-1">
-            {project.details.map((detail, index) => <Detail key={index} {...detail} />)}
+            {project.details.map((detail, index) => <Detail key={index} detail={detail} />)}
           </div>
           <div className="text-base font-light text-[#666] flex items-center mt-16 xl:mt-24">
             Share:
