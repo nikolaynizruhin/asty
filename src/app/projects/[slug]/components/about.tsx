@@ -13,7 +13,7 @@ export default function About({ project }: { project: Project }) {
             Концепт
           </h2>
           <p className="text-base font-light text-[#666]">
-            {project.description}
+            {project.concept}
           </p>
         </div>
         <div className="flex flex-col pt-10 xl:pl-24">

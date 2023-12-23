@@ -8,8 +8,8 @@ export interface Detail {
     id: number;
     slug: string;
     name: string;
-    subtitle: string;
     description: string;
+    concept: string;
     details: Detail[];
   }
   

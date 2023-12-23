@@ -19,7 +19,7 @@ export default function Hero({ project }: { project: Project }) {
             {project.name}
           </h1>
           <p className="mt-4 md:mt-6 font-light text-sm xl:text-base text-white">
-            {project.subtitle}
+            {project.description}
           </p>
         </div>
       </div>
