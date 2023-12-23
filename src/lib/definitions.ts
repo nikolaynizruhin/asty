@@ -10,5 +10,6 @@ export interface Project {
   name: string;
   description: string;
   concept: string;
+  category: string;
   details: Detail[];
 }
