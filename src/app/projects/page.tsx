@@ -6,7 +6,6 @@ import ProjectList from '@/src/app/projects/components/projects'
 export default function Projects() {
   return (
     <>
-      {/* Header */}
       <Header isDark />
       <ProjectList />
       <Contact />
