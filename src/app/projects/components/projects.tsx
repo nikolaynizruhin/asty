@@ -22,7 +22,7 @@ export default function Projects() {
               src={`/images/projects/${project.slug}/hero.jpg`}
               width="325"
               height="232"
-              alt=""
+              alt={project.name}
             />
           </Link>
         ))}
