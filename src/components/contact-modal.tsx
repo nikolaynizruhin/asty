@@ -4,11 +4,12 @@ import Modal from "@/src/components/modal"
 import Input from "@/src/components/input"
 import Button from "@/src/components/button"
 import { Dialog } from '@headlessui/react'
+import { sendContactEmail } from "../lib/actions"
 
 export default function ContactModal({ open, setOpen }: { open: boolean; setOpen: (open: boolean) => void }) {
   return (
     <Modal open={open} setOpen={setOpen}>
-      <form>
+      <form action={sendContactEmail}>
         <Dialog.Title as="h3" className="text-3xl md:text-4xl font-bold text-white md:max-w-[350px] mb-9 xl:mb-20">
           Напишіть нам
         </Dialog.Title>
@@ -17,7 +18,7 @@ export default function ContactModal({ open, setOpen }: { open: boolean; setOpen
           <Input name="message" label="Повідомлення" />
           <Input name="email" label="Пошта" />
         </div>
-        <Button className="mt-11 md:mt-20 xl:mt-32" isDark onClick={() => setOpen(false)}>
+        <Button className="mt-11 md:mt-20 xl:mt-32" isDark>
           ВІДПРАВИТИ
         </Button>
       </form>

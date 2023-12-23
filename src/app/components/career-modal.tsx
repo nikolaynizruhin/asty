@@ -4,11 +4,12 @@ import Modal from "@/src/components/modal"
 import Input from "@/src/components/input"
 import Button from "@/src/components/button"
 import { Dialog } from '@headlessui/react'
+import { sendCareerEmail } from "@/src/lib/actions"
 
 export default function ThankModal({ open, setOpen }: { open: boolean; setOpen: (open: boolean) => void }) {
   return (
     <Modal open={open} setOpen={setOpen}>
-      <form>
+      <form action={sendCareerEmail}>
         <Dialog.Title as="h3" className="text-3xl md:text-4xl font-bold text-white md:max-w-[350px] mb-9 xl:mb-20">
           Приєднуйся до нашої команди!
         </Dialog.Title>
@@ -18,7 +19,7 @@ export default function ThankModal({ open, setOpen }: { open: boolean; setOpen: 
           <Input name="phone" label="Телефон" />
           <Input name="resume" label="Резюме" type="file" />
         </div>
-        <Button className="mt-11 md:mt-20 xl:mt-32" isDark onClick={() => setOpen(false)}>
+        <Button className="mt-11 md:mt-20 xl:mt-32" isDark>
           ВІДПРАВИТИ
         </Button>
       </form>
