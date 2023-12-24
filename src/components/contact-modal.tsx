@@ -1,15 +1,26 @@
 'use client'
 
+import { useFormState } from 'react-dom'
 import Modal from "@/src/components/modal"
 import Input from "@/src/components/input"
 import Button from "@/src/components/button"
 import { Dialog } from '@headlessui/react'
 import { sendContactEmail } from "../lib/actions"
 
+const initialState = {
+  success: false,
+}
+
 export default function ContactModal({ open, setOpen }: { open: boolean; setOpen: (open: boolean) => void }) {
+  const [state, formAction] = useFormState(sendContactEmail, initialState)
+
+  if (state.success) {
+    setOpen(false);
+  }
+
   return (
     <Modal open={open} setOpen={setOpen}>
-      <form action={sendContactEmail}>
+      <form action={formAction}>
         <Dialog.Title as="h3" className="text-3xl md:text-4xl font-bold text-white md:max-w-[350px] mb-9 xl:mb-20">
           Напишіть нам
         </Dialog.Title>

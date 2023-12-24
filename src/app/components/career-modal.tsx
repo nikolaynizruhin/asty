@@ -1,15 +1,26 @@
 'use client'
 
+import { useFormState } from 'react-dom'
 import Modal from "@/src/components/modal"
 import Input from "@/src/components/input"
 import Button from "@/src/components/button"
 import { Dialog } from '@headlessui/react'
 import { sendCareerEmail } from "@/src/lib/actions"
 
+const initialState = {
+  success: false,
+}
+
 export default function ThankModal({ open, setOpen }: { open: boolean; setOpen: (open: boolean) => void }) {
+  const [state, formAction] = useFormState(sendCareerEmail, initialState)
+
+  if (state.success) {
+    setOpen(false);
+  }
+
   return (
     <Modal open={open} setOpen={setOpen}>
-      <form action={sendCareerEmail}>
+      <form action={formAction}>
         <Dialog.Title as="h3" className="text-3xl md:text-4xl font-bold text-white md:max-w-[350px] mb-9 xl:mb-20">
           Приєднуйся до нашої команди!
         </Dialog.Title>
