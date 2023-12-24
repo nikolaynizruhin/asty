@@ -6,17 +6,21 @@ import Input from "@/src/components/input"
 import Button from "@/src/components/button"
 import { Dialog } from '@headlessui/react'
 import { sendContactEmail } from "../lib/actions"
+import { useEffect } from 'react'
 
 const initialState = {
   success: false,
 }
 
-export default function ContactModal({ open, setOpen }: { open: boolean; setOpen: (open: boolean) => void }) {
+export default function ContactModal({ open, setOpen, setOpenThank }: { open: boolean; setOpen: (open: boolean) => void; setOpenThank: (open: boolean) => void }) {
   const [state, formAction] = useFormState(sendContactEmail, initialState)
 
-  if (state.success) {
-    setOpen(false);
-  }
+  useEffect(() => {
+    if (state.success) {
+      setOpen(false);
+      setOpenThank(true);
+    }
+  }, [state.success]);
 
   return (
     <Modal open={open} setOpen={setOpen}>

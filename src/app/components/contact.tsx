@@ -2,6 +2,7 @@
 
 import Button from "@/src/components/button"
 import ContactModal from "@/src/components/contact-modal"
+import ThankModal from "@/src/components/thank-modal"
 import { useState } from "react"
 
 const contacts = [
@@ -26,7 +27,8 @@ const contacts = [
 ]
 
 export default function Contact() {
-  const [open, setOpen] = useState(false)
+  const [openContact, setOpenContact] = useState(false)
+  const [openThank, setOpenThank] = useState(false)
 
   return (
     <div id="contact" className="bg-[#1a1a1a] py-20 xl:py-32">
@@ -49,10 +51,11 @@ export default function Contact() {
           interior design.
         </p>
         <div className="mt-8 xl:mt-14 flex">
-          <Button isDark onClick={() => setOpen(true)}>
+          <Button isDark onClick={() => setOpenContact(true)}>
             ЗВ’ЯЗАТИСЬ З НАМИ
           </Button>
-          <ContactModal open={open} setOpen={setOpen} />
+          <ContactModal open={openContact} setOpen={setOpenContact} setOpenThank={setOpenThank} />
+          <ThankModal open={openThank} setOpen={setOpenThank} />
         </div>
       </div>
     </div>

@@ -4,9 +4,11 @@ import Button from "@/src/components/button"
 import Title from "@/src/components/title";
 import CareerModal from "@/src/app/components/career-modal"
 import { useState } from "react"
+import ThankModal from "@/src/components/thank-modal";
 
 export default function Career() {
-  const [open, setOpen] = useState(false)
+  const [openCareer, setOpenCareer] = useState(false)
+  const [openThank, setOpenThank] = useState(false)
 
   return (
     <div id="career" className="bg-white py-14 sm:py-48">
@@ -26,10 +28,11 @@ export default function Career() {
           </p>
         </div>
         <div className="mt-12 md:mt-14 flex">
-          <Button onClick={() => setOpen(true)}>
+          <Button onClick={() => setOpenCareer(true)}>
             ДАВАЙТЕ ЗНАЙОМИТИСЬ
           </Button>
-          <CareerModal open={open} setOpen={setOpen} />
+          <CareerModal open={openCareer} setOpen={setOpenCareer} setOpenThank={setOpenThank} />
+          <ThankModal open={openThank} setOpen={setOpenThank} />
         </div>
       </div>
     </div>
