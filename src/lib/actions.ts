@@ -8,7 +8,16 @@ const contactSchema = z.object({
   message: z.string().min(10),
 })
 
-export async function sendContactEmail(prevState: any, formData: FormData) {
+export type ContactState = {
+  errors?: {
+    name?: string[];
+    email?: string[];
+    message?: string[];
+  };
+  success?: boolean;
+};
+
+export async function sendContactEmail(prevState: ContactState, formData: FormData) {
   const validatedFields = contactSchema.safeParse({
     name: formData.get('name'),
     email: formData.get('email'),
@@ -31,14 +40,25 @@ export async function sendContactEmail(prevState: any, formData: FormData) {
 const careerSchema = z.object({
   name: z.string().min(3),
   email: z.string().email(),
-  message: z.string().min(10),
+  phone: z.string().min(10),
+  resume: z.string().min(10),
 })
 
-export async function sendCareerEmail(prevState: any, formData: FormData) {
+export type CareerState = {
+  errors?: {
+    name?: string[];
+    email?: string[];
+    phone?: string[];
+    resume?: string[];
+  };
+  success?: boolean;
+};
+
+export async function sendCareerEmail(prevState: CareerState, formData: FormData) {
   const validatedFields = careerSchema.safeParse({
     name: formData.get('name'),
     email: formData.get('email'),
-    message: formData.get('phone'),
+    phone: formData.get('phone'),
     resume: formData.get('resume'),
   })
 
