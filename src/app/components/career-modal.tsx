@@ -6,7 +6,7 @@ import Input from "@/src/components/input"
 import Button from "@/src/components/button"
 import { Dialog } from '@headlessui/react'
 import { sendCareerEmail } from "@/src/lib/actions"
-import { useEffect } from 'react'
+import { useThankModal } from '@/src/lib/hooks'
 
 const initialState = {
   success: false,
@@ -15,12 +15,7 @@ const initialState = {
 export default function ThankModal({ open, setOpen, setOpenThank }: { open: boolean; setOpen: (open: boolean) => void; setOpenThank: (open: boolean) => void }) {
   const [state, formAction] = useFormState(sendCareerEmail, initialState)
 
-  useEffect(() => {
-    if (state.success) {
-      setOpen(false);
-      setOpenThank(true);
-    }
-  }, [state.success]);
+  useThankModal(state.success, setOpen, setOpenThank);
 
   return (
     <Modal open={open} setOpen={setOpen}>
