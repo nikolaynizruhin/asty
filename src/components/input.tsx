@@ -1,4 +1,4 @@
-export default function Input({ name, label, type = 'text', error, ...props }: { name: string, label: string, type?: string, error?: string, [key: string]: any }) {
+export default function Input({ name, label, type = 'text', errors, ...props }: { name: string, label: string, type?: string, errors?: string[], [key: string]: any }) {
   return (
     <div>
       <div className="flex items-center group">
@@ -19,7 +19,7 @@ export default function Input({ name, label, type = 'text', error, ...props }: {
           />
         </div>
       </div>
-      {error && <div className="text-[red] text-xs text-right mt-[2px]">{error}</div>}
+      {errors && errors.map((error, index) => <div key={index} className="text-[red] text-xs text-right mt-[2px]">{error}</div>)}
     </div>
   )
 }

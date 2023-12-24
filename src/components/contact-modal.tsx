@@ -29,9 +29,9 @@ export default function ContactModal({ open, setOpen, setOpenThank }: { open: bo
           Напишіть нам
         </Dialog.Title>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-7 gap-x-10 xl:gap-x-40 md:mr-6 xl:mr-24">
-          <Input name="name" label="Імʼя" required error={state.errors?.name?.[0]} />
-          <Input name="message" label="Повідомлення" required error={state.errors?.message?.[0]} />
-          <Input name="email" label="Пошта" required error={state.errors?.email?.[0]} />
+          <Input name="name" label="Імʼя" required errors={state.errors?.name} />
+          <Input name="message" label="Повідомлення" required errors={state.errors?.message} />
+          <Input name="email" label="Пошта" required errors={state.errors?.email} />
         </div>
         <Button className="mt-11 md:mt-20 xl:mt-32" isDark>
           ВІДПРАВИТИ

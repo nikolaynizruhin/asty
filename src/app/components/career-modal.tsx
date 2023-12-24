@@ -29,10 +29,10 @@ export default function ThankModal({ open, setOpen, setOpenThank }: { open: bool
           Приєднуйся до нашої команди!
         </Dialog.Title>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-7 gap-x-10 xl:gap-x-40 md:mr-6 xl:mr-24">
-          <Input name="name" label="Імʼя" required error={state.errors?.name?.[0]} />
-          <Input name="email" label="Пошта" required error={state.errors?.email?.[0]} />
-          <Input name="phone" label="Телефон" required error={state.errors?.phone?.[0]} />
-          <Input name="resume" label="Резюме" type="file" required error={state.errors?.resume?.[0]} />
+          <Input name="name" label="Імʼя" required errors={state.errors?.name} />
+          <Input name="email" label="Пошта" required errors={state.errors?.email} />
+          <Input name="phone" label="Телефон" required errors={state.errors?.phone} />
+          <Input name="resume" label="Резюме" type="file" accept="application/pdf" required errors={state.errors?.resume} />
         </div>
         <Button className="mt-11 md:mt-20 xl:mt-32" isDark>
           ВІДПРАВИТИ

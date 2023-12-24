@@ -41,6 +41,12 @@ const careerSchema = z.object({
   name: z.string().min(3),
   email: z.string().email(),
   phone: z.string().min(10),
+  resume: z.any()
+    .refine((file) => file?.size <= 5000000, `Max pdf size is 5MB.`)
+    .refine(
+      (file) => ['application/pdf'].includes(file?.type),
+      "Only .pdf format is supported."
+    )
 })
 
 export type CareerState = {
