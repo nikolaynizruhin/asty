@@ -1,12 +1,6 @@
 'use server'
 
-import { z } from 'zod'
-
-const contactSchema = z.object({
-  name: z.string().min(3),
-  email: z.string().email(),
-  message: z.string().min(10),
-})
+import { careerSchema, contactSchema } from "./validations";
 
 export type ContactState = {
   errors?: {
@@ -36,18 +30,6 @@ export async function sendContactEmail(prevState: ContactState, formData: FormDa
   // revalidate cache
   return { success: true }
 }
-
-const careerSchema = z.object({
-  name: z.string().min(3),
-  email: z.string().email(),
-  phone: z.string().min(10),
-  resume: z.any()
-    .refine((file) => file?.size <= 5000000, `Max pdf size is 5MB.`)
-    .refine(
-      (file) => ['application/pdf'].includes(file?.type),
-      "Only .pdf format is supported."
-    )
-})
 
 export type CareerState = {
   errors?: {
