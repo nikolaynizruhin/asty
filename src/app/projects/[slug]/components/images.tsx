@@ -6,18 +6,21 @@ export default function Images({ project }: { project: Project }) {
     <div className="bg-white py-12 xl:py-20">
       <div className="mx-auto justify-items-center max-w-[550px] px-4 xl:px-16 grid grid-cols-1 gap-x-5 xl:gap-x-10 gap-y-4 md:gap-y-10 xl:gap-y-16 text-[#666] md:max-w-full md:grid-cols-2">
         <Image
+          className='w-full'
           src={`/images/projects/${project.slug}/1.jpg`}
           width="640"
           height="905"
           alt=""
         />
         <Image
+          className='w-full'
           src={`/images/projects/${project.slug}/2.jpg`}
           width="640"
           height="905"
           alt=""
         />
         <Image
+          className='w-full'
           src={`/images/projects/${project.slug}/3.jpg`}
           width="640"
           height="905"
@@ -49,15 +52,17 @@ export default function Images({ project }: { project: Project }) {
           width="1304"
           height="934"
           alt=""
-          className='col-span-2'
+          className='col-span-2 w-full'
         />
         <Image
+          className='w-full'
           src={`/images/projects/${project.slug}/5.jpg`}
           width="640"
           height="905"
           alt=""
         />
         <Image
+          className='w-full'
           src={`/images/projects/${project.slug}/6.jpg`}
           width="640"
           height="905"
@@ -68,15 +73,17 @@ export default function Images({ project }: { project: Project }) {
           width="1304"
           height="934"
           alt=""
-          className='col-span-2'
+          className='col-span-2 w-full'
         />
         <Image
+          className='w-full'
           src={`/images/projects/${project.slug}/8.jpg`}
           width="640"
           height="905"
           alt=""
         />
         <Image
+          className='w-full'
           src={`/images/projects/${project.slug}/9.jpg`}
           width="640"
           height="905"
