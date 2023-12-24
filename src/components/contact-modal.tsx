@@ -25,9 +25,9 @@ export default function ContactModal({ open, setOpen }: { open: boolean; setOpen
           Напишіть нам
         </Dialog.Title>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-7 gap-x-10 xl:gap-x-40 md:mr-6 xl:mr-24">
-          <Input name="name" label="Імʼя" />
-          <Input name="message" label="Повідомлення" />
-          <Input name="email" label="Пошта" />
+          <Input name="name" label="Імʼя" required />
+          <Input name="message" label="Повідомлення" required />
+          <Input name="email" label="Пошта" required />
         </div>
         <Button className="mt-11 md:mt-20 xl:mt-32" isDark>
           ВІДПРАВИТИ

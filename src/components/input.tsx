@@ -1,4 +1,4 @@
-export default function Input({ name, label, type = 'text', error }: { name: string, label: string, type?: string, error?: string }) {
+export default function Input({ name, label, type = 'text', error, ...props }: { name: string, label: string, type?: string, error?: string, [key: string]: any }) {
   return (
     <div>
       <div className="flex items-center group">
@@ -11,6 +11,7 @@ export default function Input({ name, label, type = 'text', error }: { name: str
             name={name}
             id={name}
             className="peer block w-full border-0 text-[#828282] bg-inherit focus:ring-0 py-0 text-sm xl:text-lg"
+            {...props}
           />
           <div
             className={`absolute inset-x-0 bottom-0 border-t border-[#828282] peer-focus:border-t-2 peer-focus:border-white ${type === 'file' ? 'hidden' : ''}`}
