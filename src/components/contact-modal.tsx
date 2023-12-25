@@ -1,6 +1,6 @@
 'use client'
 
-import { useFormState } from 'react-dom'
+import { useFormState, useFormStatus } from 'react-dom'
 import Modal from "@/src/components/modal"
 import Input from "@/src/components/input"
 import Button from "@/src/components/button"
@@ -19,6 +19,7 @@ const initialState = {
 
 export default function ContactModal({ open, setOpen, setOpenThank }: { open: boolean; setOpen: (open: boolean) => void; setOpenThank: (open: boolean) => void }) {
   const [state, formAction] = useFormState(sendContactEmail, initialState)
+  const { pending } = useFormStatus()
 
   useThankModal(
     state.success,
@@ -37,7 +38,7 @@ export default function ContactModal({ open, setOpen, setOpenThank }: { open: bo
           <Input name="message" label="Повідомлення" required errors={state.errors.message} />
           <Input name="email" label="Пошта" required errors={state.errors.email} />
         </div>
-        <Button className="mt-11 md:mt-20 xl:mt-32" isDark>
+        <Button className="mt-11 md:mt-20 xl:mt-32" aria-disabled={pending} isDark>
           ВІДПРАВИТИ
         </Button>
       </form>
