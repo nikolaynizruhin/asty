@@ -1,20 +1,21 @@
 import Image from "next/image"
+import Link from "next/link"
 
 const categories = [
   {
     name: 'Архітектура',
     image: '/images/categories/architecture.jpg',
-    href: '#'
+    href: '/projects?category=architecture'
   },
   {
     name: 'Дизайн інтер’єру',
     image: '/images/categories/interior.jpg',
-    href: '#'
+    href: '/projects?category=interior'
   },
   {
     name: 'Комерція',
     image: '/images/categories/commercial.jpg',
-    href: '#'
+    href: '/projects?category=commerce'
   }
 ]
 
@@ -31,7 +32,7 @@ export default function Categories() {
             className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[.3]"
           />
           <h3 className="text-2xl xl:text-4xl md:text-center font-bold text-white">
-            <a href={category.href}>{category.name}</a>
+            <Link href={category.href}>{category.name}</Link>
           </h3>
         </div>
       ))}
