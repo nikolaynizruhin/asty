@@ -1,4 +1,3 @@
-import Button from "@/src/components/button"
 import Title from "@/src/components/title"
 
 export default function About() {
