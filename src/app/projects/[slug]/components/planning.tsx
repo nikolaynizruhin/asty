@@ -1,3 +1,4 @@
+import Heading from '@/src/components/heading'
 import Image from 'next/image'
 
 export default function Planning() {
@@ -11,9 +12,7 @@ export default function Planning() {
           alt=""
         />
         <div className="py-10 xl:px-28 text-base max-w-lg md:max-w-[464px] xl:max-w-full">
-          <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl mb-7">
-            Planning
-          </h2>
+          <Heading className="mb-7">Planning</Heading>
           <p className="font-light text-[#666]">
             As often happens in the real estate market of Europe, YODEZEEN
             received an already-built house with existing walls, window

@@ -1,3 +1,4 @@
+import Heading from '@/src/components/heading'
 import { Project } from '@/src/lib/definitions'
 import Image from 'next/image'
 
@@ -27,9 +28,7 @@ export default function Images({ project }: { project: Project }) {
           alt=""
         />
         <div className="flex flex-col justify-center md:px-10 lg:px-28 py-10 md:py-0">
-          <h2 className="text-3xl font-semibold text-gray-900 md:text-4xl mb-7">
-            Concept
-          </h2>
+          <Heading className="mb-7">Концепт</Heading>
           <p className="font-light">
             As often happens in the real estate market of Europe, YODEZEEN
             received an already-built house with existing walls, window

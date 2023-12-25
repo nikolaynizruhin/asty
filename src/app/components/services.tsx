@@ -1,3 +1,4 @@
+import Heading from "@/src/components/heading"
 import Icon from "@/src/components/icon"
 import Image from "next/image"
 
@@ -37,9 +38,7 @@ export default function Services() {
         />
         <div className="mx-auto max-w-lg xl:max-w-4xl px-4 py-7 md:py-28 xl:py-48">
           <div className="xl:w-1/2">
-            <h2 className="mt-2 text-3xl font-bold text-white md:text-4xl max-w-xs">
-              Наші послуги
-            </h2>
+            <Heading isDark={false}>Наші послуги</Heading>
             <p className="mt-7 md:mt-10 xl:mt-6 text-base font-light text-white">
               Ми ретельно продумуємо всі технічні аспекти проєкту прононуючи сучасні та функціональні рішення, які ми можемо реалізувати з нашими партнерами.
             </p>
