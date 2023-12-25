@@ -28,9 +28,9 @@ export default function Contact() {
         <h2 className="text-3xl font-bold text-white md:text-4xl max-w-[250px] mb-12 xl:mb-14">
           Наші контакти
         </h2>
-        <div className="flex justify-between">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-8 sm:gap-0 mr-24 sm:mr-0">
           {contacts.map(contact => (
-            <div key={contact.index} className="w-1/3">
+            <div key={contact.index}>
               <h4 className="text-[#666] font-light text-sm">{contact.name}:</h4>
               <a href={contact.href} className="text-white text-sm">
                 {contact.text}
