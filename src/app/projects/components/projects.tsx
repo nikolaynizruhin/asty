@@ -1,7 +1,7 @@
 import Title from '@/src/components/title'
 import Image from 'next/image'
 import Link from 'next/link'
-import projects from '@/src/lib/data'
+import projects from '@/src/lib/projects'
 import { Category, Project } from '@/src/lib/definitions'
 
 export default function Projects({ category }: { category?: Category }) {

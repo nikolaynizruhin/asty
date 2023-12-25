@@ -23,8 +23,8 @@ export default function Categories() {
   return (
     <div className="mx-auto grid auto-rows-fr grid-cols-1 lg:max-w-none md:grid-cols-3 max-w-xl md:max-w-none">
       {categories.map((category, index) => (
-        <Link href={category.href}>
-          <div key={index} className="relative isolate flex flex-col justify-end overflow-hidden bg-gray-900 px-4 py-20 md:py-44 xl:py-96">
+        <Link key={index} href={category.href}>
+          <div className="relative isolate flex flex-col justify-end overflow-hidden bg-gray-900 px-4 py-20 md:py-44 xl:py-96">
             <Image
               src={category.image}
               width="480"

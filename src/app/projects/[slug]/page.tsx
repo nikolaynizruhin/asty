@@ -5,7 +5,7 @@ import Planning from '@/src/app/projects/[slug]/components/planning'
 import Images from '@/src/app/projects/[slug]/components/images'
 import Pagination from '@/src/app/projects/[slug]/components/pagination'
 import { notFound } from 'next/navigation'
-import projects from '@/src/lib/data'
+import projects from '@/src/lib/projects'
 
 export default function Project({ params }: { params: { slug: string } }) {
   const project = projects.find(project => project.slug === params.slug);
