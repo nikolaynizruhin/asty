@@ -12,7 +12,7 @@ export default function Planning() {
           alt=""
         />
         <div className="py-10 xl:px-28 text-base max-w-lg md:max-w-[464px] xl:max-w-full">
-          <Heading className="mb-7">Planning</Heading>
+          <Heading className="mb-7" isDark>Planning</Heading>
           <p className="font-light text-[#666]">
             As often happens in the real estate market of Europe, YODEZEEN
             received an already-built house with existing walls, window

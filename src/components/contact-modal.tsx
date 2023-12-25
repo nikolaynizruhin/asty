@@ -28,7 +28,7 @@ export default function ContactModal({ open, setOpen, setOpenThank }: { open: bo
     <Modal open={open} setOpen={setOpen}>
       <form action={formAction}>
         <Dialog.Title as='div'>
-          <Heading className='md:max-w-[350px] mb-9 xl:mb-20' isDark={false}>Напишіть нам</Heading>
+          <Heading className='md:max-w-[350px] mb-9 xl:mb-20'>Напишіть нам</Heading>
         </Dialog.Title>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-7 gap-x-10 xl:gap-x-40 md:mr-6 xl:mr-24">
           <Input name="name" label="Імʼя" required errors={state.errors.name} />

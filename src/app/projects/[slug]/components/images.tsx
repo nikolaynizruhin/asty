@@ -28,7 +28,7 @@ export default function Images({ project }: { project: Project }) {
           alt=""
         />
         <div className="flex flex-col justify-center md:px-10 lg:px-28 py-10 md:py-0">
-          <Heading className="mb-7">Концепт</Heading>
+          <Heading className="mb-7" isDark>Концепт</Heading>
           <p className="font-light">
             As often happens in the real estate market of Europe, YODEZEEN
             received an already-built house with existing walls, window

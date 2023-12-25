@@ -45,7 +45,7 @@ export default function Steps() {
     <div className="py-7 md:py-28 xl:py-48">
       <div className="mx-auto max-w-lg xl:max-w-4xl px-4">
         <div className="xl:pl-[50%]">
-          <Heading>Як ми працюємо</Heading>
+          <Heading isDark>Як ми працюємо</Heading>
           <p className="mt-7 md:mt-10 xl:mt-6 text-base font-light text-[#666]">
             Ми любимо сприймати ваше бачення, створюючи елегантний, оригінальний і розумний спосіб втілення ваших задумів у життя.
           </p>

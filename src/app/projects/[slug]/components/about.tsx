@@ -10,7 +10,7 @@ export default function About({ project }: { project: Project }) {
       <Title text="ДЕТАЛІ" className="-mb-40 mx-[9vw] hidden md:flex" />
       <div className="mx-auto max-w-lg xl:max-w-4xl px-4 mt-10 grid grid-cols-1 gap-3 xl:gap-8 xl:grid-cols-2">
         <div>
-          <Heading className="mb-10 xl:mb-9 max-w-[330px]">Концепт</Heading>
+          <Heading className="mb-10 xl:mb-9 max-w-[330px]" isDark>Концепт</Heading>
           <p className="text-base font-light text-[#666]">
             {project.concept}
           </p>

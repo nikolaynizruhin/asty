@@ -26,7 +26,7 @@ export default function Contact() {
   return (
     <div id="contact" className="bg-[#1a1a1a] py-20 xl:py-32">
       <div className="mx-auto max-w-lg xl:max-w-4xl px-4">
-        <Heading className="max-w-[250px] mb-12 xl:mb-14" isDark={false}>Наші контакти</Heading>
+        <Heading className="max-w-[250px] mb-12 xl:mb-14">Наші контакти</Heading>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-y-8 sm:gap-0 mr-24 sm:mr-0">
           {contacts.map(contact => (
             <div key={contact.index}>

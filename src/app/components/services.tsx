@@ -38,7 +38,7 @@ export default function Services() {
         />
         <div className="mx-auto max-w-lg xl:max-w-4xl px-4 py-7 md:py-28 xl:py-48">
           <div className="xl:w-1/2">
-            <Heading isDark={false}>Наші послуги</Heading>
+            <Heading>Наші послуги</Heading>
             <p className="mt-7 md:mt-10 xl:mt-6 text-base font-light text-white">
               Ми ретельно продумуємо всі технічні аспекти проєкту прононуючи сучасні та функціональні рішення, які ми можемо реалізувати з нашими партнерами.
             </p>
