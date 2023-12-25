@@ -1,12 +1,16 @@
-export default function Pagination() {
+import { getNextProject, getPreviousProject } from "@/src/lib/data";
+import { Project } from "@/src/lib/definitions";
+import Link from "next/link";
+
+export default function Pagination({ project }: { project: Project }) {
   return (
     <div className="flex text-sm xl:text-lg text-white md:font-bold px-4 md:px-8 xl:px-16 max-w-[550px] mx-auto md:max-w-none bg-[#1a1a1a] justify-between pt-14 pb-14 xl:pb-28">
-      <a href="#">
+      <Link href={`/projects/${getPreviousProject(project)?.slug}`}>
         Попередній проєкт
-      </a>
-      <a href="#">
+      </Link>
+      <Link href={`/projects/${getNextProject(project)?.slug}`}>
         Наступний проєкт
-      </a>
+      </Link>
     </div>
   )
 }
