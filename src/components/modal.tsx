@@ -7,7 +7,7 @@ import Icon from './icon'
 export default function Modal({ open, setOpen, children }: { open: boolean, children: React.ReactNode, setOpen: (open: boolean) => void }) {
   return (
     <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" className="relative z-10" onClose={setOpen}>
+      <Dialog as="div" className="relative z-20" onClose={setOpen}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -20,7 +20,7 @@ export default function Modal({ open, setOpen, children }: { open: boolean, chil
           <div className="fixed inset-0 bg-[rgba(31,31,31,0.96)] transition-opacity" />
         </Transition.Child>
 
-        <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div className="fixed inset-0 z-20 w-screen overflow-y-auto">
           <div className="flex min-h-full justify-center text-center items-center">
             <Transition.Child
               as={Fragment}
