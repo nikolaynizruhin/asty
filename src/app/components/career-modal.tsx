@@ -10,12 +10,22 @@ import { useThankModal } from '@/src/lib/hooks'
 
 const initialState = {
   success: false,
+  errors: {
+    name: [],
+    email: [],
+    phone: [],
+    resume: []
+  }
 }
 
 export default function ThankModal({ open, setOpen, setOpenThank }: { open: boolean; setOpen: (open: boolean) => void; setOpenThank: (open: boolean) => void }) {
   const [state, formAction] = useFormState(sendCareerEmail, initialState)
 
-  useThankModal(state.success, setOpen, setOpenThank);
+  useThankModal(
+    state.success,
+    () => setOpen(false),
+    () => setOpenThank(true)
+  );
 
   return (
     <Modal open={open} setOpen={setOpen}>
@@ -24,9 +34,9 @@ export default function ThankModal({ open, setOpen, setOpenThank }: { open: bool
           Приєднуйся до нашої команди!
         </Dialog.Title>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-7 gap-x-10 xl:gap-x-40 md:mr-6 xl:mr-24">
-          <Input name="name" label="Імʼя" required errors={state.errors?.name} />
-          <Input name="email" label="Пошта" required errors={state.errors?.email} />
-          <Input name="phone" label="Телефон" required errors={state.errors?.phone} />
+          <Input name="name" label="Імʼя" required errors={state.errors.name} />
+          <Input name="email" label="Пошта" required errors={state.errors.email} />
+          <Input name="phone" label="Телефон" required errors={state.errors.phone} />
           <Input name="resume" label="Резюме" type="file" accept="application/pdf" required errors={state.errors?.resume} />
         </div>
         <Button className="mt-11 md:mt-20 xl:mt-32" isDark>

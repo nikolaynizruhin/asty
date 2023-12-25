@@ -3,12 +3,12 @@
 import { careerSchema, contactSchema } from "./validations";
 
 export type ContactState = {
-  errors?: {
+  errors: {
     name?: string[];
     email?: string[];
     message?: string[];
   };
-  success?: boolean;
+  success: boolean;
 };
 
 export async function sendContactEmail(prevState: ContactState, formData: FormData) {
@@ -20,6 +20,7 @@ export async function sendContactEmail(prevState: ContactState, formData: FormDa
 
   if (!validatedFields.success) {
     return {
+      success: false,
       errors: validatedFields.error.flatten().fieldErrors,
     }
   }
@@ -28,17 +29,20 @@ export async function sendContactEmail(prevState: ContactState, formData: FormDa
   
   // send email
   // revalidate cache
-  return { success: true }
+  return { 
+    success: true,
+    errors: {},
+  }
 }
 
 export type CareerState = {
-  errors?: {
+  errors: {
     name?: string[];
     email?: string[];
     phone?: string[];
     resume?: string[];
   };
-  success?: boolean;
+  success: boolean;
 };
 
 export async function sendCareerEmail(prevState: CareerState, formData: FormData) {
@@ -51,6 +55,7 @@ export async function sendCareerEmail(prevState: CareerState, formData: FormData
 
   if (!validatedFields.success) {
     return {
+      success: false,
       errors: validatedFields.error.flatten().fieldErrors,
     }
   }
@@ -59,5 +64,8 @@ export async function sendCareerEmail(prevState: CareerState, formData: FormData
   
   // send email
   // revalidate cache
-  return { success: true }
+  return { 
+    success: true,
+    errors: {},
+  }
 }

@@ -10,12 +10,21 @@ import { useThankModal } from '../lib/hooks'
 
 const initialState = {
   success: false,
+  errors: {
+    name: [],
+    email: [],
+    message: []
+  }
 }
 
 export default function ContactModal({ open, setOpen, setOpenThank }: { open: boolean; setOpen: (open: boolean) => void; setOpenThank: (open: boolean) => void }) {
   const [state, formAction] = useFormState(sendContactEmail, initialState)
 
-  useThankModal(state.success, setOpen, setOpenThank);
+  useThankModal(
+    state.success,
+    () => setOpen(false),
+    () => setOpenThank(true)
+  );
 
   return (
     <Modal open={open} setOpen={setOpen}>
@@ -24,9 +33,9 @@ export default function ContactModal({ open, setOpen, setOpenThank }: { open: bo
           Напишіть нам
         </Dialog.Title>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-7 gap-x-10 xl:gap-x-40 md:mr-6 xl:mr-24">
-          <Input name="name" label="Імʼя" required errors={state.errors?.name} />
-          <Input name="message" label="Повідомлення" required errors={state.errors?.message} />
-          <Input name="email" label="Пошта" required errors={state.errors?.email} />
+          <Input name="name" label="Імʼя" required errors={state.errors.name} />
+          <Input name="message" label="Повідомлення" required errors={state.errors.message} />
+          <Input name="email" label="Пошта" required errors={state.errors.email} />
         </div>
         <Button className="mt-11 md:mt-20 xl:mt-32" isDark>
           ВІДПРАВИТИ
