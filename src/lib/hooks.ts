@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 
-export function useThankModal(showThankModal: boolean, closeModal: () => void, openThankModal: () => void) {
+export function useThankModal(success: boolean, setOpen: (open: boolean) => void, setOpenThank: (open: boolean) => void) {
   useEffect(() => {
-    if (showThankModal) {
-      closeModal();
-      openThankModal();
+    if (success) {
+      setOpen(false);
+      setOpenThank(true);
     }
-  }, [showThankModal]);
+  }, [success, setOpen, setOpenThank]);
 }

@@ -21,11 +21,7 @@ export default function ContactModal({ open, setOpen, setOpenThank }: { open: bo
   const [state, formAction] = useFormState(sendContactEmail, initialState)
   const { pending } = useFormStatus()
 
-  useThankModal(
-    state.success,
-    () => setOpen(false),
-    () => setOpenThank(true)
-  );
+  useThankModal(state.success, setOpen, setOpenThank);
 
   return (
     <Modal open={open} setOpen={setOpen}>

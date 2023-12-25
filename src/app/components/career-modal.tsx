@@ -22,11 +22,7 @@ export default function ThankModal({ open, setOpen, setOpenThank }: { open: bool
   const [state, formAction] = useFormState(sendCareerEmail, initialState)
   const { pending } = useFormStatus()
 
-  useThankModal(
-    state.success,
-    () => setOpen(false),
-    () => setOpenThank(true)
-  );
+  useThankModal(state.success, setOpen, setOpenThank);
 
   return (
     <Modal open={open} setOpen={setOpen}>
