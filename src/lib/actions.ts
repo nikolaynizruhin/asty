@@ -25,10 +25,9 @@ export async function sendContactEmail(prevState: ContactState, formData: FormDa
     }
   }
 
-  console.log(validatedFields)
-  
   // send email
-  // revalidate cache
+  console.log(validatedFields)
+
   return { 
     success: true,
     errors: {},
@@ -60,10 +59,9 @@ export async function sendCareerEmail(prevState: CareerState, formData: FormData
     }
   }
 
+  // send email
   console.log(validatedFields)
   
-  // send email
-  // revalidate cache
   return { 
     success: true,
     errors: {},
