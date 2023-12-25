@@ -39,8 +39,7 @@ export default function Contact() {
           ))}
         </div>
         <p className="text-[#666] font-light text-base max-w-[350px] mt-11 xl:mt-16">
-          We are ready to lead you into the exciting world of architecture and
-          interior design.
+          Разом ми створемо простір в якому хочеться жити та творити.
         </p>
         <div className="mt-8 xl:mt-14 flex">
           <ContactButton isDark>
