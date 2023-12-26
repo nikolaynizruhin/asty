@@ -10,12 +10,6 @@ export default function Footer({ isDark = false }: { isDark?: boolean }) {
         <a href="#" className={`text-[10px] tracking-widest ${isDark ? 'text-white opacity-[0.32]' : 'text-[#888]'}`}>
           Політика конфіденційності
         </a>
-        <p className={`text-[10px] my-3 tracking-widest ${isDark ? 'text-white opacity-[0.32]' : 'text-[#888]'} max-w-[460px]`}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-          voluptate officiis veritatis vitae dolor ullam dignissimos nihil placeat
-          quisquam ducimus odit amet dolores, ut pariatur voluptas dolorum
-          voluptatem quas. Dolorum?
-        </p>
         <div className="md:flex md:items-center md:justify-between text-[#888]">
           <p className="text-[10px] font-light tracking-widest">
             © { new Date().getFullYear() } ASTY, INC. ALL RIGHTS RESERVED.
