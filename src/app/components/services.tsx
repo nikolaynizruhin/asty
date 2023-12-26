@@ -1,3 +1,4 @@
+import Container from "@/src/components/container"
 import Heading from "@/src/components/heading"
 import Icon from "@/src/components/icon"
 import Image from "next/image"
@@ -36,7 +37,7 @@ export default function Services() {
           height="768"
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[0.25]"
         />
-        <div className="mx-auto max-w-lg xl:max-w-4xl px-4 py-7 md:py-28 xl:py-48">
+        <Container className="py-7 md:py-28 xl:py-48">
           <div className="xl:w-1/2">
             <Heading>Наші послуги</Heading>
             <p className="mt-7 md:mt-10 xl:mt-6 text-base font-light text-white">
@@ -63,7 +64,7 @@ export default function Services() {
               ))}
             </dl>
           </div>
-        </div>
+        </Container>
       </div>
     </div>
   )

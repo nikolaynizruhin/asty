@@ -1,3 +1,4 @@
+import Container from "@/src/components/container"
 import Header from "@/src/components/header"
 import { Project } from "@/src/lib/definitions"
 import Image from 'next/image'
@@ -14,14 +15,14 @@ export default function Hero({ project }: { project: Project }) {
           height="748"
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[.3]"
         />
-        <div className="mx-auto max-w-lg xl:max-w-4xl px-4 pb-96 pt-60 sm:pb-44 sm:pt-36 xl:pb-96 xl:pt-60">
+        <Container className="pb-96 pt-60 sm:pb-44 sm:pt-36 xl:pb-96 xl:pt-60">
           <h1 className="text-4xl md:text-5xl font-bold text-white xl:text-7xl">
             {project.name}
           </h1>
           <p className="mt-4 md:mt-6 font-light text-sm xl:text-base text-white">
             {project.description}
           </p>
-        </div>
+        </Container>
       </div>
     </div>
   )

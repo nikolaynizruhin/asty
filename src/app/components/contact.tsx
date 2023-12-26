@@ -1,4 +1,5 @@
 import ContactButton from "@/src/components/contact-button"
+import Container from "@/src/components/container"
 import Heading from "@/src/components/heading"
 
 const contacts = [
@@ -25,7 +26,7 @@ const contacts = [
 export default function Contact() {
   return (
     <div id="contact" className="bg-[#1a1a1a] py-20 xl:py-32">
-      <div className="mx-auto max-w-lg xl:max-w-4xl px-4">
+      <Container>
         <Heading className="max-w-[250px] mb-12 xl:mb-14">Наші контакти</Heading>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-8 sm:gap-0 mr-16 sm:mr-0">
           {contacts.map(contact => (
@@ -45,7 +46,7 @@ export default function Contact() {
             ЗВ’ЯЗАТИСЬ З НАМИ
           </ContactButton>
         </div>
-      </div>
+      </Container>
     </div>
   )
 }

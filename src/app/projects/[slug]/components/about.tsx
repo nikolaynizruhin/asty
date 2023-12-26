@@ -3,12 +3,13 @@ import Title from "@/src/components/title"
 import Detail from "./detail"
 import { Project } from "@/src/lib/definitions"
 import Heading from "@/src/components/heading"
+import Container from "@/src/components/container"
 
 export default function About({ project }: { project: Project }) {
   return (
     <div className="bg-white py-12 md:py-48 xl:py-64">
       <Title text="ДЕТАЛІ" className="-mb-40 mx-[9vw] hidden md:flex" />
-      <div className="mx-auto max-w-lg xl:max-w-4xl px-4 mt-10 grid grid-cols-1 gap-3 xl:gap-8 xl:grid-cols-2">
+      <Container className="mt-10 grid grid-cols-1 gap-3 xl:gap-8 xl:grid-cols-2">
         <div>
           <Heading className="mb-10 xl:mb-9 max-w-[330px]" isDark>Концепт</Heading>
           <p className="text-base font-light text-[#666]">
@@ -25,7 +26,7 @@ export default function About({ project }: { project: Project }) {
             <Icon name="instagram" width={12} height={12} />
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   )
 }
