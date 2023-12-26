@@ -32,7 +32,7 @@ export default function Categories() {
               alt=""
               className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[.3]"
             />
-            <h3 className="text-2xl xl:text-4xl md:text-center font-bold text-white">
+            <h3 className="text-[28px] leading-[33px] md:text-2xl xl:text-4xl md:text-center font-bold text-white">
               {category.name}
             </h3>
           </div>
