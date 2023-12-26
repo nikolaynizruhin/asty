@@ -13,7 +13,7 @@ const categories = [
     href: '/projects?category=interior'
   },
   {
-    name: 'Комерційна нерухомість',
+    name: 'Комерція',
     image: '/images/categories/commercial.jpg',
     href: '/projects?category=commerce'
   }

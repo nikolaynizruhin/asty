@@ -16,7 +16,7 @@ export default function Hero() {
         />
         <div className="mx-auto max-w-3xl px-4 py-60 sm:py-48 lg:py-56">
           <h1 className="text-4xl font-semibold text-white sm:text-7xl">
-            Запрошуємо у світ архітектури та дизайну інтерєрів
+            Світ архітектури<br/>та дизайну 
           </h1>
           <p className="mt-8 font-light text-sm text-gray-300">
             Коли кожний квадратний метр має значення
