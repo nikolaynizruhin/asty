@@ -6,27 +6,33 @@ export default function Images({ project }: { project: Project }) {
   return (
     <div className="bg-white py-12 xl:py-20">
       <div className="mx-auto justify-items-center max-w-[550px] px-4 xl:px-16 grid grid-cols-1 gap-x-5 xl:gap-x-10 gap-y-4 md:gap-y-10 xl:gap-y-16 text-[#666] md:max-w-full md:grid-cols-2">
-        <Image
-          className='w-full'
-          src={`/images/projects/${project.slug}/1.jpg`}
-          width="640"
-          height="905"
-          alt=""
-        />
-        <Image
-          className='w-full'
-          src={`/images/projects/${project.slug}/2.jpg`}
-          width="640"
-          height="905"
-          alt=""
-        />
-        <Image
-          className='w-full'
-          src={`/images/projects/${project.slug}/3.jpg`}
-          width="640"
-          height="905"
-          alt=""
-        />
+        <div className="size-full overflow-hidden aspect-[2/3]">
+          <Image
+            className='size-full object-cover object-center'
+            src={`/images/projects/${project.slug}/1.jpg`}
+            width="640"
+            height="905"
+            alt=""
+          />
+        </div>
+        <div className="size-full overflow-hidden aspect-[2/3]">
+          <Image
+            className='size-full object-cover object-center'
+            src={`/images/projects/${project.slug}/2.jpg`}
+            width="640"
+            height="905"
+            alt=""
+          />
+        </div>
+        <div className="size-full overflow-hidden aspect-[2/3]">
+          <Image
+            className='size-full object-cover object-center'
+            src={`/images/projects/${project.slug}/3.jpg`}
+            width="640"
+            height="905"
+            alt=""
+          />
+        </div>
         <div className="flex flex-col justify-center md:px-10 lg:px-28 py-10 md:py-0">
           <Heading className="mb-7" isDark>Концепт</Heading>
           <p className="font-light">
@@ -46,48 +52,60 @@ export default function Images({ project }: { project: Project }) {
             a kids’ unit, and a bedroom exclusively for the owner’s parents.
           </p>
         </div>
-        <Image
-          src={`/images/projects/${project.slug}/4.jpg`}
-          width="1304"
-          height="934"
-          alt=""
-          className='col-span-2 w-full'
-        />
-        <Image
-          className='w-full'
-          src={`/images/projects/${project.slug}/5.jpg`}
-          width="640"
-          height="905"
-          alt=""
-        />
-        <Image
-          className='w-full'
-          src={`/images/projects/${project.slug}/6.jpg`}
-          width="640"
-          height="905"
-          alt=""
-        />
-        <Image
-          src={`/images/projects/${project.slug}/7.jpg`}
-          width="1304"
-          height="934"
-          alt=""
-          className='col-span-2 w-full'
-        />
-        <Image
-          className='w-full'
-          src={`/images/projects/${project.slug}/8.jpg`}
-          width="640"
-          height="905"
-          alt=""
-        />
-        <Image
-          className='w-full'
-          src={`/images/projects/${project.slug}/9.jpg`}
-          width="640"
-          height="905"
-          alt=""
-        />
+        <div className="size-full overflow-hidden aspect-[3/2] col-span-2">
+          <Image
+            className='size-full object-cover object-center'
+            src={`/images/projects/${project.slug}/4.jpg`}
+            width="640"
+            height="905"
+            alt=""
+          />
+        </div>
+        <div className="size-full overflow-hidden aspect-[2/3]">
+          <Image
+            className='size-full object-cover object-center'
+            src={`/images/projects/${project.slug}/5.jpg`}
+            width="640"
+            height="905"
+            alt=""
+          />
+        </div>
+        <div className="size-full overflow-hidden aspect-[2/3]">
+          <Image
+            className='size-full object-cover object-center'
+            src={`/images/projects/${project.slug}/6.jpg`}
+            width="640"
+            height="905"
+            alt=""
+          />
+        </div>
+        <div className="size-full overflow-hidden aspect-[3/2] col-span-2">
+          <Image
+            className='size-full object-cover object-center'
+            src={`/images/projects/${project.slug}/7.jpg`}
+            width="640"
+            height="905"
+            alt=""
+          />
+        </div>
+        <div className="size-full overflow-hidden aspect-[2/3]">
+          <Image
+            className='size-full object-cover object-center'
+            src={`/images/projects/${project.slug}/8.jpg`}
+            width="640"
+            height="905"
+            alt=""
+          />
+        </div>
+        <div className="size-full overflow-hidden aspect-[2/3]">
+          <Image
+            className='size-full object-cover object-center'
+            src={`/images/projects/${project.slug}/9.jpg`}
+            width="640"
+            height="905"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   )
