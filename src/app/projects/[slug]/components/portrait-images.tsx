@@ -1,21 +1,11 @@
 import Heading from "@/src/components/heading"
 import { Project } from "@/src/lib/definitions"
-import Image from "next/image"
+import ProjectImage from "./project-image"
 
 export default function PortraitImages({ project }: { project: Project }) {
   return (
     <>
-      {project.images.slice(0, 3).map((image, index) => (
-        <div key={index} className="size-full overflow-hidden aspect-[2/3]">
-          <Image
-            className='size-full object-cover object-center'
-            src={image.src}
-            width={image.width}
-            height={image.height}
-            alt={image.alt}
-          />
-        </div>
-      ))}
+      {project.images.slice(0, 3).map((image, index) => <ProjectImage key={index} image={image} />)}
       <div className="flex flex-col justify-center md:px-10 lg:px-28 py-10 md:py-0">
         <Heading className="mb-7" isDark>Концепт</Heading>
         <p className="font-light">
@@ -35,17 +25,7 @@ export default function PortraitImages({ project }: { project: Project }) {
           a kids’ unit, and a bedroom exclusively for the owner’s parents.
         </p>
       </div>
-      {project.images.slice(3).map((image, index) => (
-        <div key={index} className={`size-full overflow-hidden ${image.isLandscape ? 'aspect-[3/2] col-span-2' : 'aspect-[2/3]'}`}>
-          <Image
-            className='size-full object-cover object-center'
-            src={image.src}
-            width={image.width}
-            height={image.height}
-            alt={image.alt}
-          />
-        </div>
-      ))}
+      {project.images.slice(3).map((image, index) => <ProjectImage key={index} image={image} />)}
     </>
   )
 }
