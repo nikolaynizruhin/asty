@@ -20,6 +20,7 @@ export interface Project {
   name: string;
   description: string;
   concept: string;
+  overview?: string;
   category: Category;
   details: Detail[];
   images: Image[];
