@@ -31,7 +31,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-[#f2f2f2]"
+            className={`-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 ${isDark ? 'test-[#333]' : 'text-[#f2f2f2]'}`}
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
