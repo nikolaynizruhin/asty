@@ -92,11 +92,11 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
           <div className="mt-24 flow-root">
             <div className="space-y-2 py-6">
               {navigation.map((item, index) => (
-                <Link key={index} href={item.href} className={`block px-3 text-center py-2 text-2xl font-normal hover:underline ${isDark ? 'text-[#333]' : 'text-white'}`}>
+                <Link key={index} href={item.href} className="block px-3 text-center py-2 text-2xl font-normal hover:underline text-[#f2f2f2]">
                   {item.name}
                 </Link>
               ))}
-              <div className="mt-2 flex justify-center gap-7 px-3 py-6 text-white">
+              <div className="mt-2 flex justify-center gap-7 px-3 py-6 text-[#f2f2f2]">
                 <a href="https://www.instagram.com/asty_ua">
                   <Icon name="instagram" width={12} height={12} />
                 </a>
