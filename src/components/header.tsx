@@ -2,9 +2,10 @@
 
 import Image from 'next/image'
 import { Dialog } from '@headlessui/react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Icon from './icon'
 import Link from 'next/link'
+import { usePathname, useSearchParams } from 'next/navigation'
 
 const navigation = [
   { name: 'Проєкти', href: '/projects' },
@@ -15,6 +16,12 @@ const navigation = [
 
 export default function Header({ isDark = false }: { isDark?: boolean }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+
+  useEffect(() => {
+    setMobileMenuOpen(false)
+  }, [pathname, searchParams])
 
   return (
     <header className="absolute inset-x-0 top-0 z-10">
