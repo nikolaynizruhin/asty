@@ -29,7 +29,7 @@ export function getPreviousProject(project: Project): Project | undefined {
 }
 
 export function getProjectImages(project: Project): Image[] {
-  return fs.readdirSync("./public/images/projects/" + project.slug)
+  return fs.readdirSync(process.cwd() + "/public/images/projects/" + project.slug)
     .filter(image => image.endsWith(".jpg") && image !== "hero.jpg")
     .map(image => {
       const isLandscape = project.category === 'architecture' ||  ['4.jpg', '7.jpg'].includes(image);
