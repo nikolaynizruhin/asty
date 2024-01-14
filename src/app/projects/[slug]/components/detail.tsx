@@ -12,7 +12,7 @@ export default function Detail({ detail }: { detail: Detail }) {
           {detail.name}:
         </h4>
         <p className="text-[#666] tracking-wider text-sm font-light">
-          {detail.description}
+          {detail.value}
         </p>
       </div>
     </div>

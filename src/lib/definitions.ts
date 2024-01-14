@@ -1,7 +1,7 @@
 export interface Detail {
   icon: string;
   name: string;
-  description: string;
+  value: string;
 }
 
 export interface Image {
@@ -22,5 +22,8 @@ export interface Project {
   concept: string;
   overview?: string;
   category: Category;
-  details: Detail[];
+  location: string;
+  area: string;
+  date: string;
+  style: string;
 }
