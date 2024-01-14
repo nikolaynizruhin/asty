@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const circe = localFont({
   src: [
@@ -39,6 +40,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${circe.variable} font-sans antialiased`}>
         {children}
+        <SpeedInsights />
         <Analytics />
       </body>
     </html>
