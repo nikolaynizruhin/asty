@@ -1,4 +1,5 @@
-import { Category, Project } from "./definitions";
+import fs from "fs";
+import { Category, Image, Project } from "./definitions";
 import projects from "./projects";
 
 export function getProjectBySlug(slug: string): Project | undefined {
@@ -25,4 +26,20 @@ export function getPreviousProject(project: Project): Project | undefined {
   return project === firstProject
     ? projects.at(-1)
     : projects.at(project.id - 2);
+}
+
+export function getProjectImages(project: Project): Image[] {
+  return fs.readdirSync("./public/images/projects/" + project.slug)
+    .filter(image => image.endsWith(".jpg") && image !== "hero.jpg")
+    .map(image => {
+      const isLandscape = project.category === 'architecture' ||  ['4.jpg', '7.jpg'].includes(image);
+
+      return {
+        src: "/images/projects/" + project.slug + "/" + image,
+        alt: project.name,
+        width: isLandscape ? 905 : 640,
+        height: isLandscape ? 640 : 905,
+        isLandscape
+      }
+    });
 }

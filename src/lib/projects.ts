@@ -31,71 +31,6 @@ const projects: Project[] = [
         description: "Мінімалізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/floating-house/1.jpg',
-        alt: 'Floating House',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/floating-house/2.jpg',
-        alt: 'Floating House',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/floating-house/3.jpg',
-        alt: 'Floating House',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/floating-house/4.jpg',
-        alt: 'Floating House',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/floating-house/5.jpg',
-        alt: 'Floating House',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/floating-house/6.jpg',
-        alt: 'Floating House',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/floating-house/7.jpg',
-        alt: 'Floating House',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/floating-house/8.jpg',
-        alt: 'Floating House',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/floating-house/9.jpg',
-        alt: 'Floating House',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      }
-    ]
   },
   {
     id: 2,
@@ -127,71 +62,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/riviera/1.jpg',
-        alt: 'Riviera Village',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/riviera/2.jpg',
-        alt: 'Riviera Village',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/riviera/3.jpg',
-        alt: 'Riviera Village',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/riviera/4.jpg',
-        alt: 'Riviera Village',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/riviera/5.jpg',
-        alt: 'Riviera Village',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/riviera/6.jpg',
-        alt: 'Riviera Village',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/riviera/7.jpg',
-        alt: 'Riviera Village',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/riviera/8.jpg',
-        alt: 'Riviera Village',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/riviera/9.jpg',
-        alt: 'Riviera Village',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      }
-    ]
   },
   {
     id: 3,
@@ -223,71 +93,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/goodlife-park/1.jpg',
-        alt: 'Goodlife Park',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park/2.jpg',
-        alt: 'Goodlife Park',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park/3.jpg',
-        alt: 'Goodlife Park',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park/4.jpg',
-        alt: 'Goodlife Park',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park/5.jpg',
-        alt: 'Goodlife Park',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park/6.jpg',
-        alt: 'Goodlife Park',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park/7.jpg',
-        alt: 'Goodlife Park',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park/8.jpg',
-        alt: 'Goodlife Park',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park/9.jpg',
-        alt: 'Goodlife Park',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      }
-    ]
   },
   {
     id: 4,
@@ -319,71 +124,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/landysh/1.jpg',
-        alt: 'Landysh',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/landysh/2.jpg',
-        alt: 'Landysh',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/landysh/3.jpg',
-        alt: 'Landysh',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/landysh/4.jpg',
-        alt: 'Landysh',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/landysh/5.jpg',
-        alt: 'Landysh',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/landysh/6.jpg',
-        alt: 'Landysh',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/landysh/7.jpg',
-        alt: 'Landysh',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/landysh/8.jpg',
-        alt: 'Landysh',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/landysh/9.jpg',
-        alt: 'Landysh',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      }
-    ]
   },
   {
     id: 5,
@@ -415,57 +155,6 @@ const projects: Project[] = [
         description: "Мінімалізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/park-avenue/1.jpg',
-        alt: 'Park Avenue',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/park-avenue/2.jpg',
-        alt: 'Park Avenue',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/park-avenue/3.jpg',
-        alt: 'Park Avenue',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/park-avenue/4.jpg',
-        alt: 'Park Avenue',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/park-avenue/5.jpg',
-        alt: 'Park Avenue',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/park-avenue/6.jpg',
-        alt: 'Park Avenue',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/park-avenue/7.jpg',
-        alt: 'Park Avenue',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-    ]
   },
   {
     id: 6,
@@ -497,50 +186,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/park-avenue-2/1.jpg',
-        alt: 'Park Avenue 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/park-avenue-2/2.jpg',
-        alt: 'Park Avenue 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/park-avenue-2/3.jpg',
-        alt: 'Park Avenue 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/park-avenue-2/4.jpg',
-        alt: 'Park Avenue 2',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/park-avenue-2/5.jpg',
-        alt: 'Park Avenue 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/park-avenue-2/6.jpg',
-        alt: 'Park Avenue 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-    ]
   },
   {
     id: 7,
@@ -572,71 +217,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/sky-avenue-2/1.jpg',
-        alt: 'Sky Avenue 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/sky-avenue-2/2.jpg',
-        alt: 'Sky Avenue 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/sky-avenue-2/3.jpg',
-        alt: 'Sky Avenue 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/sky-avenue-2/4.jpg',
-        alt: 'Sky Avenue 2',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/sky-avenue-2/5.jpg',
-        alt: 'Sky Avenue 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/sky-avenue-2/6.jpg',
-        alt: 'Sky Avenue 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/sky-avenue-2/7.jpg',
-        alt: 'Sky Avenue 2',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/sky-avenue-2/8.jpg',
-        alt: 'Sky Avenue 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/sky-avenue-2/9.jpg',
-        alt: 'Sky Avenue 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      }
-    ]
   },
   {
     id: 8,
@@ -668,71 +248,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/sky-avenue/1.jpg',
-        alt: 'Sky Avenue',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/sky-avenue/2.jpg',
-        alt: 'Sky Avenue',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/sky-avenue/3.jpg',
-        alt: 'Sky Avenue',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/sky-avenue/4.jpg',
-        alt: 'Sky Avenue',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/sky-avenue/5.jpg',
-        alt: 'Sky Avenue',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/sky-avenue/6.jpg',
-        alt: 'Sky Avenue',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/sky-avenue/7.jpg',
-        alt: 'Sky Avenue',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/sky-avenue/8.jpg',
-        alt: 'Sky Avenue',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/sky-avenue/9.jpg',
-        alt: 'Sky Avenue',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      }
-    ]
   },
   {
     id: 9,
@@ -764,71 +279,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/goodlife-park-2/1.jpg',
-        alt: 'Goodlife Park 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-2/2.jpg',
-        alt: 'Goodlife Park 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-2/3.jpg',
-        alt: 'Goodlife Park 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-2/4.jpg',
-        alt: 'Goodlife Park 2',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-2/5.jpg',
-        alt: 'Goodlife Park 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-2/6.jpg',
-        alt: 'Goodlife Park 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-2/7.jpg',
-        alt: 'Goodlife Park 2',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-2/8.jpg',
-        alt: 'Goodlife Park 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-2/9.jpg',
-        alt: 'Goodlife Park 2',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      }
-    ]
   },
   {
     id: 10,
@@ -860,71 +310,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/goodlife-park-3/1.jpg',
-        alt: 'Goodlife Park 3',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-3/2.jpg',
-        alt: 'Goodlife Park 3',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-3/3.jpg',
-        alt: 'Goodlife Park 3',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-3/4.jpg',
-        alt: 'Goodlife Park 3',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-3/5.jpg',
-        alt: 'Goodlife Park 3',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-3/6.jpg',
-        alt: 'Goodlife Park 3',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-3/7.jpg',
-        alt: 'Goodlife Park 3',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-3/8.jpg',
-        alt: 'Goodlife Park 3',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-3/9.jpg',
-        alt: 'Goodlife Park 3',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      }
-    ]
   },
   {
     id: 11,
@@ -956,71 +341,6 @@ const projects: Project[] = [
         description: "Мінімалізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/goodlife-park-4/1.jpg',
-        alt: 'Goodlife Park 4',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-4/2.jpg',
-        alt: 'Goodlife Park 4',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-4/3.jpg',
-        alt: 'Goodlife Park 4',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-4/4.jpg',
-        alt: 'Goodlife Park 4',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-4/5.jpg',
-        alt: 'Goodlife Park 4',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-4/6.jpg',
-        alt: 'Goodlife Park 4',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-4/7.jpg',
-        alt: 'Goodlife Park 4',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-4/8.jpg',
-        alt: 'Goodlife Park 4',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-4/9.jpg',
-        alt: 'Goodlife Park 4',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      }
-    ]
   },
   {
     id: 12,
@@ -1052,71 +372,6 @@ const projects: Project[] = [
         description: "Мінімалізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/goodlife-park-5/1.jpg',
-        alt: 'Goodlife Park 5',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-5/2.jpg',
-        alt: 'Goodlife Park 5',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-5/3.jpg',
-        alt: 'Goodlife Park 5',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-5/4.jpg',
-        alt: 'Goodlife Park 5',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-5/5.jpg',
-        alt: 'Goodlife Park 5',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-5/6.jpg',
-        alt: 'Goodlife Park 5',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-5/7.jpg',
-        alt: 'Goodlife Park 5',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-5/8.jpg',
-        alt: 'Goodlife Park 5',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-5/9.jpg',
-        alt: 'Goodlife Park 5',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      }
-    ]
   },
   {
     id: 13,
@@ -1148,57 +403,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/goodlife-park-6/1.jpg',
-        alt: 'Goodlife Park 6',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-6/2.jpg',
-        alt: 'Goodlife Park 6',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-6/3.jpg',
-        alt: 'Goodlife Park 6',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-6/4.jpg',
-        alt: 'Goodlife Park 6',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-6/5.jpg',
-        alt: 'Goodlife Park 6',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-6/6.jpg',
-        alt: 'Goodlife Park 6',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-6/7.jpg',
-        alt: 'Goodlife Park 6',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      }
-    ]
   },
   {
     id: 14,
@@ -1230,71 +434,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/goodlife-park-7/1.jpg',
-        alt: 'Goodlife Park 7',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-7/2.jpg',
-        alt: 'Goodlife Park 7',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-7/3.jpg',
-        alt: 'Goodlife Park 7',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-7/4.jpg',
-        alt: 'Goodlife Park 7',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-7/5.jpg',
-        alt: 'Goodlife Park 7',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-7/6.jpg',
-        alt: 'Goodlife Park 7',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-7/7.jpg',
-        alt: 'Goodlife Park 7',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-7/8.jpg',
-        alt: 'Goodlife Park 7',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-7/9.jpg',
-        alt: 'Goodlife Park 7',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      }
-    ]
   },
   {
     id: 15,
@@ -1326,50 +465,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/goodlife-park-8/1.jpg',
-        alt: 'Goodlife Park 8',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-8/2.jpg',
-        alt: 'Goodlife Park 8',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-8/3.jpg',
-        alt: 'Goodlife Park 8',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-8/4.jpg',
-        alt: 'Goodlife Park 8',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-8/5.jpg',
-        alt: 'Goodlife Park 8',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-8/6.jpg',
-        alt: 'Goodlife Park 8',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      }
-    ]
   },
   {
     id: 16,
@@ -1401,71 +496,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/goodlife-park-9/1.jpg',
-        alt: 'Goodlife Park 9',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-9/2.jpg',
-        alt: 'Goodlife Park 9',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-9/3.jpg',
-        alt: 'Goodlife Park 9',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-9/4.jpg',
-        alt: 'Goodlife Park 9',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-9/5.jpg',
-        alt: 'Goodlife Park 9',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-9/6.jpg',
-        alt: 'Goodlife Park 9',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-9/7.jpg',
-        alt: 'Goodlife Park 9',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-9/8.jpg',
-        alt: 'Goodlife Park 9',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      },
-      {
-        src: '/images/projects/goodlife-park-9/9.jpg',
-        alt: 'Goodlife Park 9',
-        width: 640,
-        height: 905,
-        isLandscape: false,
-      }
-    ]
   },
   {
     id: 17,
@@ -1496,36 +526,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/goodlife-park-10/1.jpg',
-        alt: 'Goodlife Park 10',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-10/2.jpg',
-        alt: 'Goodlife Park 10',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-10/3.jpg',
-        alt: 'Goodlife Park 10',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-10/4.jpg',
-        alt: 'Goodlife Park 10',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      }
-    ]
   },
   {
     id: 18,
@@ -1556,36 +556,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/goodlife-park-11/1.jpg',
-        alt: 'Goodlife Park 11',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-11/2.jpg',
-        alt: 'Goodlife Park 11',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-11/3.jpg',
-        alt: 'Goodlife Park 11',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-11/4.jpg',
-        alt: 'Goodlife Park 11',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      }
-    ]
   },
   {
     id: 19,
@@ -1616,36 +586,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/goodlife-park-12/1.jpg',
-        alt: 'Goodlife Park 12',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-12/2.jpg',
-        alt: 'Goodlife Park 12',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-12/3.jpg',
-        alt: 'Goodlife Park 12',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-12/4.jpg',
-        alt: 'Goodlife Park 12',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      }
-    ]
   },
   {
     id: 20,
@@ -1676,36 +616,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/goodlife-park-13/1.jpg',
-        alt: 'Goodlife Park 13',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-13/2.jpg',
-        alt: 'Goodlife Park 13',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-13/3.jpg',
-        alt: 'Goodlife Park 13',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-13/4.jpg',
-        alt: 'Goodlife Park 13',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      }
-    ]
   },
   {
     id: 21,
@@ -1736,43 +646,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/goodlife-park-14/1.jpg',
-        alt: 'Goodlife Park 14',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-14/2.jpg',
-        alt: 'Goodlife Park 14',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-14/3.jpg',
-        alt: 'Goodlife Park 14',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-14/4.jpg',
-        alt: 'Goodlife Park 14',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-14/5.jpg',
-        alt: 'Goodlife Park 14',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      }
-    ]
   },
   {
     id: 22,
@@ -1803,36 +676,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/goodlife-park-15/1.jpg',
-        alt: 'Goodlife Park 15',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-15/2.jpg',
-        alt: 'Goodlife Park 15',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-15/3.jpg',
-        alt: 'Goodlife Park 15',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/goodlife-park-15/4.jpg',
-        alt: 'Goodlife Park 15',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      }
-    ]
   },
   {
     id: 23,
@@ -1863,29 +706,6 @@ const projects: Project[] = [
         description: "Модернізм",
       }
     ],
-    images: [
-      {
-        src: '/images/projects/landysh-2/1.jpg',
-        alt: 'Landysh 2',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/landysh-2/2.jpg',
-        alt: 'Landysh 2',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/landysh-2/3.jpg',
-        alt: 'Landysh 2',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      }
-    ]
   },
   {
     id: 24,
@@ -1915,43 +735,6 @@ const projects: Project[] = [
         name: "Стиль дизайну",
         description: "Модернізм",
       }
-    ],
-    images: [
-      {
-        src: '/images/projects/riviera-2/1.jpg',
-        alt: 'Floating House',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/riviera-2/2.jpg',
-        alt: 'Floating House',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/riviera-2/3.jpg',
-        alt: 'Floating House',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/riviera-2/4.jpg',
-        alt: 'Floating House',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
-      {
-        src: '/images/projects/riviera-2/5.jpg',
-        alt: 'Floating House',
-        width: 905,
-        height: 640,
-        isLandscape: true,
-      },
     ],
   },
 ]

@@ -23,5 +23,4 @@ export interface Project {
   overview?: string;
   category: Category;
   details: Detail[];
-  images: Image[];
 }
