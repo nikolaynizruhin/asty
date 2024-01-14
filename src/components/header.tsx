@@ -16,12 +16,8 @@ const navigation = [
 
 export default function Header({ isDark = false }: { isDark?: boolean }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const pathname = usePathname()
-  const searchParams = useSearchParams()
-
-  useEffect(() => {
-    setMobileMenuOpen(false)
-  }, [pathname, searchParams])
+  const close = () => setMobileMenuOpen(false)
+  const open = () => setMobileMenuOpen(true)
 
   return (
     <header className="absolute inset-x-0 top-0 z-10">
@@ -39,7 +35,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
           <button
             type="button"
             className={`-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 ${isDark ? 'test-[#333]' : 'text-[#f2f2f2]'}`}
-            onClick={() => setMobileMenuOpen(true)}
+            onClick={open}
           >
             <span className="sr-only">Open main menu</span>
             <Icon name="list" width={30} height={30} />
@@ -64,7 +60,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-[#f2f2f2]"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={close}
             >
               <span className="sr-only">Close menu</span>
               <Icon name="x-lg" width={24} height={24} />
@@ -73,7 +69,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
           <div className="mt-24 flow-root">
             <div className="space-y-2 py-6">
               {navigation.map((item, index) => (
-                <Link key={index} href={item.href} className="block px-3 text-center py-2 text-2xl font-normal hover:underline text-[#f2f2f2]">
+                <Link key={index} href={item.href} onClick={close} className="block px-3 text-center py-2 text-2xl font-normal hover:underline text-[#f2f2f2]">
                   {item.name}
                 </Link>
               ))}
