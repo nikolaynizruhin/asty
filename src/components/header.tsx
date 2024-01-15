@@ -53,7 +53,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
         <div className="fixed inset-0 z-20" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-[rgba(31,31,31,0.99)] px-4 py-4 sm:max-w-sm">
           <div className="flex items-center justify-between">
-            <Link href="/" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5 outline-none">
               <span className="sr-only">ASTY</span>
               <Image src="/images/logo-light.svg" alt="Logo" width="797" height="236" className="h-10 md:h-12 xl:h-14 w-auto" />
             </Link>
