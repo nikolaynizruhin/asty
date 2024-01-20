@@ -1,5 +1,6 @@
 'use server'
 
+import sendEmail from "./mail";
 import { careerSchema, contactSchema } from "./validations";
 
 export type ContactState = {
@@ -25,8 +26,14 @@ export async function sendContactEmail(prevState: ContactState, formData: FormDa
     }
   }
 
-  // send email
-  console.log(validatedFields)
+  await sendEmail(
+    'Контактна форма',
+    `
+      Ім'я: ${formData.get('name')}\n
+      Email: ${formData.get('email')}\n
+      Повідомлення: ${formData.get('message')}
+    `
+  );
 
   return { 
     success: true,
@@ -59,9 +66,23 @@ export async function sendCareerEmail(prevState: CareerState, formData: FormData
     }
   }
 
-  // send email
-  console.log(validatedFields)
-  
+  const resume = formData.get('resume') as File;
+
+  await sendEmail(
+    'Відгук на ваканцію',
+    `
+      Ім'я: ${formData.get('name')}\n
+      Email: ${formData.get('email')}\n
+      Телефон: ${formData.get('phone')}
+    `,
+    [
+      {
+        filename: 'resume.pdf',
+        content: Buffer.from(await resume.arrayBuffer()),
+      }
+    ]
+  );
+
   return { 
     success: true,
     errors: {},
