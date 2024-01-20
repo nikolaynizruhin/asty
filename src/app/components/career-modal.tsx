@@ -3,11 +3,11 @@
 import { useFormState, useFormStatus } from 'react-dom'
 import Modal from "@/src/components/modal"
 import Input from "@/src/components/input"
-import Button from "@/src/components/button"
 import { Dialog } from '@headlessui/react'
 import { sendCareerEmail } from "@/src/lib/actions"
 import { useThankModal } from '@/src/lib/hooks'
 import Heading from '@/src/components/heading'
+import { SubmitButton } from '@/src/components/submit-button'
 
 const initialState = {
   success: false,
@@ -37,9 +37,7 @@ export default function ThankModal({ open, setOpen, setOpenThank }: { open: bool
           <Input name="phone" label="Телефон" required errors={state.errors.phone} />
           <Input name="resume" label="Резюме" type="file" accept="application/pdf" required errors={state.errors?.resume} />
         </div>
-        <Button className="mt-11 md:mt-20 xl:mt-32" aria-disabled={pending} isDark>
-          ВІДПРАВИТИ
-        </Button>
+        <SubmitButton />
       </form>
     </Modal>
   )

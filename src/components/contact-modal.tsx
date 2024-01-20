@@ -3,11 +3,11 @@
 import { useFormState, useFormStatus } from 'react-dom'
 import Modal from "@/src/components/modal"
 import Input from "@/src/components/input"
-import Button from "@/src/components/button"
 import { Dialog } from '@headlessui/react'
 import { sendContactEmail } from "../lib/actions"
 import { useThankModal } from '../lib/hooks'
 import Heading from './heading'
+import { SubmitButton } from './submit-button'
 
 const initialState = {
   success: false,
@@ -35,9 +35,7 @@ export default function ContactModal({ open, setOpen, setOpenThank }: { open: bo
           <Input name="message" label="Повідомлення" required errors={state.errors.message} />
           <Input name="email" label="Пошта" required errors={state.errors.email} />
         </div>
-        <Button className="mt-11 md:mt-20 xl:mt-32" aria-disabled={pending} isDark>
-          ВІДПРАВИТИ
-        </Button>
+        <SubmitButton />
       </form>
     </Modal>
   )
