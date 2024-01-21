@@ -1,4 +1,4 @@
-import { getNextProject, getPreviousProject } from "@/src/lib/data";
+import { getNextProject, getPreviousProject } from "@/src/lib/projects";
 import { Project } from "@/src/lib/definitions";
 import Link from "next/link";
 

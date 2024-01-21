@@ -2,7 +2,7 @@ import Title from '@/src/components/title'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Category, Project } from '@/src/lib/definitions'
-import { getProjectsByCategory } from '@/src/lib/data'
+import { getProjectsByCategory } from '@/src/lib/projects'
 
 export default function Projects({ category }: { category?: Category }) {
   const projects: Project[] = getProjectsByCategory(category)

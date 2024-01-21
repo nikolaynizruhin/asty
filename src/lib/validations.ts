@@ -11,9 +11,6 @@ export const careerSchema = z.object({
   email: z.string().email(),
   phone: z.string().min(10),
   resume: z.any()
-    .refine((file) => file?.size <= 5000000, `PDF файл не повинен бути більше ніж 5MB.`)
-    .refine(
-      file => file?.type === 'application/pdf',
-      "Підтримується тільки .pdf формат."
-    )
+    .refine(file => file?.size <= 5000000, 'PDF файл не повинен бути більше ніж 5 MB.')
+    .refine(file => file?.type === 'application/pdf', "Підтримується тільки .pdf формат.")
 })
