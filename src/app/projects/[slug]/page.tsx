@@ -1,8 +1,8 @@
 import Footer from '@/src/components/footer'
-import Hero from '@/src/app/projects/[slug]/components/hero'
-import About from '@/src/app/projects/[slug]/components/about'
-import Images from '@/src/app/projects/[slug]/components/images'
-import Pagination from '@/src/app/projects/[slug]/components/pagination'
+import Hero from '@/src/components/project/hero'
+import About from '@/src/components/project/about'
+import Images from '@/src/components/project/images'
+import Pagination from '@/src/components/project/pagination'
 import { notFound } from 'next/navigation'
 import { getProjectBySlug } from '@/src/lib/projects'
 

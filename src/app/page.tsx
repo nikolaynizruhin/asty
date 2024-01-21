@@ -1,11 +1,11 @@
 import Footer from '@/src/components/footer'
-import Hero from '@/src/app/components/hero'
-import About from '@/src/app/components/about'
-import Categories from '@/src/app/components/categories'
-import Steps from '@/src/app/components/steps'
-import Career from '@/src/app/components/career'
-import Contact from '@/src/app/components/contact'
-import Services from '@/src/app/components/services'
+import Hero from '@/src/components/home/hero'
+import About from '@/src/components/home/about'
+import Categories from '@/src/components/home/categories'
+import Steps from '@/src/components/home/steps'
+import Career from '@/src/components/home/career'
+import Contact from '@/src/components/home/contact'
+import Services from '@/src/components/home/services'
 
 export default function Home() {
   return (
