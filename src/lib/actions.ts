@@ -2,6 +2,7 @@
 
 import sendEmail from "./mail";
 import { careerSchema, contactSchema } from "./validations";
+import { getBuffer } from "./utils";
 
 export type ContactState = {
   errors: {
@@ -78,7 +79,7 @@ export async function sendCareerEmail(prevState: CareerState, formData: FormData
     [
       {
         filename: 'resume.pdf',
-        content: Buffer.from(await resume.arrayBuffer()),
+        content: await getBuffer(resume),
       }
     ]
   );
