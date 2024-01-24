@@ -44,9 +44,9 @@ export default function About({ project }: { project: Project }) {
             {details.map((detail, index) => <Detail key={index} detail={detail} />)}
           </div>
           <div className="text-base font-light text-[#666] flex items-center mt-16 xl:mt-24">
-            Share:
-            <Icon name="facebook" width={12} height={12} className="ml-7 mr-6" />
-            <Icon name="instagram" width={12} height={12} />
+            Підпишись:
+            <Icon name="facebook" width={12} height={12} className="ml-7" />
+            <Icon name="instagram" width={12} height={12} className="ml-6" />
           </div>
         </div>
       </Container>
