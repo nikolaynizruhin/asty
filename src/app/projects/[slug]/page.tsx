@@ -6,7 +6,15 @@ import Pagination from '@/src/components/project/pagination'
 import { notFound } from 'next/navigation'
 import { getProjectBySlug } from '@/src/lib/projects'
 
-export default function Project({ params }: { params: { slug: string } }) {
+export async function generateMetadata({ params }: { params: { slug: string }}) {
+  const project = getProjectBySlug(params.slug)
+
+  return {
+    title: project?.name,
+  }
+}
+
+export default function Project({ params }: { params: { slug: string }}) {
   const project = getProjectBySlug(params.slug)
   
   if (!project) {
