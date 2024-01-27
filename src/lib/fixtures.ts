@@ -11,8 +11,8 @@ const projects: Project[] = [
     category: 'interior',
     location: "Goodlife Park",
     area: "130 кв.м",
-    date: "2024",
-    style: "Мінімалізм",
+    date: "12 місяців",
+    style: "Скандинавський мінімалізм",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const projects: Project[] = [
     category: 'interior',
     location: "Riviera Village",
     area: "450 кв.м",
-    date: "2024",
+    date: "4 місяці",
     style: "Модернізм",
   },
   {
@@ -37,7 +37,7 @@ const projects: Project[] = [
     category: 'interior',
     location: "Goodlife Park",
     area: "427 кв.м",
-    date: "2024",
+    date: "12 місяців",
     style: "Модернізм",
   },
   {
@@ -50,8 +50,8 @@ const projects: Project[] = [
     category: 'interior',
     location: "Козин",
     area: "100 кв.м",
-    date: "2024",
-    style: "Модернізм",
+    date: "6 місяців",
+    style: "Barn house",
   },
   {
     id: 5,
@@ -63,7 +63,7 @@ const projects: Project[] = [
     category: 'interior',
     location: "ЖК Park Avenue",
     area: "173 кв.м",
-    date: "2024",
+    date: "7 місяців",
     style: "Мінімалізм",
   },
   {
@@ -76,7 +76,7 @@ const projects: Project[] = [
     category: 'interior',
     location: "ЖК Park Avenue",
     area: "173 кв.м",
-    date: "2024",
+    date: "7 місяців",
     style: "Модернізм",
   },
   {
@@ -89,8 +89,8 @@ const projects: Project[] = [
     category: 'interior',
     location: "ЖК Sky Avenue",
     area: "91 кв.м",
-    date: "2024",
-    style: "Модернізм",
+    date: "5 місяців",
+    style: "Скандинавський",
   },
   {
     id: 8,
@@ -102,8 +102,8 @@ const projects: Project[] = [
     category: 'interior',
     location: "ЖК Sky Avenue",
     area: "91 кв.м",
-    date: "2024",
-    style: "Модернізм",
+    date: "5 місяців",
+    style: "Скандинавський",
   },
   {
     id: 9,
@@ -115,7 +115,7 @@ const projects: Project[] = [
     category: 'interior',
     location: "Goodlife Park",
     area: "395 кв.м",
-    date: "2024",
+    date: "12 місяців",
     style: "Модернізм",
   },
   {
@@ -128,7 +128,7 @@ const projects: Project[] = [
     category: 'interior',
     location: "Goodlife Park",
     area: "395 кв.м",
-    date: "2024",
+    date: "12 місяців",
     style: "Модернізм",
   },
   {
@@ -141,7 +141,7 @@ const projects: Project[] = [
     category: 'interior',
     location: "Goodlife Park",
     area: "392 кв.м",
-    date: "2024",
+    date: "6 місяців",
     style: "Мінімалізм",
   },
   {
@@ -154,7 +154,7 @@ const projects: Project[] = [
     category: 'interior',
     location: "Goodlife Park",
     area: "392 кв.м",
-    date: "2024",
+    date: "6 місяців",
     style: "Мінімалізм",
   },
   {
@@ -167,7 +167,7 @@ const projects: Project[] = [
     category: 'interior',
     location: "Goodlife Park",
     area: "180 кв.м",
-    date: "2024",
+    date: "6 місяців",
     style: "Модернізм",
   },
   {
@@ -180,7 +180,7 @@ const projects: Project[] = [
     category: 'interior',
     location: "Goodlife Park",
     area: "180 кв.м",
-    date: "2024",
+    date: "6 місяців",
     style: "Модернізм",
   },
   {
@@ -206,7 +206,7 @@ const projects: Project[] = [
     category: 'interior',
     location: "Goodlife Park",
     area: "328 кв.м",
-    date: "2024",
+    date: "12 місяців",
     style: "Модернізм",
   },
   {
@@ -217,8 +217,8 @@ const projects: Project[] = [
     concept: "Цим будинком ми продовжили доповнювати архітектурну концептуальність котеджного містечка GoodLife Park. Проєкт створено для сімейної пари, яка любить затишок, комфорт та екологічність поза міської метушні. Ми побудували будинок з екологічно чистих матеріалів і зберегли дерева, щоб мешканці могли жити у справжньому лісі та дихати чудовим повітрям.",
     category: 'architecture',
     location: "Goodlife Park",
-    area: "328 кв.м",
-    date: "2024",
+    area: "197 кв.м",
+    date: "10 місяців",
     style: "Модернізм",
   },
   {
@@ -229,8 +229,8 @@ const projects: Project[] = [
     concept: "Європейська архітектура, довершеність ліній, витриманий стиль. Ми можемо з гордістю сказати, що це будинок, який уособлює в собі всі ці характеристики. Архітектори ASTY плідно попрацювали над фасадом, щоб зробити його цілісним і не обтяжливим. Будинок має два поверхи, великі скляні вікна і темні дерев'яні панелі, які створюють контраст і одночасно гармонію з природним оточенням. Архітектура будинку прагне до функціональності, енергоефективності та мінімалізму.",
     category: 'architecture',
     location: "Goodlife Park",
-    area: "328 кв.м",
-    date: "2024",
+    area: "263 кв.м",
+    date: "В процесі",
     style: "Модернізм",
   },
   {
@@ -242,7 +242,7 @@ const projects: Project[] = [
     category: 'architecture',
     location: "Goodlife Park",
     area: "180 кв.м",
-    date: "2024",
+    date: "В процесі",
     style: "Модернізм",
   },
   {
@@ -253,8 +253,8 @@ const projects: Project[] = [
     concept: "Цей лаконічний двоповерховий будинок поєднує в собі комфорт грамотного планування, затишок природних матеріалів і елегантність сучасного дизайну. Тут однаково комфортно буде проводити затишні сніданки в сімейному колі і влаштовувати святкові вечори, зібравши під одним дахом друзів і родичів у просторій їдальні. Власники хотіли мати великі панорамні вікна, щоб насолоджуватись чудовими видами, а також проводити час на терасі за філіжанкою кави.",
     category: 'architecture',
     location: "Goodlife Park",
-    area: "328 кв.м",
-    date: "2024",
+    area: "220 кв.м",
+    date: "9 місяців",
     style: "Модернізм",
   },
   {
@@ -266,7 +266,7 @@ const projects: Project[] = [
     category: 'architecture',
     location: "Goodlife Park",
     area: "427 кв.м",
-    date: "2024",
+    date: "В процесі",
     style: "Модернізм",
   },
   {
@@ -277,8 +277,8 @@ const projects: Project[] = [
     concept: "Цей будинок - це приклад сучасної архітектури, яка поєднує в собі натуральні матеріали в комбінації дерева і каменя, створюючи гармонійний і елегантний вигляд. Будинок має два поверхи, великі панорамні вікна і терасу для відпочинку. Металопластикові двокамерні панорамні вікна з п'ятикамерним профілем не пропускають спеку та холод. Максимум світла, сонця та повітря.",
     category: 'architecture',
     location: "Goodlife Park",
-    area: "328 кв.м",
-    date: "2024",
+    area: "263 кв.м",
+    date: "В процесі",
     style: "Модернізм",
   },
   {
@@ -290,8 +290,8 @@ const projects: Project[] = [
     category: 'architecture',
     location: "Козин",
     area: "100 кв.м",
-    date: "2024",
-    style: "Модернізм",
+    date: "4 місяці",
+    style: "Barn house",
   },
   {
     id: 24,
@@ -302,8 +302,8 @@ const projects: Project[] = [
     category: 'architecture',
     location: "Riviera Village",
     area: "450 кв.м",
-    date: "2024",
-    style: "Модернізм",
+    date: "В процесі",
+    style: "Мінімалізм",
   },
   {
     id: 25,
@@ -312,9 +312,9 @@ const projects: Project[] = [
     description: 'Новий формат заправних станцій БАРС',
     concept: "Зустрічайте новий формат заправних станцій АЗК БАРС. Ми розробили концепт за яким будуть перетворюватись усі АЗК по всій Україні. Це була не проста та водночас цікава задача - розробка архітектури та дизайну у сучасному індустріальному стилі та проєктування всіх складових багаторівневого сервісу для гостей. Для нас важливо, щоб заправка стала не тільки місцем, де можна заправити своє авто, але й завжди можна перепочити, випити ароматну каву, з’їсти щось смачненьке та отримати весь перелік необхідних послуг, які на щастя вже стали стандартом.",
     category: 'commerce',
-    location: "Ukraine",
+    location: "Україна",
     area: "759 кв.м",
-    date: "2024",
+    date: "В процесі",
     style: "Індустріальний",
   },
 ]

@@ -6,6 +6,10 @@ import Heading from "@/src/components/heading"
 import Container from "@/src/components/container"
 
 export default function About({ project }: { project: Project }) {
+  const style = project.category === 'architecture' 
+    ? 'Стиль архітектури'
+    : 'Стиль дизайну';
+
   const details: DetailType[] = [
     {
       icon: "geo-alt",
@@ -24,7 +28,7 @@ export default function About({ project }: { project: Project }) {
     },
     {
       icon: "vector-pen",
-      name: "Стиль дизайну",
+      name: style,
       value: project.style,
     }
   ];
