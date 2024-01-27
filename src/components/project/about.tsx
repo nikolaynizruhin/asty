@@ -1,37 +1,13 @@
 import Icon from "@/src/components/icon"
 import Title from "@/src/components/title"
 import Detail from "./detail"
-import { Detail as DetailType, Project } from "@/src/lib/definitions"
+import { Project } from "@/src/lib/definitions"
 import Heading from "@/src/components/heading"
 import Container from "@/src/components/container"
+import { getProjectDetails } from "@/src/lib/projects"
 
 export default function About({ project }: { project: Project }) {
-  const style = project.category === 'architecture' 
-    ? 'Стиль архітектури'
-    : 'Стиль дизайну';
-
-  const details: DetailType[] = [
-    {
-      icon: "geo-alt",
-      name: "Локація",
-      value: project.location,
-    },
-    {
-      icon: "houses",
-      name: "Площа",
-      value: project.area,
-    },
-    {
-      icon: "calendar3",
-      name: "Термін реалізації",
-      value: project.date,
-    },
-    {
-      icon: "vector-pen",
-      name: style,
-      value: project.style,
-    }
-  ];
+  const details = getProjectDetails(project);
 
   return (
     <div className="bg-white py-12 md:py-48 xl:py-64">
