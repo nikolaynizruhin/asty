@@ -1,6 +1,6 @@
 import Header from "@/src/components/header"
-import Icon from "@/src/components/icon"
 import Image from "next/image"
+import SocialIcons from "../social-icons"
 
 export default function Hero() {
   return (
@@ -22,14 +22,7 @@ export default function Hero() {
             Коли кожний квадратний метр має значення
           </p>
         </div>
-        <div className="flex gap-8 p-4 lg:py-12 lg:px-16 text-white">
-          <a href="https://www.instagram.com/asty_ua">
-            <Icon name="instagram" />
-          </a>
-          <a href="https://www.facebook.com/asty.ukraine">
-            <Icon name="facebook" />
-          </a>
-        </div>
+        <SocialIcons className="flex gap-8 p-4 lg:py-12 lg:px-16 text-white" />
       </div>
     </div>
   )

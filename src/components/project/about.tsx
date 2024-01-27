@@ -5,6 +5,7 @@ import { Project } from "@/src/lib/definitions"
 import Heading from "@/src/components/heading"
 import Container from "@/src/components/container"
 import { getProjectDetails } from "@/src/lib/projects"
+import SocialIcons from "../social-icons"
 
 export default function About({ project }: { project: Project }) {
   const details = getProjectDetails(project);
@@ -25,8 +26,7 @@ export default function About({ project }: { project: Project }) {
           </div>
           <div className="text-base font-light text-[#666] flex items-center mt-16 xl:mt-24">
             Підпишись:
-            <Icon name="facebook" width={12} height={12} className="ml-7" />
-            <Icon name="instagram" width={12} height={12} className="ml-6" />
+            <SocialIcons className="flex gap-6 ml-7" size={12} />
           </div>
         </div>
       </Container>

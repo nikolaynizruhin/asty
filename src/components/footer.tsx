@@ -1,4 +1,5 @@
 import Icon from "./icon";
+import SocialIcons from "./social-icons";
 
 export default function Footer({ isDark = false }: { isDark?: boolean }) {
   return (
@@ -14,16 +15,7 @@ export default function Footer({ isDark = false }: { isDark?: boolean }) {
           <p className="text-[10px] font-light tracking-widest">
             © { new Date().getFullYear() } ASTY, INC. ALL RIGHTS RESERVED.
           </p>
-          <div className="flex space-x-6 mt-3 md:mt-0">
-            <a href="https://www.instagram.com/asty_ua" className="hover:text-gray-500">
-              <span className="sr-only">Instagram</span>
-              <Icon name="instagram" />
-            </a>
-            <a href="https://www.facebook.com/asty.ukraine" className="hover:text-gray-500">
-              <span className="sr-only">Facebook</span>
-              <Icon name="facebook" />
-            </a>
-          </div>
+          <SocialIcons className="flex space-x-6 mt-3 md:mt-0" />
         </div>
       </div>
     </footer>
