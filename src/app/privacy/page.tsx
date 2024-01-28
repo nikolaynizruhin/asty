@@ -1,8 +1,4 @@
-import Container from "@/src/components/container"
 import Content from "@/src/components/content"
-import Footer from "@/src/components/footer"
-import Header from "@/src/components/header"
-import Heading from "@/src/components/heading"
 
 export default function Privacy() {
   return (
