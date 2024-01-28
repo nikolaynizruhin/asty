@@ -7,7 +7,7 @@ export function SubmitButton() {
   const { pending } = useFormStatus()
 
   return (
-    <Button type="submit" aria-disabled={pending} className="mt-11 md:mt-20 xl:mt-32" isDark>
+    <Button type="submit" aria-disabled={pending} isDark>
       {pending ? 'ВІДПРАВЛЯЮ...' : 'ВІДПРАВИТИ'}
     </Button>
   )

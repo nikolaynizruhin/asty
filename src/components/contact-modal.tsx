@@ -1,6 +1,6 @@
 'use client'
 
-import { useFormState, useFormStatus } from 'react-dom'
+import { useFormState } from 'react-dom'
 import Modal from "@/src/components/modal"
 import Input from "@/src/components/input"
 import { Dialog } from '@headlessui/react'
@@ -8,6 +8,7 @@ import { sendContactEmail } from "../lib/actions"
 import { useThankModal } from '../lib/hooks'
 import Heading from './heading'
 import { SubmitButton } from './submit-button'
+import TermsCheckbox from './terms-checkbox'
 
 const initialState = {
   success: false,
@@ -20,7 +21,6 @@ const initialState = {
 
 export default function ContactModal({ open, setOpen, setOpenThank }: { open: boolean; setOpen: (open: boolean) => void; setOpenThank: (open: boolean) => void }) {
   const [state, formAction] = useFormState(sendContactEmail, initialState)
-  const { pending } = useFormStatus()
 
   useThankModal(state.success, setOpen, setOpenThank);
 
@@ -35,6 +35,7 @@ export default function ContactModal({ open, setOpen, setOpenThank }: { open: bo
           <Input name="message" label="Повідомлення" required errors={state.errors.message} />
           <Input name="email" label="Пошта" required errors={state.errors.email} />
         </div>
+        <TermsCheckbox errors={state.errors.terms} />
         <SubmitButton />
       </form>
     </Modal>

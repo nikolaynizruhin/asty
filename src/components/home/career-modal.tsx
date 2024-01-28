@@ -1,6 +1,6 @@
 'use client'
 
-import { useFormState, useFormStatus } from 'react-dom'
+import { useFormState } from 'react-dom'
 import Modal from "@/src/components/modal"
 import Input from "@/src/components/input"
 import { Dialog } from '@headlessui/react'
@@ -8,6 +8,7 @@ import { sendCareerEmail } from "@/src/lib/actions"
 import { useThankModal } from '@/src/lib/hooks'
 import Heading from '@/src/components/heading'
 import { SubmitButton } from '@/src/components/submit-button'
+import TermsCheckbox from '../terms-checkbox'
 
 const initialState = {
   success: false,
@@ -21,7 +22,6 @@ const initialState = {
 
 export default function ThankModal({ open, setOpen, setOpenThank }: { open: boolean; setOpen: (open: boolean) => void; setOpenThank: (open: boolean) => void }) {
   const [state, formAction] = useFormState(sendCareerEmail, initialState)
-  const { pending } = useFormStatus()
 
   useThankModal(state.success, setOpen, setOpenThank);
 
@@ -37,6 +37,7 @@ export default function ThankModal({ open, setOpen, setOpenThank }: { open: bool
           <Input name="phone" label="Телефон" required errors={state.errors.phone} />
           <Input name="resume" label="Резюме" type="file" accept="application/pdf" required errors={state.errors?.resume} />
         </div>
+        <TermsCheckbox errors={state.errors.terms} />
         <SubmitButton />
       </form>
     </Modal>

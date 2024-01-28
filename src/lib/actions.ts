@@ -9,6 +9,7 @@ export type ContactState = {
     name?: string[];
     email?: string[];
     message?: string[];
+    terms?: string[];
   };
   success: boolean;
 };
@@ -18,6 +19,7 @@ export async function sendContactEmail(prevState: ContactState, formData: FormDa
     name: formData.get('name'),
     email: formData.get('email'),
     message: formData.get('message'),
+    terms: formData.get('terms'),
   })
 
   if (!validatedFields.success) {
@@ -48,6 +50,7 @@ export type CareerState = {
     email?: string[];
     phone?: string[];
     resume?: string[];
+    terms?: string[];
   };
   success: boolean;
 };
@@ -58,6 +61,7 @@ export async function sendCareerEmail(prevState: CareerState, formData: FormData
     email: formData.get('email'),
     phone: formData.get('phone'),
     resume: formData.get('resume'),
+    terms: formData.get('terms'),
   })
 
   if (!validatedFields.success) {
