@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Icon from "./icon";
 import SocialIcons from "./social-icons";
 
 export default function Footer({ isDark = false }: { isDark?: boolean }) {
