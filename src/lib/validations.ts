@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-const terms = z.any().refine(terms => terms !== null, 'Будь ласка, погодьтеся на обробку персональних даних, щоб відправити повідомлення.')
+const terms = z.any().refine(terms => terms, 'Будь ласка, погодьтеся на обробку персональних даних, щоб відправити повідомлення.')
 
 export const contactSchema = z.object({
   name: z.string().min(3),
