@@ -59,7 +59,7 @@ export default function Steps() {
                   {step.index}
                 </div>
                 <dt className="flex md:items-center gap-x-3 text-sm font-bold min-h-[48px] text-gray-900">
-                  <Icon name={step.icon} width={32} height={32} className="flex-none h-9 w-9 md:h-8 md:w-8" />
+                  <Icon name={step.icon} width={32} height={32} className="flex-none" />
                   <span className="hidden md:inline">
                     # {step.index}
                     <br />
