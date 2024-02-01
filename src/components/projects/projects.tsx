@@ -1,8 +1,8 @@
 import Title from '@/src/components/title'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Category, Project } from '@/src/lib/definitions'
 import { getProjectsByCategory } from '@/src/lib/projects'
+import ProjectComponent from './project'
 
 export default function Projects({ category }: { category?: Category }) {
   const projects: Project[] = getProjectsByCategory(category)
@@ -17,18 +17,7 @@ export default function Projects({ category }: { category?: Category }) {
         <Link href='/projects?category=commerce' scroll={false} className={`${category === 'commerce' ? 'text-[#121212]' : '' } xl:uppercase font-semibold`}>Комерція</Link>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-[2px] mt-8">
-        {projects.map((project, index) => (
-          <Link key={index} href={`/projects/${project.slug}`} className='group relative'>
-            <h3 className='text-[#f2f2f2] p-6 text-2xl font-bold absolute bottom-0 z-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300'>{project.name}</h3>
-            <Image
-              className="object-cover aspect-[325/232] w-full brightness-[.8] group-hover:brightness-[0.3] transition-all ease-in duration-300"
-              src={`/images/projects/${project.slug}/hero.jpg`}
-              width="325"
-              height="232"
-              alt={project.name}
-            />
-          </Link>
-        ))}
+        {projects.map(project => <ProjectComponent key={project.id} project={project} />)}
       </div>
     </div>
   )
