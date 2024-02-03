@@ -1,25 +1,29 @@
 import Container from "@/src/components/container"
 import Heading from "@/src/components/heading"
-import Icon from "@/src/components/icon"
 import Image from "next/image"
+import MediaObject from "./media-object"
 
 const services = [
   {
+    id: 1,
     name: 'Будівельно-монтажні роботи',
     description: 'Ми керуємо процесом будівництва, ремонтом та виробництвом меблів, щоб гарантувати, що все буде виконано на найвищому рівні. Ми доступні 24/7 та надаємо фото/відео звіти всього будівельного процесу, де ви можете спостерігати за кожним кроком нашої команди.',
     icon: 'house',
   },
   {
+    id: 2,
     name: 'Архітектурно-дизайнерське проєктування',
     description: 'Розробка архітектурних проєктів відбувається з урахуванням особливостей ділянки та відповідно до будівельних норм та стандартів. Важливою складовою всьго процесу проєктування є ваше бачення та бажання.',
     icon: 'file-earmark-easel',
   },
   {
+    id: 3,
     name: 'Авторський супровід дизайн проєктів',
     description: "Ми слідкуємо за тим, щоб весь процес ремонту був без ускладнень і не потребував вашої участі. Всі поточні питання, які виникають вирішує локально наш дизайнер на об'єкті і слідкує за правильним підбором матеріалів і вибором зразків.",
     icon: 'vector-pen',
   },
   {
+    id: 4,
     name: 'Комплексний ремонт та повна комплектація',
     description: "У робочому просторі стежимо за аналогією дизайн-проєкту та контролюємо відповідність кольоровій гаммі. Налагоджена система управління всіма етапами дає можливість дотримуватись термінів і виконання робіт без перешкод.",
     icon: 'calculator',
@@ -46,22 +50,12 @@ export default function Services() {
           </div>
           <div className="mx-auto mt-12 md:mt-16 max-w-2xl sm:mt-20 lg:mt-20 lg:max-w-none">
             <dl className="grid max-w-xl grid-cols-1 gap-x-20 xl:gap-x-32 gap-y-6 md:gap-y-16 xl:gap-y-32 lg:max-w-none md:grid-cols-2">
-              {services.map((service, index) => (
-                <div key={index} className="flex gap-7 md:gap-0 md:flex-col relative">
-                  <dt className="flex md:items-center gap-x-3 text-sm font-bold min-h-[48px] text-white">
-                    <Icon name={service.icon} width={32} height={32} className="flex-none" />
-                    <span className="hidden md:inline">
-                      {service.name}
-                    </span>
-                  </dt>
-                  <dd className="md:mt-6 text-base font-light text-white">
-                    <p className="md:hidden mb-[10px] text-sm font-bold text-white">
-                      {service.name}
-                    </p>
-                    {service.description}
-                  </dd>
-                </div>
-              ))}
+              {services.map(service => <MediaObject
+                key={service.id}
+                name={service.name}
+                icon={service.icon}
+                description={service.description}
+              />)}
             </dl>
           </div>
         </Container>

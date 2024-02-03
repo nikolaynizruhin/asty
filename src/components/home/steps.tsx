@@ -1,40 +1,40 @@
 import Container from "@/src/components/container"
 import Heading from "@/src/components/heading"
-import Icon from "@/src/components/icon"
+import MediaObject from "./media-object"
 
 const steps = [
   {
-    index: 1,
+    id: 1,
     name: 'Знайомство',
     description: 'Знайомство і обговорення ваших очікувань і наших можливостей',
     icon: 'people',
   },
   {
-    index: 2,
+    id: 2,
     name: 'Підписання договору',
     description: 'Розрахунок вартості проєкту, обговорення деталей, укладення договору, авансовий платіж',
     icon: 'pen',
   },
   {
-    index: 3,
+    id: 3,
     name: 'Планувальне рішення та візуалізації',
     description: 'Заміри простору і розробка концепту з планувальним рішенням. Обмін референсами та інспіраціями',
     icon: 'file-earmark-easel',
   },
   {
-    index: 4,
+    id: 4,
     name: 'Робоча документація',
     description: 'Пакет креслень, вибір матеріалів, обговорення бюджету і підписання договору на ремонт',
     icon: 'journal-check',
   },
   {
-    index: 5,
+    id: 5,
     name: 'Ремонтні роботи та авторський супровід',
     description: 'Запуск ремонту. Ми контролюємо всі етапи виконання ремонтних робіт, а ви займаєтесь своїми справами',
     icon: 'tools',
   },
   {
-    index: 6,
+    id: 6,
     name: 'Новосілля',
     description: 'Щасливий день для Вас! Ми передаємо сервісні книжки та всю робочу документацію. Ви можете заселятись у свою оселю',
     icon: 'house-check',
@@ -53,27 +53,14 @@ export default function Steps() {
         </div>
         <div className="mx-auto mt-12 md:mt-16 max-w-2xl sm:mt-20 lg:mt-20 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 md:grid-cols-2 gap-x-20 xl:gap-x-32 gap-y-6 md:gap-y-16 xl:gap-y-32 lg:max-w-none xl:grid-cols-3">
-            {steps.map(step => (
-              <div key={step.index} className="flex gap-7 md:gap-0 md:flex-col relative">
-                <div className="hidden md:block absolute font-bold text-[180px] text-black opacity-[0.02] -left-20 -top-24 -z-10">
-                  {step.index}
-                </div>
-                <dt className="flex md:items-center gap-x-3 text-sm font-bold min-h-[48px] text-gray-900">
-                  <Icon name={step.icon} width={32} height={32} className="flex-none" />
-                  <span className="hidden md:inline">
-                    # {step.index}
-                    <br />
-                    {step.name}
-                  </span>
-                </dt>
-                <dd className="md:mt-6 text-base font-light text-[#666]">
-                  <p className="md:hidden mb-[10px] text-sm font-bold text-gray-900">
-                    #{step.index} {step.name}
-                  </p>
-                  {step.description}
-                </dd>
-              </div>
-            ))}
+            {steps.map(step => <MediaObject
+              id={step.id}
+              key={step.id}
+              name={step.name}
+              icon={step.icon}
+              description={step.description}
+              isDark
+            />)}
           </dl>
         </div>
       </Container>
