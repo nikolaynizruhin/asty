@@ -13,7 +13,7 @@ export default function MediaObject({ media, isDark = false }: { media: MediaObj
       </dt>
       <dd className={`md:mt-6 text-base font-light ${isDark ? 'text-[#666]' : 'text-white'}`}>
         <p className={`md:hidden mb-[10px] text-sm font-bold ${isDark ? 'text-gray-900' : 'text-white'}`}>
-          {media.id ? `#${media.id} ${media.name}` : media.name}
+          {media?.id ? `#${media.id} ${media.name}` : media.name}
         </p>
         {media.description}
       </dd>
