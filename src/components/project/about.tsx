@@ -1,4 +1,3 @@
-import Icon from "@/src/components/icon"
 import Title from "@/src/components/title"
 import Detail from "./detail"
 import { Project } from "@/src/lib/definitions"

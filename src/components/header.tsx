@@ -1,7 +1,7 @@
 'use client'
 
 import { Dialog } from '@headlessui/react'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Icon from './icon'
 import Link from 'next/link'
 import Logo from './logo'
