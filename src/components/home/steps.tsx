@@ -1,8 +1,9 @@
 import Container from "@/src/components/container"
 import Heading from "@/src/components/heading"
 import MediaObject from "./media-object"
+import { MediaObject as Media } from "@/src/lib/definitions"
 
-const steps = [
+const steps: Media[] = [
   {
     id: 1,
     name: 'Знайомство',
@@ -53,14 +54,7 @@ export default function Steps() {
         </div>
         <div className="mx-auto mt-12 md:mt-16 max-w-2xl sm:mt-20 lg:mt-20 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 md:grid-cols-2 gap-x-20 xl:gap-x-32 gap-y-6 md:gap-y-16 xl:gap-y-32 lg:max-w-none xl:grid-cols-3">
-            {steps.map(step => <MediaObject
-              id={step.id}
-              key={step.id}
-              name={step.name}
-              icon={step.icon}
-              description={step.description}
-              isDark
-            />)}
+            {steps.map(step => <MediaObject key={step.id} media={step} isDark />)}
           </dl>
         </div>
       </Container>

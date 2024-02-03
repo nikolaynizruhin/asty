@@ -4,6 +4,13 @@ export interface Detail {
   value: string;
 }
 
+export interface MediaObject {
+  id?: number;
+  name: string;
+  description: string;
+  icon: string;
+}
+
 export interface Image {
   src: string;
   alt: string;
