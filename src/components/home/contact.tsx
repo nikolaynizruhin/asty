@@ -6,7 +6,7 @@ const contacts = [
   {
     index: 1,
     name: 'Пошта',
-    href: '#',
+    href: 'mailto:office@asty.com.ua',
     text: 'office@asty.com.ua',
   },
   {
