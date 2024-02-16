@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import Icon from './icon'
 import Link from 'next/link'
 import Logo from './logo'
+import SocialIcons from './social-icons'
 
 const navigation = [
   { name: 'Проєкти', href: '/projects' },
@@ -72,14 +73,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
                   {item.name}
                 </Link>
               ))}
-              <div className="mt-2 flex justify-center gap-7 px-3 py-6 text-[#f2f2f2]">
-                <a href="https://www.instagram.com/asty_ua">
-                  <Icon name="instagram" width={12} height={12} />
-                </a>
-                <a href="https://www.facebook.com/asty.ukraine">
-                  <Icon name="facebook" width={12} height={12} />
-                </a>
-              </div>
+              <SocialIcons className="mt-2 flex justify-center gap-7 px-3 py-6 text-[#f2f2f2]" />
             </div>
           </div>
         </Dialog.Panel>

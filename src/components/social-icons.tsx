@@ -1,6 +1,6 @@
 import Icon from "./icon";
 
-export default function SocialIcons({ className = "", size = 16 }: { className?: string, size?: number }) {
+export default function SocialIcons({ className = "", size = 18 }: { className?: string, size?: number }) {
   return (
     <div className={className}>
       <a href="https://www.instagram.com/asty_ua">
