@@ -9,7 +9,7 @@ export default function Columns({ id, title, heading, children, button }: { id: 
       <Container>
         <Heading className="max-w-[250px]" isDark>{heading}</Heading>
         <div className="mt-7 md:mt-10 xl:mt-5 grid grid-cols-1 gap-3 xl:gap-8 text-sm xl:text-base font-light text-[#666] xl:grid-cols-2">
-            {children}
+          {children}
         </div>
         {button}
       </Container>

@@ -6,8 +6,9 @@ import Icon from './icon'
 import Link from 'next/link'
 import Logo from './logo'
 import SocialIcons from './social-icons'
+import { Navigation } from '../lib/definitions'
 
-const navigation = [
+const navigation: Navigation[] = [
   { name: 'Проєкти', href: '/projects' },
   { name: 'Про нас', href: '/#about' },
   { name: 'Кар’єра', href: '/#career' },

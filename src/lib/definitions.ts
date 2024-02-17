@@ -11,6 +11,11 @@ export interface Contact {
   text: string;
 }
 
+export interface Navigation {
+  name: string;
+  href: string;
+}
+
 export interface MediaObject {
   id?: number;
   name: string;
@@ -24,6 +29,12 @@ export interface Image {
   width: number;
   height: number;
   isLandscape: boolean;
+}
+
+export interface CategoryLink {
+  name: string;
+  image: string;
+  href: string;
 }
 
 export type Category = 'architecture' | 'interior' | 'commerce';
