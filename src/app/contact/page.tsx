@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <>
       <Header />
-      <ContactComponent className='py-24 md:py-28 xl:py-80' />
+      <ContactComponent className='pb-72 pt-24 md:pt-28 xl:py-80' />
       <Footer isDark />
     </>
   )
