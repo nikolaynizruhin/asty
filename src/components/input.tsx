@@ -1,3 +1,5 @@
+import Errors from "./errors";
+
 export default function Input({ name, label, type = 'text', errors, ...props }: { name: string, label: string, type?: string, errors?: string[], [key: string]: any }) {
   return (
     <div>
@@ -19,7 +21,7 @@ export default function Input({ name, label, type = 'text', errors, ...props }: 
           />
         </div>
       </div>
-      {errors && errors.map((error, index) => <div key={index} className="text-[red] text-xs text-right mt-[2px]">{error}</div>)}
+      <Errors errors={errors} className="text-right" />
     </div>
   )
 }

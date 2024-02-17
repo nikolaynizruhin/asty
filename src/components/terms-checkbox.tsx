@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Errors from "./errors";
 
 export default function TermsCheckbox({ errors }: { errors?: string[] }) {
   return (
@@ -9,7 +10,7 @@ export default function TermsCheckbox({ errors }: { errors?: string[] }) {
           Я даю згоду на обробку <Link href="/privacy" className="hover:text-white underline underline-offset-[6px] decoration-1">персональних даних</Link>
         </label>
       </div>
-      {errors && errors.map((error, index) => <div key={index} className="text-[red] ml-7 text-xs mt-[2px]">{error}</div>)}
+      <Errors errors={errors} className="ml-7" />
     </div>
   )
 }
