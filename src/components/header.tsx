@@ -11,7 +11,7 @@ const navigation = [
   { name: 'Проєкти', href: '/projects' },
   { name: 'Про нас', href: '/#about' },
   { name: 'Кар’єра', href: '/#career' },
-  { name: 'Контакти', href: '/#contact' },
+  { name: 'Контакти', href: '/contact' },
 ]
 
 export default function Header({ isDark = false }: { isDark?: boolean }) {

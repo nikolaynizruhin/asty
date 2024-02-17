@@ -4,7 +4,7 @@ import About from '@/src/components/home/about'
 import Categories from '@/src/components/home/categories'
 import Steps from '@/src/components/home/steps'
 import Career from '@/src/components/home/career'
-import Contact from '@/src/components/home/contact'
+import Contact from '@/src/components/contact'
 import Services from '@/src/components/home/services'
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <Steps />
       <Services />
       <Career />
-      <Contact />
+      <Contact className='py-20 xl:py-32' />
       <Footer isDark />
     </>
   )

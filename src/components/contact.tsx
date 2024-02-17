@@ -23,9 +23,9 @@ const contacts = [
   }
 ]
 
-export default function Contact() {
+export default function Contact({ className }: { className?: string }) {
   return (
-    <div id="contact" className="bg-[#1a1a1a] py-20 xl:py-32">
+    <div id="contact" className={`bg-[#1a1a1a] ${className}`}>
       <Container>
         <Heading className="max-w-[250px] mb-12 xl:mb-14">Наші контакти</Heading>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-8 sm:gap-0 mr-16 sm:mr-0">
