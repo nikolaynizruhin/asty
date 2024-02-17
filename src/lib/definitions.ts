@@ -4,6 +4,13 @@ export interface Detail {
   value: string;
 }
 
+export interface Contact {
+  index: number;
+  name: string;
+  href: string;
+  text: string;
+}
+
 export interface MediaObject {
   id?: number;
   name: string;

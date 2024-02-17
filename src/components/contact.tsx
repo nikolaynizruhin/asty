@@ -1,8 +1,9 @@
 import ContactButton from "@/src/components/contact-button"
 import Container from "@/src/components/container"
 import Heading from "@/src/components/heading"
+import { Contact as ContactInterface } from "../lib/definitions"
 
-const contacts = [
+const contacts: ContactInterface[] = [
   {
     index: 1,
     name: 'Пошта',
@@ -29,14 +30,7 @@ export default function Contact({ className }: { className?: string }) {
       <Container>
         <Heading className="max-w-[250px] mb-12 xl:mb-14">Наші контакти</Heading>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-8 sm:gap-0 mr-16 sm:mr-0">
-          {contacts.map(contact => (
-            <div key={contact.index}>
-              <h4 className="text-[#666] font-light text-sm">{contact.name}:</h4>
-              <a href={contact.href} className="text-white text-sm">
-                {contact.text}
-              </a>
-            </div>
-          ))}
+          {contacts.map(contact => <ContactDetail key={contact.index} contact={contact} />)}
         </div>
         <p className="text-[#666] font-light text-base max-w-[350px] mt-11 xl:mt-16">
           Разом ми створемо простір в якому хочеться жити та творити.
@@ -47,6 +41,17 @@ export default function Contact({ className }: { className?: string }) {
           </ContactButton>
         </div>
       </Container>
+    </div>
+  )
+}
+
+function ContactDetail({ contact }: { contact: ContactInterface}) {
+  return (
+    <div>
+      <h4 className="text-[#666] font-light text-sm">{contact.name}:</h4>
+      <a href={contact.href} className="text-white text-sm">
+        {contact.text}
+      </a>
     </div>
   )
 }
