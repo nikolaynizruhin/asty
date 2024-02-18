@@ -1,4 +1,4 @@
-import { Category, CategoryLink } from "@/src/lib/definitions"
+import { CategoryLink } from "@/src/lib/definitions"
 import Image from "next/image"
 import Link from "next/link"
 
