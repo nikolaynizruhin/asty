@@ -34,7 +34,7 @@ export default function ThankModal({ open, setOpen, setOpenThank }: { open: bool
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-7 gap-x-10 xl:gap-x-40 md:mr-6 xl:mr-24">
           <Input name="name" label="Імʼя" required errors={state.errors.name} />
           <Input name="email" label="Пошта" required errors={state.errors.email} />
-          <Input name="phone" label="Телефон" required errors={state.errors.phone} />
+          <Input name="phone" label="Телефон" errors={state.errors.phone} />
           <Input name="resume" label="Завантажити резюме" labelClasses='hover:text-white underline underline-offset-[6px] decoration-1 cursor-pointer' type="file" accept="application/pdf" required errors={state.errors?.resume} />
         </div>
         <TermsCheckbox errors={state.errors.terms} />
