@@ -1,13 +1,13 @@
 import Errors from "./errors";
 
-export default function Input({ name, label, type = 'text', errors, ...props }: { name: string, label: string, type?: string, errors?: string[], [key: string]: any }) {
+export default function Input({ name, label, type = 'text', errors, labelClasses, ...props }: { name: string, label: string, type?: string, errors?: string[], labelClasses?: string, [key: string]: any }) {
   return (
     <div>
       <div className="flex items-center group">
-        <label htmlFor={name} className="font-bold text-sm xl:text-lg text-[#828282] mr-3 group-focus-within:text-white">
+        <label htmlFor={name} className={`font-bold text-sm xl:text-lg text-[#828282] mr-3 group-focus-within:text-white ${labelClasses}`}>
           {label}
         </label>
-        <div className="relative flex-1">
+        <div className={`relative flex-1 ${type === 'file' ? 'hidden' : ''}`}>
           <input
             type={type}
             name={name}
