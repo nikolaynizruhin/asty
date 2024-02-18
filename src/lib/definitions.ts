@@ -37,6 +37,12 @@ export interface CategoryLink {
   href: string;
 }
 
+export interface Filter {
+  name: string;
+  href: string;
+  isActive: (category?: Category) => boolean;
+}
+
 export type Category = 'architecture' | 'interior' | 'commerce';
   
 export interface Project {
