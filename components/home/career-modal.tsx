@@ -11,13 +11,13 @@ import { SubmitButton } from '@/components/submit-button'
 import TermsCheckbox from '../terms-checkbox'
 
 export default function ThankModal({ open, setOpen, setOpenThank }: { open: boolean; setOpen: (open: boolean) => void; setOpenThank: (open: boolean) => void }) {
-  const [state, formAction] = useFormState(sendCareerEmail, { success: false, errors: {} })
+  const [state, action] = useFormState(sendCareerEmail, { success: false, errors: {} })
 
   useThankModal(state.success, setOpen, setOpenThank);
 
   return (
     <Modal open={open} setOpen={setOpen}>
-      <form action={formAction}>
+      <form action={action}>
         <Dialog.Title as='div'>
           <Heading className='md:max-w-[350px] mb-9 xl:mb-20'>Приєднуйся до нашої команди!</Heading>
         </Dialog.Title>
