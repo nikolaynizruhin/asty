@@ -5,7 +5,7 @@ import { careerSchema, contactSchema } from "./validations";
 import { getBuffer } from "./utils";
 
 export type ContactState = {
-  errors: {
+  errors?: {
     name?: string[];
     email?: string[];
     message?: string[];
@@ -38,14 +38,11 @@ export async function sendContactEmail(prevState: ContactState, formData: FormDa
     `
   );
 
-  return { 
-    success: true,
-    errors: {},
-  }
+  return { success: true }
 }
 
 export type CareerState = {
-  errors: {
+  errors?: {
     name?: string[];
     email?: string[];
     phone?: string[];
@@ -88,8 +85,5 @@ export async function sendCareerEmail(prevState: CareerState, formData: FormData
     ]
   );
 
-  return { 
-    success: true,
-    errors: {},
-  }
+  return { success: true }
 }
