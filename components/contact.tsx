@@ -24,11 +24,11 @@ const contacts: ContactInterface[] = [
   }
 ]
 
-export default function Contact({ className }: { className?: string }) {
+export default function Contact({ className, asPage = true }: { className?: string, asPage?: boolean }) {
   return (
     <div id="contact" className={`bg-[#1a1a1a] ${className}`}>
       <Container>
-        <Heading className="max-w-[250px] mb-12 xl:mb-14">Наші контакти</Heading>
+        <Heading as={ asPage ? 'h1' : 'h2' } className="max-w-[250px] mb-12 xl:mb-14">Наші контакти</Heading>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-8 sm:gap-0 mr-16 sm:mr-0">
           {contacts.map(contact => <ContactDetail key={contact.index} contact={contact} />)}
         </div>
@@ -48,7 +48,7 @@ export default function Contact({ className }: { className?: string }) {
 function ContactDetail({ contact }: { contact: ContactInterface}) {
   return (
     <div>
-      <h4 className="text-[#666] font-light text-sm">{contact.name}:</h4>
+      <p className="text-[#666] font-light text-sm">{contact.name}:</p>
       <a href={contact.href} className="text-white text-sm">
         {contact.text}
       </a>

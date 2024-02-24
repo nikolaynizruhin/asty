@@ -16,7 +16,7 @@ export default function Home() {
       <Steps />
       <Services />
       <Career />
-      <Contact className='py-20 xl:py-32' />
+      <Contact asPage={false} className='py-20 xl:py-32' />
       <Footer isDark />
     </>
   )
