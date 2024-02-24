@@ -57,4 +57,5 @@ export interface Project {
   area: string;
   date: string;
   style: string;
+  updatedAt: string;
 }

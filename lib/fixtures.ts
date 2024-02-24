@@ -13,6 +13,7 @@ const projects: Project[] = [
     area: "130 кв.м",
     date: "12 місяців",
     style: "Скандинавський мінімалізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ const projects: Project[] = [
     area: "450 кв.м",
     date: "4 місяці",
     style: "Модернізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 3,
@@ -39,6 +41,7 @@ const projects: Project[] = [
     area: "427 кв.м",
     date: "12 місяців",
     style: "Модернізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 4,
@@ -52,6 +55,7 @@ const projects: Project[] = [
     area: "100 кв.м",
     date: "6 місяців",
     style: "Barn house",
+    updatedAt: "2024-01-01",
   },
   {
     id: 5,
@@ -65,6 +69,7 @@ const projects: Project[] = [
     area: "173 кв.м",
     date: "7 місяців",
     style: "Мінімалізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 6,
@@ -78,6 +83,7 @@ const projects: Project[] = [
     area: "173 кв.м",
     date: "7 місяців",
     style: "Модернізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 7,
@@ -91,6 +97,7 @@ const projects: Project[] = [
     area: "91 кв.м",
     date: "5 місяців",
     style: "Скандинавський",
+    updatedAt: "2024-01-01",
   },
   {
     id: 8,
@@ -104,6 +111,7 @@ const projects: Project[] = [
     area: "91 кв.м",
     date: "5 місяців",
     style: "Скандинавський",
+    updatedAt: "2024-01-01",
   },
   {
     id: 9,
@@ -117,6 +125,7 @@ const projects: Project[] = [
     area: "395 кв.м",
     date: "12 місяців",
     style: "Модернізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 10,
@@ -130,6 +139,7 @@ const projects: Project[] = [
     area: "395 кв.м",
     date: "12 місяців",
     style: "Модернізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 11,
@@ -143,6 +153,7 @@ const projects: Project[] = [
     area: "392 кв.м",
     date: "6 місяців",
     style: "Мінімалізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 12,
@@ -156,6 +167,7 @@ const projects: Project[] = [
     area: "392 кв.м",
     date: "6 місяців",
     style: "Мінімалізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 13,
@@ -169,6 +181,7 @@ const projects: Project[] = [
     area: "180 кв.м",
     date: "6 місяців",
     style: "Модернізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 14,
@@ -182,6 +195,7 @@ const projects: Project[] = [
     area: "180 кв.м",
     date: "6 місяців",
     style: "Модернізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 15,
@@ -195,6 +209,7 @@ const projects: Project[] = [
     area: "328 кв.м",
     date: "2024",
     style: "Модернізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 16,
@@ -208,6 +223,7 @@ const projects: Project[] = [
     area: "328 кв.м",
     date: "12 місяців",
     style: "Модернізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 17,
@@ -220,6 +236,7 @@ const projects: Project[] = [
     area: "197 кв.м",
     date: "10 місяців",
     style: "Модернізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 18,
@@ -232,6 +249,7 @@ const projects: Project[] = [
     area: "263 кв.м",
     date: "В процесі",
     style: "Модернізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 19,
@@ -244,6 +262,7 @@ const projects: Project[] = [
     area: "180 кв.м",
     date: "В процесі",
     style: "Модернізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 20,
@@ -256,6 +275,7 @@ const projects: Project[] = [
     area: "220 кв.м",
     date: "9 місяців",
     style: "Модернізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 21,
@@ -268,6 +288,7 @@ const projects: Project[] = [
     area: "427 кв.м",
     date: "В процесі",
     style: "Модернізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 22,
@@ -280,6 +301,7 @@ const projects: Project[] = [
     area: "263 кв.м",
     date: "В процесі",
     style: "Модернізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 23,
@@ -292,6 +314,7 @@ const projects: Project[] = [
     area: "100 кв.м",
     date: "4 місяці",
     style: "Barn house",
+    updatedAt: "2024-01-01",
   },
   {
     id: 24,
@@ -304,6 +327,7 @@ const projects: Project[] = [
     area: "450 кв.м",
     date: "В процесі",
     style: "Мінімалізм",
+    updatedAt: "2024-01-01",
   },
   {
     id: 25,
@@ -316,6 +340,7 @@ const projects: Project[] = [
     area: "759 кв.м",
     date: "В процесі",
     style: "Індустріальний",
+    updatedAt: "2024-01-01",
   },
 ]
 
