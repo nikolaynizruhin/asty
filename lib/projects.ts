@@ -60,12 +60,12 @@ export function getProjectDetails(project: Project): Detail[] {
 export function getProjectImages(project: Project): Image[] {
   return fs.readdirSync(process.cwd() + "/public/images/projects/" + project.slug)
     .filter(image => image.endsWith(".jpg") && image !== "hero.jpg")
-    .map(image => {
+    .map((image, index) => {
       const isLandscape = project.category !== 'interior' ||  ['4.jpg', '7.jpg'].includes(image);
 
       return {
         src: "/images/projects/" + project.slug + "/" + image,
-        alt: project.name,
+        alt: `${project.name} - фото ${index + 1} | ASTY`,
         width: isLandscape ? 905 : 640,
         height: isLandscape ? 640 : 905,
         isLandscape
