@@ -5,12 +5,16 @@ import Images from '@/components/project/images'
 import Pagination from '@/components/project/pagination'
 import { notFound } from 'next/navigation'
 import { getProjectBySlug } from '@/lib/projects'
+import type { Metadata } from 'next'
 
-export async function generateMetadata({ params }: { params: { slug: string }}) {
+export function generateMetadata({ params }: { params: { slug: string }}): Metadata {
   const project = getProjectBySlug(params.slug)
 
   return {
     title: project?.name,
+    alternates: {
+      canonical: `https://asty.vercel.app/project/${project?.slug}`,
+    },
   }
 }
 
