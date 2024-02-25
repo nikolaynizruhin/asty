@@ -7,11 +7,23 @@ import Steps from '@/components/home/steps'
 import Career from '@/components/home/career'
 import Contact from '@/components/contact'
 import Services from '@/components/home/services'
+import { isEmpty } from '@/lib/utils'
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: 'https://asty.vercel.app',
-  },
+export function generateMetadata({ searchParams }: { searchParams: object }): Metadata {
+  const metadata: Metadata = {
+    alternates: {
+      canonical: 'https://asty.vercel.app',
+    },
+  }
+
+  if (!isEmpty(searchParams)) {
+    metadata.robots = {
+      index: false,
+      follow: true,
+    }
+  }
+
+  return metadata
 }
 
 export default function Home() {

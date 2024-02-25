@@ -3,3 +3,7 @@ export async function getBuffer(file: File): Promise<Buffer> {
 
   return Buffer.from(fileBuffer);
 }
+
+export function isEmpty(object: object): boolean {
+  return Object.keys(object).length === 0
+}
