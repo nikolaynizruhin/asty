@@ -7,7 +7,7 @@ import Steps from '@/components/home/steps'
 import Career from '@/components/home/career'
 import Contact from '@/components/contact'
 import Services from '@/components/home/services'
-import { isEmpty } from '@/lib/utils'
+import { addRobots } from '@/lib/utils'
 
 export function generateMetadata({ searchParams }: { searchParams: object }): Metadata {
   const metadata: Metadata = {
@@ -16,14 +16,7 @@ export function generateMetadata({ searchParams }: { searchParams: object }): Me
     },
   }
 
-  if (!isEmpty(searchParams)) {
-    metadata.robots = {
-      index: false,
-      follow: true,
-    }
-  }
-
-  return metadata
+  return addRobots(metadata, searchParams)
 }
 
 export default function Home() {
