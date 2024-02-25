@@ -9,13 +9,11 @@ export const metadata: Metadata = {
   title: 'Проєкти',
 }
 
-export default function Projects({ searchParams }: { searchParams: { [category: string]: Category }}) {
-  const category = searchParams.category ?? null
-
+export default function Projects({ params }: { params: { category?: Category[] }}) {
   return (
     <>
       <Header isDark />
-      <ProjectList category={category} />
+      <ProjectList category={params?.category?.[0]} />
       <Contact />
       <Footer />
     </>

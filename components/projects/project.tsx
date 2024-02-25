@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Project({ project }: { project: Project }) {
   return (
-    <Link href={`/projects/${project.slug}`} className='group relative'>
+    <Link href={`/project/${project.slug}`} className='group relative'>
       <h2 className='text-[#f2f2f2] p-6 text-2xl font-bold absolute bottom-0 z-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300'>
         {project.name}
       </h2>

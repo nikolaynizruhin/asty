@@ -6,17 +6,17 @@ const categories: CategoryLink[] = [
   {
     name: 'Архітектура',
     image: '/images/categories/architecture.jpg',
-    href: '/projects?category=architecture'
+    href: '/projects/architecture'
   },
   {
     name: 'Дизайн інтер’єру',
     image: '/images/categories/interior.jpg',
-    href: '/projects?category=interior'
+    href: '/projects/interior'
   },
   {
     name: 'Комерція',
     image: '/images/categories/commercial.jpg',
-    href: '/projects?category=commerce'
+    href: '/projects/commerce'
   }
 ]
 
