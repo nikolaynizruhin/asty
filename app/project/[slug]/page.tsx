@@ -6,13 +6,14 @@ import Pagination from '@/components/project/pagination'
 import { notFound } from 'next/navigation'
 import { getProjectBySlug } from '@/lib/projects'
 import type { Metadata } from 'next'
-import { addRobots } from '@/lib/utils'
+import { addRobots, getSentence } from '@/lib/utils'
 
 export function generateMetadata({ params, searchParams }: { params: { slug: string }, searchParams: object }): Metadata {
   const project = getProjectBySlug(params.slug)
 
   const metadata: Metadata = {
-    title: project?.name,
+    title: project?.title,
+    description: getSentence(project?.concept ?? '') + ' ➤ Дивитися фото та опис на сайті архітектурно-дизайнерського бюро ASTY',
     alternates: {
       canonical: `https://asty.vercel.app/project/${project?.slug}`,
     },
