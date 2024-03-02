@@ -10,18 +10,21 @@ const contacts: ContactInterface[] = [
     index: 1,
     name: 'Пошта',
     href: `mailto:${company.email}`,
+    target: '_self',
     text: company.email,
   },
   {
     index: 2,
     name: 'Телефон',
     href: `tel:${removeWhitespaces(company.phone)}`,
+    target: '_self',
     text: company.phone,
   },
   {
     index: 3,
     name: 'Адреса',
-    href: '#',
+    href: company.map,
+    target: '_blank',
     text: company.address,
   }
 ]
@@ -51,7 +54,7 @@ function ContactDetail({ contact }: { contact: ContactInterface}) {
   return (
     <div>
       <p className="text-[#666] font-light text-sm">{contact.name}:</p>
-      <a href={contact.href} className="text-white text-sm">
+      <a href={contact.href} target={contact.target} className="text-white text-sm">
         {contact.text}
       </a>
     </div>

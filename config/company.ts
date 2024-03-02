@@ -4,4 +4,5 @@ export default {
   address: 'Київ, вул. П.Скоропадського, 39',
   instagram: 'https://www.instagram.com/asty_ua/',
   facebook: 'https://www.facebook.com/asty.ukraine',
+  map: 'https://maps.app.goo.gl/Z5FNf2bJjr85ek1t9',
 }

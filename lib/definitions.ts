@@ -8,6 +8,7 @@ export interface Contact {
   index: number;
   name: string;
   href: string;
+  target: string;
   text: string;
 }
 
