@@ -32,11 +32,6 @@ export function generateMetadata({ params }: { params: { category?: Category[] }
   }
 }
 
-export const metadata: Metadata = {
-  title: 'Проєкти',
-  description: "Дизайн-проекти інтер'єру, архітектурні проекти, рішення з комплектації та меблювання ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY",
-}
-
 export default function Projects({ params }: { params: { category?: Category[] }}) {
   return (
     <>
