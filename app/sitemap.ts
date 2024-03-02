@@ -1,19 +1,20 @@
+import app from '@/config/app';
 import { default as projectList } from '@/lib/fixtures';
 import { MetadataRoute } from 'next'
  
 export default function sitemap(): MetadataRoute.Sitemap {
   const projects = projectList.map(project => ({
-    url: `https://asty.vercel.app/projects/${project.slug}`,
+    url: `${app.url}/projects/${project.slug}`,
     lastModified: project.updatedAt,
   }));
 
   return [
     {
-      url: 'https://asty.vercel.app',
+      url: app.url,
       lastModified: '2024-01-01',
     },
     {
-      url: 'https://asty.vercel.app/contact',
+      url: `${app.url}/contact`,
       lastModified: '2024-01-01',
     },
     ...projects,

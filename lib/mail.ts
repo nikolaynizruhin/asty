@@ -1,4 +1,5 @@
 import nodemailer from 'nodemailer';
+import app from '@/config/app';
 
 export default async function sendEmail(subject: string, text: string, attachments: { filename: string, content: Buffer }[] = []) {
   const transporter = nodemailer.createTransport({
@@ -10,7 +11,7 @@ export default async function sendEmail(subject: string, text: string, attachmen
   });
 
   return await transporter.sendMail({
-    from: `"ASTY Website" <${process.env.MAIL_USER}>`,
+    from: `"${app.name} Website" <${process.env.MAIL_USER}>`,
     to: process.env.MAIL_USER,
     subject,
     text,

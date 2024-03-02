@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import app from '@/config/app';
 
 const circe = localFont({
   src: [
@@ -28,8 +29,8 @@ const circe = localFont({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | ASTY',
-    default: 'ASTY',
+    template: `%s | ${app.name}`,
+    default: app.name,
   },
   description: 'Архітектурно-дизайнерське бюро',
 }
@@ -40,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="uk">
       <body className={`${circe.variable} font-sans antialiased`}>
         {children}
         <SpeedInsights />

@@ -7,6 +7,7 @@ import Link from 'next/link'
 import Logo from './logo'
 import SocialIcons from './social-icons'
 import { Navigation } from '../lib/definitions'
+import app from '@/config/app'
 
 const navigation: Navigation[] = [
   { name: 'Проєкти', href: '/projects' },
@@ -28,7 +29,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
       >
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">ASTY</span>
+            <span className="sr-only">{app.name}</span>
             <Logo isDark={isDark} />
           </Link>
         </div>

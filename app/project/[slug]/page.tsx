@@ -7,6 +7,7 @@ import { notFound } from 'next/navigation'
 import { getProjectBySlug } from '@/lib/projects'
 import type { Metadata } from 'next'
 import { addRobots, getSentence } from '@/lib/utils'
+import app from '@/config/app'
 
 export function generateMetadata({ params, searchParams }: { params: { slug: string }, searchParams: object }): Metadata {
   const project = getProjectBySlug(params.slug)
@@ -15,7 +16,7 @@ export function generateMetadata({ params, searchParams }: { params: { slug: str
     title: project?.title,
     description: getSentence(project?.concept ?? '') + ' ➤ Дивитися фото та опис на сайті архітектурно-дизайнерського бюро ASTY',
     alternates: {
-      canonical: `https://asty.vercel.app/project/${project?.slug}`,
+      canonical: `${app.url}/project/${project?.slug}`,
     },
   }
 

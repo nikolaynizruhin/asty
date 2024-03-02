@@ -8,11 +8,12 @@ import Career from '@/components/home/career'
 import Contact from '@/components/contact'
 import Services from '@/components/home/services'
 import { addRobots } from '@/lib/utils'
+import app from '@/config/app'
 
 export function generateMetadata({ searchParams }: { searchParams: object }): Metadata {
   const metadata: Metadata = {
     alternates: {
-      canonical: 'https://asty.vercel.app',
+      canonical: app.url,
     },
   }
 

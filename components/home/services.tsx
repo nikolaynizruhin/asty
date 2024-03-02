@@ -3,6 +3,7 @@ import Heading from "@/components/heading"
 import Image from "next/image"
 import MediaObject from "./media-object"
 import { MediaObject as Media } from "@/lib/definitions"
+import app from "@/config/app"
 
 const services: Media[] = [
   {
@@ -33,7 +34,7 @@ export default function Services() {
       <div className="relative isolate overflow-hidden pt-14">
         <Image
           src="/images/services.jpg"
-          alt="Сервіси | ASTY"
+          alt={`Сервіси | ${app.name}`}
           width="1440"
           height="768"
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[0.25]"

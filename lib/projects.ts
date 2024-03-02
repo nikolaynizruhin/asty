@@ -1,6 +1,7 @@
 import fs from "fs";
 import { Category, Image, Project, Detail } from "./definitions";
 import projects from "./fixtures";
+import app from "@/config/app";
 
 export function getProjectBySlug(slug: string): Project | undefined {
   return projects.find(project => project.slug === slug);
@@ -65,7 +66,7 @@ export function getProjectImages(project: Project): Image[] {
 
       return {
         src: "/images/projects/" + project.slug + "/" + image,
-        alt: `${project.title} - фото ${index + 1} | ASTY`,
+        alt: `${project.title} - фото ${index + 1} | ${app.name}`,
         width: isLandscape ? 905 : 640,
         height: isLandscape ? 640 : 905,
         isLandscape
