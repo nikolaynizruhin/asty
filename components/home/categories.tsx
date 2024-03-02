@@ -36,7 +36,7 @@ function Category({ category }: { category: CategoryLink }) {
           src={category.image}
           width="480"
           height="823"
-          alt=""
+          alt={category.name + ' | ASTY'}
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[.3]"
         />
         <h3 className="text-[28px] leading-[33px] md:text-2xl xl:text-4xl md:text-center font-bold text-white">

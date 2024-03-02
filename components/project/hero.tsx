@@ -10,7 +10,7 @@ export default function Hero({ project }: { project: Project }) {
       <div className="relative isolate overflow-hidden pt-14">
         <Image
           src={`/images/projects/${project.slug}/hero.jpg`}
-          alt=""
+          alt={project.title + ' | ASTY'}
           width="1440"
           height="748"
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[.3]"
