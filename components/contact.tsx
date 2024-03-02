@@ -2,25 +2,27 @@ import ContactButton from "@/components/contact-button"
 import Container from "@/components/container"
 import Heading from "@/components/heading"
 import { Contact as ContactInterface } from "../lib/definitions"
+import company from "@/config/company"
+import { removeWhitespaces } from "@/lib/utils"
 
 const contacts: ContactInterface[] = [
   {
     index: 1,
     name: 'Пошта',
-    href: 'mailto:office@asty.com.ua',
-    text: 'office@asty.com.ua',
+    href: `mailto:${company.email}`,
+    text: company.email,
   },
   {
     index: 2,
     name: 'Телефон',
-    href: 'tel:+380677777474',
-    text: '+38 067 777 74 74',
+    href: `tel:${removeWhitespaces(company.phone)}`,
+    text: company.phone,
   },
   {
     index: 3,
     name: 'Адреса',
     href: '#',
-    text: 'Київ, вул. П.Скоропадського, 39',
+    text: company.address,
   }
 ]
 

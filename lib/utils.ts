@@ -14,6 +14,10 @@ export function getSentence(text: string): string {
   return text.split('. ', 1)[0]
 }
 
+export function removeWhitespaces(text: string): string {
+  return text.replace(/\s+/g, '')
+}
+
 export function addRobots(metadata: Metadata, searchParams: object) {
   if (!isEmpty(searchParams)) {
     metadata.robots = { index: false, follow: true }
