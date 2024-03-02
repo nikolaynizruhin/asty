@@ -8,6 +8,8 @@ import Logo from './logo'
 import SocialIcons from './social-icons'
 import { Navigation } from '../lib/definitions'
 import app from '@/config/app'
+import company from '@/config/company'
+import { removeWhitespaces } from '@/lib/utils'
 
 const navigation: Navigation[] = [
   { name: 'Проєкти', href: '/projects' },
@@ -45,10 +47,14 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
         </div>
         <div className="hidden lg:flex lg:gap-x-16 lg:flex-1 lg:justify-end">
           {navigation.map((item, index) => (
-            <Link key={index} href={item.href} className={`text-sm font-bold ${isDark ? 'text-[#333]' : 'text-white'}`}>
+            <Link key={index} href={item.href} className={`whitespace-nowrap text-sm font-bold ${isDark ? 'text-[#333]' : 'text-white'}`}>
               {item.name}
             </Link>
           ))}
+          <Link href={'tel:' + removeWhitespaces(company.phone)} className={`whitespace-nowrap text-sm font-bold flex gap-2 ${isDark ? 'text-[#333]' : 'text-white'}`}>
+            <Icon name="phone" width={18} height={18} />
+            {company.phone}
+          </Link>
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -75,6 +81,9 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
                   {item.name}
                 </Link>
               ))}
+              <Link href={'tel:' + removeWhitespaces(company.phone)} className="block px-3 text-center py-2 text-2xl font-normal hover:underline text-[#f2f2f2]">
+                {company.phone}
+              </Link>
               <SocialIcons className="mt-2 flex justify-center gap-7 px-3 py-6 text-[#f2f2f2]" />
             </div>
           </div>
