@@ -35,7 +35,7 @@ export default function Modal({ open, setOpen, children }: { open: boolean, chil
                 <div className="absolute right-0 top-0 pr-3 pt-4 md:pr-7 md:pt-8">
                   <button
                     type="button"
-                    className="text-white"
+                    className="text-white outline-none"
                     onClick={() => setOpen(false)}
                   >
                     <span className="sr-only">Close</span>
