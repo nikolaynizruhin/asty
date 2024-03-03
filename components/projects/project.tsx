@@ -1,3 +1,4 @@
+import app from "@/config/app";
 import { Project } from "@/lib/definitions";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +14,7 @@ export default function Project({ project }: { project: Project }) {
         src={`/images/projects/${project.slug}/hero.jpg`}
         width="325"
         height="232"
-        alt={project.name + ' | ASTY'}
+        alt={project.name + ' | ' + app.name}
       />
     </Link>
   )
