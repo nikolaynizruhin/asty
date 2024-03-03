@@ -9,7 +9,7 @@ export default function Hero({ project }: { project: Project }) {
     <div className="bg-gray-900">
       <Header />
       <div className="relative isolate overflow-hidden pt-14">
-        <img
+        <Image
           src={`/images/projects/${project.slug}/hero.jpg`}
           alt={project.title + ' | ' + app.name}
           width="1440"

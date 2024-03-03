@@ -8,7 +8,7 @@ export default function Hero() {
     <div className="bg-gray-900">
       <Header />
       <div className="relative isolate overflow-hidden pt-14">
-        <img
+        <Image
           src="/images/hero.jpg"
           alt={`Дизайн інтерʼєру та архітектурні рішення від ASTY | ${app.name}`}
           width="1440"
