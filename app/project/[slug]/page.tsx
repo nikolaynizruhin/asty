@@ -5,13 +5,22 @@ import Images from '@/components/project/images'
 import Pagination from '@/components/project/pagination'
 import { notFound } from 'next/navigation'
 import { getProjectBySlug } from '@/lib/projects'
+import type { Metadata } from 'next'
+import { addRobots, getSentence } from '@/lib/utils'
+import app from '@/config/app'
 
-export async function generateMetadata({ params }: { params: { slug: string }}) {
+export function generateMetadata({ params, searchParams }: { params: { slug: string }, searchParams: object }): Metadata {
   const project = getProjectBySlug(params.slug)
 
-  return {
-    title: project?.name,
+  const metadata: Metadata = {
+    title: project?.title,
+    description: getSentence(project?.concept ?? '') + ' ➤ Дивитися фото та опис на сайті архітектурно-дизайнерського бюро ASTY',
+    alternates: {
+      canonical: `${app.url}/project/${project?.slug}`,
+    },
   }
+
+  return addRobots(metadata, searchParams)
 }
 
 export default function Project({ params }: { params: { slug: string }}) {

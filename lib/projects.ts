@@ -1,6 +1,7 @@
 import fs from "fs";
 import { Category, Image, Project, Detail } from "./definitions";
 import projects from "./fixtures";
+import app from "@/config/app";
 
 export function getProjectBySlug(slug: string): Project | undefined {
   return projects.find(project => project.slug === slug);
@@ -60,12 +61,12 @@ export function getProjectDetails(project: Project): Detail[] {
 export function getProjectImages(project: Project): Image[] {
   return fs.readdirSync(process.cwd() + "/public/images/projects/" + project.slug)
     .filter(image => image.endsWith(".jpg") && image !== "hero.jpg")
-    .map(image => {
+    .map((image, index) => {
       const isLandscape = project.category !== 'interior' ||  ['4.jpg', '7.jpg'].includes(image);
 
       return {
         src: "/images/projects/" + project.slug + "/" + image,
-        alt: project.name,
+        alt: `${project.title} - фото ${index + 1} | ${app.name}`,
         width: isLandscape ? 905 : 640,
         height: isLandscape ? 640 : 905,
         isLandscape

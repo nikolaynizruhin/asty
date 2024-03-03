@@ -5,6 +5,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Контакти',
+  description: "На сторінці можна ознайомитись з контактними даними архітектурно-дизайнерського бюро ASTY"
 }
 
 export default function Contact() {

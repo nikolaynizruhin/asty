@@ -8,6 +8,7 @@ export interface Contact {
   index: number;
   name: string;
   href: string;
+  target: string;
   text: string;
 }
 
@@ -49,6 +50,7 @@ export interface Project {
   id: number;
   slug: string;
   name: string;
+  title: string;
   description: string;
   concept: string;
   overview?: string;
@@ -57,4 +59,5 @@ export interface Project {
   area: string;
   date: string;
   style: string;
+  updatedAt: string;
 }

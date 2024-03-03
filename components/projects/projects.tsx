@@ -6,9 +6,9 @@ import ProjectComponent from './project'
 
 const filters: Filter[] = [
   { name: 'Всі', href: '/projects', isActive: (category?: Category) => !category },
-  { name: 'Архітектура', href: '/projects?category=architecture', isActive: (category?: Category) => category === 'architecture' },
-  { name: 'Інтерʼєр', href: '/projects?category=interior', isActive: (category?: Category) => category === 'interior' },
-  { name: 'Комерція', href: '/projects?category=commerce', isActive: (category?: Category) => category === 'commerce'},
+  { name: 'Архітектура', href: '/projects/architecture', isActive: (category?: Category) => category === 'architecture' },
+  { name: 'Інтерʼєр', href: '/projects/interior', isActive: (category?: Category) => category === 'interior' },
+  { name: 'Комерція', href: '/projects/commerce', isActive: (category?: Category) => category === 'commerce'},
 ]
 
 export default function Projects({ category }: { category?: Category }) {

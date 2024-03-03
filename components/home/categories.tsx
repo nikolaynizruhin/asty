@@ -1,3 +1,4 @@
+import app from "@/config/app"
 import { CategoryLink } from "@/lib/definitions"
 import Image from "next/image"
 import Link from "next/link"
@@ -6,17 +7,17 @@ const categories: CategoryLink[] = [
   {
     name: 'Архітектура',
     image: '/images/categories/architecture.jpg',
-    href: '/projects?category=architecture'
+    href: '/projects/architecture'
   },
   {
     name: 'Дизайн інтер’єру',
     image: '/images/categories/interior.jpg',
-    href: '/projects?category=interior'
+    href: '/projects/interior'
   },
   {
     name: 'Комерція',
     image: '/images/categories/commercial.jpg',
-    href: '/projects?category=commerce'
+    href: '/projects/commerce'
   }
 ]
 
@@ -36,7 +37,7 @@ function Category({ category }: { category: CategoryLink }) {
           src={category.image}
           width="480"
           height="823"
-          alt=""
+          alt={category.name + ' | ' + app.name}
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[.3]"
         />
         <h3 className="text-[28px] leading-[33px] md:text-2xl xl:text-4xl md:text-center font-bold text-white">

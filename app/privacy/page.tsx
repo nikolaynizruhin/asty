@@ -1,4 +1,10 @@
 import Content from "@/components/content"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: 'Політика конфіденційності',
+  description: "Політика конфіденційності встановлює порядок отримання, зберігання, обробки, використання і розкриття персональних даних користувача веб-сайту asty.com.ua"
+}
 
 export default function Privacy() {
   return (
