@@ -4,6 +4,7 @@ import localFont from 'next/font/local'
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import app from '@/config/app';
+import { addSuffix } from '@/lib/utils';
 
 const circe = localFont({
   src: [
@@ -29,10 +30,10 @@ const circe = localFont({
 
 export const metadata: Metadata = {
   title: {
-    template: `%s | ${app.name}`,
+    template: addSuffix('%s'),
     default: app.name,
   },
-  description: 'Архітектурно-дизайнерське бюро',
+  description: "ASTY – архітектурно-дизайнерське бюро, яке працює в сфері дизайну інтер’єру та архітектури по всьому світі ➣ Коли кожний квадратний метр має значення",
 }
 
 export default function RootLayout({

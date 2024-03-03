@@ -1,3 +1,4 @@
+import app from "@/config/app";
 import { Metadata } from "next";
 
 export async function getBuffer(file: File): Promise<Buffer> {
@@ -18,10 +19,14 @@ export function removeWhitespaces(text: string): string {
   return text.replace(/\s+/g, '')
 }
 
-export function addRobots(metadata: Metadata, searchParams: object) {
+export function addRobots(metadata: Metadata, searchParams: object): Metadata {
   if (!isEmpty(searchParams)) {
     metadata.robots = { index: false, follow: true }
   }
 
   return metadata;
+}
+
+export function addSuffix(text: string): string {
+  return text + ' | ' + app.name
 }

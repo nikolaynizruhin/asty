@@ -1,7 +1,7 @@
 import Header from "@/components/header"
 import Image from "next/image"
 import SocialIcons from "../social-icons"
-import app from "@/config/app"
+import { addSuffix } from "@/lib/utils"
 
 export default function Hero() {
   return (
@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="relative isolate overflow-hidden pt-14">
         <Image
           src="/images/hero.jpg"
-          alt={`Дизайн інтерʼєру та архітектурні рішення від ASTY | ${app.name}`}
+          alt={addSuffix("Дизайн інтерʼєру та архітектурні рішення від ASTY")}
           width="1440"
           height="768"
           priority={true}

@@ -1,7 +1,7 @@
 import Container from "@/components/container"
 import Header from "@/components/header"
-import app from "@/config/app"
 import { Project } from "@/lib/definitions"
+import { addSuffix } from "@/lib/utils"
 import Image from 'next/image'
 
 export default function Hero({ project }: { project: Project }) {
@@ -11,7 +11,7 @@ export default function Hero({ project }: { project: Project }) {
       <div className="relative isolate overflow-hidden pt-14">
         <Image
           src={`/images/projects/${project.slug}/hero.jpg`}
-          alt={project.title + ' | ' + app.name}
+          alt={addSuffix(project.title)}
           width="1440"
           height="748"
           priority={true}
