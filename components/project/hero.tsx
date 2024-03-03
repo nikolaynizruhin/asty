@@ -14,7 +14,6 @@ export default function Hero({ project }: { project: Project }) {
           alt={project.title + ' | ' + app.name}
           width="1440"
           height="748"
-          loading="eager"
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[.3]"
         />
         <Container className="pb-96 pt-60 sm:pb-44 sm:pt-36 xl:pb-96 xl:pt-60">

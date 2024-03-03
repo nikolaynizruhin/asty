@@ -13,7 +13,6 @@ export default function Hero() {
           alt={`Дизайн інтерʼєру та архітектурні рішення від ASTY | ${app.name}`}
           width="1440"
           height="768"
-          loading="eager"
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-50"
         />
         <div className="mx-auto max-w-3xl px-4 py-60 sm:py-48 lg:py-56">
