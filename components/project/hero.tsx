@@ -9,12 +9,11 @@ export default function Hero({ project }: { project: Project }) {
     <div className="bg-gray-900">
       <Header />
       <div className="relative isolate overflow-hidden pt-14">
-        <Image
+        <img
           src={`/images/projects/${project.slug}/hero.jpg`}
           alt={project.title + ' | ' + app.name}
           width="1440"
           height="748"
-          priority={true}
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[.3]"
         />
         <Container className="pb-96 pt-60 sm:pb-44 sm:pt-36 xl:pb-96 xl:pt-60">
