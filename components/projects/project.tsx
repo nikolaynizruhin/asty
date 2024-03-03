@@ -1,5 +1,5 @@
 import { Project } from "@/lib/definitions";
-import { addSuffix } from "@/lib/utils";
+import { addMetadata } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,7 +14,7 @@ export default function Project({ project }: { project: Project }) {
         src={`/images/projects/${project.slug}/hero.jpg`}
         width="325"
         height="232"
-        alt={addSuffix(project.name)}
+        alt={addMetadata(project.name)}
       />
     </Link>
   )

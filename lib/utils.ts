@@ -27,6 +27,6 @@ export function addRobots(metadata: Metadata, searchParams: object): Metadata {
   return metadata;
 }
 
-export function addSuffix(text: string): string {
+export function addMetadata(text: string): string {
   return text + ' | ' + app.name
 }

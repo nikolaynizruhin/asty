@@ -3,7 +3,7 @@ import Heading from "@/components/heading"
 import Image from "next/image"
 import MediaObject from "./media-object"
 import { MediaObject as Media } from "@/lib/definitions"
-import { addSuffix } from "@/lib/utils"
+import { addMetadata } from "@/lib/utils"
 
 const services: Media[] = [
   {
@@ -34,7 +34,7 @@ export default function Services() {
       <div className="relative isolate overflow-hidden pt-14">
         <Image
           src="/images/services.jpg"
-          alt={addSuffix('Послуги')}
+          alt={addMetadata('Послуги')}
           width="1440"
           height="768"
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[0.25]"

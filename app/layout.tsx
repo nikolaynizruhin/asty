@@ -4,7 +4,7 @@ import localFont from 'next/font/local'
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import app from '@/config/app';
-import { addSuffix } from '@/lib/utils';
+import { addMetadata } from '@/lib/utils';
 
 const circe = localFont({
   src: [
@@ -30,7 +30,7 @@ const circe = localFont({
 
 export const metadata: Metadata = {
   title: {
-    template: addSuffix('%s'),
+    template: addMetadata('%s'),
     default: app.name,
   },
   description: "ASTY – архітектурно-дизайнерське бюро, яке працює в сфері дизайну інтер’єру та архітектури по всьому світі ➣ Коли кожний квадратний метр має значення",
