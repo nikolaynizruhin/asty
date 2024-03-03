@@ -1,4 +1,4 @@
 export default {
   name: 'ASTY',
-  url: 'https://asty.verce.app'
+  url: 'https://www.asty.com.ua'
 }
