@@ -17,14 +17,6 @@ export function generateMetadata({ searchParams }: { searchParams: object }): Me
     alternates: {
       canonical: app.url,
     },
-    openGraph: {
-      title: "Студія дизайну інтерʼєру ASTY",
-      description: 'ASTY – архітектурно-дизайнерське бюро, яке працює в сфері дизайну інтер’єру та архітектури по всьому світі',
-      url: app.url,
-      siteName: app.name,
-      locale: 'uk_UA',
-      type: 'website',
-    },
   }
 
   return addRobots(metadata, searchParams)

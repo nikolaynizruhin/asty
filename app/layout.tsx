@@ -34,6 +34,15 @@ export const metadata: Metadata = {
     default: app.name,
   },
   description: "ASTY – архітектурно-дизайнерське бюро, яке працює в сфері дизайну інтер’єру та архітектури по всьому світі ➣ Коли кожний квадратний метр має значення",
+  openGraph: {
+    title: "Студія дизайну інтерʼєру ASTY",
+    description: 'ASTY – архітектурно-дизайнерське бюро, яке працює в сфері дизайну інтер’єру та архітектури по всьому світі',
+    url: app.url,
+    siteName: app.name,
+    images: [{ url: app.url + "/images/hero.jpg" }],
+    locale: 'uk_UA',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({
