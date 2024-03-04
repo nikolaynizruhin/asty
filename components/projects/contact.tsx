@@ -8,7 +8,7 @@ export default function Contact() {
       <Container>
         <Heading className="max-w-[360px]" isDark>Напишіть нам про Ваш проєкт!</Heading>
         <p className="text-[#666] font-light max-w-[350px] mt-10 md:mt-14 xl:mt-10 xl:mb-28 text-sm xl:text-base">
-          Разом ми створемо простір в якому хочеться жити та творити.
+          Разом ми створимо простір, в якому хочеться жити та творити.
         </p>
         <div className="mt-8 md:mt-14 flex">
           <ContactButton>
