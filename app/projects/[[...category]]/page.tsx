@@ -9,26 +9,58 @@ export function generateMetadata({ params }: { params: { category?: Category[] }
   const category = params?.category?.[0]
 
   switch (category) {
-    case 'architecture':
+    case 'architecture': {
+      let title = 'Архітектурні проекти та рішення'
+      let description = "Архітектурні проекти та рішення ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY"
+
       return {
-        title: 'Архітектурні проекти та рішення',
-        description: "Архітектурні проекти та рішення ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY",
+        title,
+        description,
+        openGraph: {
+          title,
+          description,
+        }
       }
-    case 'interior':
+    }
+    case 'interior': {
+      let title = "Дизайн-проекти інтер'єру"
+      let description = "Дизайн-проекти інтер'єру ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY"
+
       return {
-        title: "Дизайн-проекти інтер'єру",
-        description: "Дизайн-проекти інтер'єру ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY",
+        title,
+        description,
+        openGraph: {
+          title,
+          description
+        }
       }
-    case 'commerce':
+    }
+    case 'commerce': {
+      let title = "Проєкти дизайну для комерційних приміщень"
+      let description = "Дизайн-проекти інтер'єру та архітектурні рішення для комерційних приміщень ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY"
+
       return {
-        title: "Проєкти дизайну для комерційних приміщень",
-        description: "Дизайн-проекти інтер'єру та архітектурні рішення для комерційних приміщень ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY",
+        title,
+        description,
+        openGraph: {
+          title,
+          description,
+        }
       }
-    default:
+    }
+    default: {
+      let title = 'Проєкти'
+      let description = "Дизайн-проекти інтер'єру, архітектурні проекти, рішення з комплектації та меблювання ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY"
+
       return {
-        title: 'Проєкти',
-        description: "Дизайн-проекти інтер'єру, архітектурні проекти, рішення з комплектації та меблювання ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY",
+        title,
+        description,
+        openGraph: {
+          title,
+          description,
+        }
       };
+    }
   }
 }
 
