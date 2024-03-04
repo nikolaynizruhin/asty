@@ -16,7 +16,7 @@ const categories: CategoryLink[] = [
   },
   {
     name: 'Комерція',
-    image: '/images/categories/commercial.jpg',
+    image: '/images/categories/commerce.jpg',
     href: '/projects/commerce'
   }
 ]

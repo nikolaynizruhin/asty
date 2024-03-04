@@ -6,6 +6,7 @@ import { Category } from '@/lib/definitions'
 import { Metadata } from 'next'
 import { isCategory } from '@/lib/utils'
 import { notFound } from 'next/navigation'
+import app from '@/config/app'
 
 export function generateMetadata({ params }: { params: { category?: Category[] }}): Metadata {
   const category = params?.category?.[0]
@@ -21,6 +22,7 @@ export function generateMetadata({ params }: { params: { category?: Category[] }
         openGraph: {
           title,
           description,
+          images: [{ url: app.url + "/images/categories/architecture.jpg" }],
         }
       }
     }
@@ -33,7 +35,8 @@ export function generateMetadata({ params }: { params: { category?: Category[] }
         description,
         openGraph: {
           title,
-          description
+          description,
+          images: [{ url: app.url + "/images/categories/interior.jpg" }],
         }
       }
     }
@@ -47,6 +50,7 @@ export function generateMetadata({ params }: { params: { category?: Category[] }
         openGraph: {
           title,
           description,
+          images: [{ url: app.url + "/images/categories/commerce.jpg" }],
         }
       }
     }
