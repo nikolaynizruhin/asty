@@ -1,5 +1,6 @@
 import app from "@/config/app";
 import { Metadata } from "next";
+import { Category } from "./definitions";
 
 export async function getBuffer(file: File): Promise<Buffer> {
   const fileBuffer = await file.arrayBuffer();
@@ -29,4 +30,12 @@ export function addRobots(metadata: Metadata, searchParams: object): Metadata {
 
 export function addMetadata(text: string): string {
   return text + ' | ' + app.name
+}
+
+export function isCategory(category: Category | undefined): category is Category {
+  if (!category) {
+    return true
+  }
+
+  return ['architecture', 'interior', 'commerce'].includes(category)
 }

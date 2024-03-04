@@ -4,6 +4,8 @@ import Contact from '@/components/projects/contact'
 import ProjectList from '@/components/projects/projects'
 import { Category } from '@/lib/definitions'
 import { Metadata } from 'next'
+import { isCategory } from '@/lib/utils'
+import { notFound } from 'next/navigation'
 
 export function generateMetadata({ params }: { params: { category?: Category[] }}): Metadata {
   const category = params?.category?.[0]
@@ -65,10 +67,16 @@ export function generateMetadata({ params }: { params: { category?: Category[] }
 }
 
 export default function Projects({ params }: { params: { category?: Category[] }}) {
+  const category = params?.category?.[0]
+
+  if (!isCategory(category)) {
+    notFound();
+  }
+
   return (
     <>
       <Header isDark />
-      <ProjectList category={params?.category?.[0]} />
+      <ProjectList category={category} />
       <Contact />
       <Footer />
     </>
