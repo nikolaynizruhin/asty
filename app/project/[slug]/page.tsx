@@ -19,6 +19,9 @@ export function generateMetadata({ params, searchParams }: { params: { slug: str
       canonical: `${app.url}/project/${project?.slug}`,
     },
     openGraph: {
+      title: project?.title,
+      description: getSentence(project?.concept ?? ''),
+      url: `${app.url}/project/${project?.slug}`,
       images: [{ url: app.url + "/images/projects/" + project?.slug + "/hero.jpg" }],
     }
   }
