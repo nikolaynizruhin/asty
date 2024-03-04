@@ -18,6 +18,9 @@ export function generateMetadata({ params, searchParams }: { params: { slug: str
     alternates: {
       canonical: `${app.url}/project/${project?.slug}`,
     },
+    openGraph: {
+      images: [{ url: app.url + "/images/projects/" + project?.slug + "/hero.jpg" }],
+    }
   }
 
   return addRobots(metadata, searchParams)

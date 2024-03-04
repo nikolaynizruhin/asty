@@ -12,10 +12,18 @@ import app from '@/config/app'
 
 export function generateMetadata({ searchParams }: { searchParams: object }): Metadata {
   const metadata: Metadata = {
-    title: "Студія дизайну інтер'єру ASTY",
+    title: "Студія дизайну інтерʼєру ASTY",
     description: "ASTY – архітектурно-дизайнерське бюро, яке працює в сфері дизайну інтер’єру та архітектури по всьому світі ➣ Коли кожний квадратний метр має значення",
     alternates: {
       canonical: app.url,
+    },
+    openGraph: {
+      title: "Студія дизайну інтерʼєру ASTY",
+      description: 'ASTY – архітектурно-дизайнерське бюро, яке працює в сфері дизайну інтер’єру та архітектури по всьому світі',
+      url: app.url,
+      siteName: app.name,
+      locale: 'uk_UA',
+      type: 'website',
     },
   }
 
