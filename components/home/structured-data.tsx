@@ -8,6 +8,7 @@ const organization = {
   legalName: company.name,
   description: 'ASTY – архітектурно-дизайнерське бюро, яке працює в сфері дизайну інтер’єру та архітектури по всьому світі',
   logo: app.url + '/images/logo-dark.svg',
+  image: app.url + '/images/logo-dark.svg',
   url: app.url,
   sameAs: [company.instagram, company.facebook],
   telephone: company.phone,
