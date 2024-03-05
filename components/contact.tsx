@@ -25,7 +25,7 @@ const contacts: ContactInterface[] = [
     name: 'Адреса',
     href: company.map,
     target: '_blank',
-    text: company.address,
+    text: company.address.city + ', ' + company.address.street,
   }
 ]
 

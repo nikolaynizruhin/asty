@@ -9,6 +9,7 @@ import Contact from '@/components/contact'
 import Services from '@/components/home/services'
 import { addRobots } from '@/lib/utils'
 import app from '@/config/app'
+import StructuredData from '@/components/home/structured-data'
 
 export function generateMetadata({ searchParams }: { searchParams: object }): Metadata {
   const metadata: Metadata = {
@@ -33,6 +34,7 @@ export default function Home() {
       <Career />
       <Contact asPage={false} className='py-20 xl:py-32' />
       <Footer isDark />
+      <StructuredData />
     </>
   )
 }
