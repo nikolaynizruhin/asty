@@ -38,7 +38,7 @@ export default function Contact({ className, asPage = true }: { className?: stri
           {contacts.map(contact => <ContactDetail key={contact.index} contact={contact} />)}
         </div>
         <p className="text-[#666] font-light text-base max-w-[350px] mt-11 xl:mt-16">
-          Разом ми створемо простір в якому хочеться жити та творити.
+          Разом ми створимо простір, в якому хочеться жити та творити.
         </p>
         <div className="mt-8 xl:mt-14 flex">
           <ContactButton isDark>
