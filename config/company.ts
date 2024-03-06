@@ -2,6 +2,7 @@ export default {
   name: 'ТОВ «АСТІ ЮКРЕЙН»',
   email: 'office@asty.com.ua',
   phone: '+38 067 777 74 74',
+  founded: 2020,
   address: {
     street: 'вул. Гетьмана Павла Скоропадського, 39',
     city: 'Київ',

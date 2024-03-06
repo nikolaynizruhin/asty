@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SocialIcons from "./social-icons";
+import company from "@/config/company";
 
 export default function Footer({ isDark = false }: { isDark?: boolean }) {
   return (
@@ -13,7 +14,7 @@ export default function Footer({ isDark = false }: { isDark?: boolean }) {
         </Link>
         <div className="md:flex md:items-center md:justify-between text-[#888]">
           <p className="text-[10px] font-light tracking-widest">
-            © { new Date().getFullYear() } ASTY, INC. ALL RIGHTS RESERVED.
+            © { company.founded } - { new Date().getFullYear() } { company.name }. ВСІ ПРАВА ЗАХИЩЕНО.
           </p>
           <SocialIcons className="flex space-x-6 mt-3 md:mt-0" />
         </div>
