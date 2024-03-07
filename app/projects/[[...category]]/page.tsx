@@ -1,6 +1,7 @@
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import Contact from '@/components/projects/contact'
+import { default as ContactFooter } from '@/components/contact'
 import ProjectList from '@/components/projects/projects'
 import { Category } from '@/lib/definitions'
 import { Metadata } from 'next'
@@ -94,7 +95,8 @@ export default function Projects({ params }: { params: { category?: Category[] }
       <Header isDark />
       <ProjectList category={category} />
       <Contact />
-      <Footer />
+      <ContactFooter className='py-20 xl:py-32' />
+      <Footer isDark />
     </>
   )
 }

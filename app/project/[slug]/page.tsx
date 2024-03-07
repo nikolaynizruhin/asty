@@ -8,6 +8,7 @@ import { getProjectBySlug } from '@/lib/projects'
 import type { Metadata } from 'next'
 import { addRobots, getSentence } from '@/lib/utils'
 import app from '@/config/app'
+import Contact from '@/components/contact'
 
 export function generateMetadata({ params, searchParams }: { params: { slug: string }, searchParams: object }): Metadata {
   const project = getProjectBySlug(params.slug)
@@ -42,6 +43,7 @@ export default function Project({ params }: { params: { slug: string }}) {
       <About project={project} />
       <Images project={project} />
       <Pagination project={project} />
+      <Contact className='pb-20 xl:pb-32' />
       <Footer isDark />
     </>
   )

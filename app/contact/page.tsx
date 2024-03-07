@@ -16,7 +16,7 @@ export default function Contact() {
   return (
     <>
       <Header />
-      <ContactSection className='pb-72 pt-24 md:pt-28 xl:py-80' />
+      <ContactSection asPage={true} className='pb-72 pt-24 md:pt-28 xl:py-80' />
       <Footer isDark />
     </>
   )

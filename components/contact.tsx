@@ -29,7 +29,7 @@ const contacts: ContactInterface[] = [
   }
 ]
 
-export default function Contact({ className, asPage = true }: { className?: string, asPage?: boolean }) {
+export default function Contact({ className, asPage = false }: { className?: string, asPage?: boolean }) {
   return (
     <div id="contact" className={`bg-[#1a1a1a] ${className}`}>
       <Container>

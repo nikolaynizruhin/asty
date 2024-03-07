@@ -32,7 +32,7 @@ export default function Home() {
       <Steps />
       <Services />
       <Career />
-      <Contact asPage={false} className='py-20 xl:py-32' />
+      <Contact className='py-20 xl:py-32' />
       <Footer isDark />
       <StructuredData />
     </>
