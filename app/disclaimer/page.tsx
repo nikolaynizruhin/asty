@@ -1,6 +1,16 @@
 import Content from "@/components/content"
+import app from "@/config/app"
+import { Metadata } from "next"
 
-export default function Privacy() {
+export const metadata: Metadata = {
+  title: 'Правові застереження',
+  description: 'Власником веб-сайту https://www.asty.com.ua є ТОВ "АСТІ ЮКРЕЙН" (код ЄДРПОУ 43976362), яка здійснює адміністрування цього веб-сайту. Детальіше - на сайті www.asty.com.ua',
+  alternates: {
+    canonical: app.url + '/disclaimer',
+  },
+}
+
+export default function Disclaimer() {
   return (
     <Content title="Правові застереження">
       <p>Власником веб-сайту <strong>https://www.asty.com.ua</strong> є <strong>ТОВ &quot;АСТІ ЮКРЕЙН&quot;</strong> (код ЄДРПОУ 43976362), яка здійснює адміністрування цього веб-сайту. ТОВ &quot;АСТІ ЮКРЕЙН&quot; забезпечує безкоштовний доступ до даного веб-сайту для всіх бажаючих. Права на всі логотипи, торгові марки, тексти, назви, зміст, фотографії та зображення, інші права інтелектуальної власності стосовно інформації, що міститься на веб-сайті, належать ТОВ &quot;АСТІ ЮКРЕЙН&quot; і захищені законодавством України. Це правило не стосується випадків, коли конкретна інформація належить третім особам, про що повинно бути прямо зазначено в тексті.</p>

@@ -1,9 +1,13 @@
 import Content from "@/components/content"
+import app from "@/config/app"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: 'Політика конфіденційності',
-  description: "Політика конфіденційності встановлює порядок отримання, зберігання, обробки, використання і розкриття персональних даних користувача веб-сайту asty.com.ua"
+  description: "Політика конфіденційності встановлює порядок отримання, зберігання, обробки, використання і розкриття персональних даних користувача веб-сайту asty.com.ua",
+  alternates: {
+    canonical: app.url + '/privacy',
+  },
 }
 
 export default function Privacy() {

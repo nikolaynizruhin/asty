@@ -19,6 +19,9 @@ export function generateMetadata({ params }: { params: { category?: Category[] }
       return {
         title,
         description,
+        alternates: {
+          canonical: app.url + '/projects/architecture',
+        },
         openGraph: {
           title,
           description,
@@ -33,6 +36,9 @@ export function generateMetadata({ params }: { params: { category?: Category[] }
       return {
         title,
         description,
+        alternates: {
+          canonical: app.url + '/projects/interior',
+        },
         openGraph: {
           title,
           description,
@@ -47,6 +53,9 @@ export function generateMetadata({ params }: { params: { category?: Category[] }
       return {
         title,
         description,
+        alternates: {
+          canonical: app.url + '/projects/commerce',
+        },
         openGraph: {
           title,
           description,
@@ -61,6 +70,9 @@ export function generateMetadata({ params }: { params: { category?: Category[] }
       return {
         title,
         description,
+        alternates: {
+          canonical: app.url + '/projects',
+        },
         openGraph: {
           title,
           description,
