@@ -4,7 +4,7 @@ import { MetadataRoute } from 'next'
  
 export default function sitemap(): MetadataRoute.Sitemap {
   const projects = projectList.map(project => ({
-    url: `${app.url}/projects/${project.slug}`,
+    url: `${app.url}/project/${project.slug}`,
     lastModified: project.updatedAt,
   }));
 
