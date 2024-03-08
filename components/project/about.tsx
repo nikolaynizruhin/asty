@@ -10,9 +10,9 @@ export default function About({ project }: { project: Project }) {
   const details = getProjectDetails(project);
 
   return (
-    <div className="bg-white py-12 md:py-48 xl:py-64">
+    <div className="bg-white py-12 md:py-48 xl:py-56">
       <Title text="ДЕТАЛІ" className="-mb-40 mx-[9vw] hidden md:flex" />
-      <Container className="mt-10 grid grid-cols-1 gap-3 xl:gap-8 xl:grid-cols-2">
+      <Container className="mt-3 grid grid-cols-1 gap-3 xl:gap-8 xl:grid-cols-2">
         <div>
           <Heading className="mb-10 xl:mb-9 max-w-[330px]" isDark>Концепт</Heading>
           <p className="text-base font-light text-[#666]">
