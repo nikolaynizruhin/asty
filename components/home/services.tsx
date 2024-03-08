@@ -39,7 +39,7 @@ export default function Services() {
           height="768"
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[0.25]"
         />
-        <Container className="py-7 md:py-28 xl:py-48">
+        <Container className="py-14 md:py-28 xl:py-48">
           <div className="xl:w-1/2">
             <Heading>Наші послуги</Heading>
             <p className="mt-7 md:mt-10 xl:mt-6 text-base font-light text-white">

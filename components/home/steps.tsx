@@ -44,7 +44,7 @@ const steps: Media[] = [
 
 export default function Steps() {
   return (
-    <div className="py-7 md:py-28 xl:py-48">
+    <div className="py-14 md:py-28 xl:py-48">
       <Container>
         <div className="xl:pl-[50%]">
           <Heading isDark>Як ми працюємо</Heading>
