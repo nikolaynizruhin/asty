@@ -31,7 +31,7 @@ const services: Media[] = [
 export default function Services() {
   return (
     <div className="bg-[#1a1a1a]">
-      <div className="relative isolate overflow-hidden pt-14">
+      <div className="relative isolate overflow-hidden">
         <Image
           src="/images/services.jpg"
           alt={addMetadata('Послуги')}

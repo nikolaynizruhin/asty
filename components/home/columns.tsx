@@ -4,7 +4,7 @@ import Container from "@/components/container";
 
 export default function Columns({ id, title, heading, children, button }: { id: string, title: string, heading: string, children: React.ReactNode, button?: React.ReactNode }) {
   return (
-    <div id={id} className="bg-white py-14 sm:py-48">
+    <div id={id} className="bg-white py-14 md:py-32 xl:py-48">
       <Title text={title} className="-mb-[8vw] 2xl:-mb-[10vw] mx-[9vw] hidden md:flex" />
       <Container>
         <Heading className="max-w-[250px]" isDark>{heading}</Heading>
