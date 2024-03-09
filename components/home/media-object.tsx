@@ -1,7 +1,7 @@
-import { MediaObject } from "@/lib/definitions";
+import { MediaObject as MediaOnjectType } from "@/lib/definitions";
 import Icon from "../icon";
 
-export default function MediaObject({ media, isDark = false }: { media: MediaObject, isDark?: boolean }) {
+export default function MediaObject({ media, isDark = false }: { media: MediaOnjectType, isDark?: boolean }) {
   return (
     <div className="flex gap-7 md:gap-0 md:flex-col relative">
       {media?.id && <div className="hidden md:block absolute font-bold text-[180px] text-black opacity-[0.02] -left-20 -top-24 -z-10">{media.id}</div>}
