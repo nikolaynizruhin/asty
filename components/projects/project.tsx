@@ -1,9 +1,9 @@
-import { Project } from "@/lib/definitions";
+import { Project as ProjectType } from "@/lib/definitions";
 import { addMetadata } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Project({ project }: { project: Project }) {
+export default function Project({ project }: { project: ProjectType }) {
   return (
     <Link href={`/project/${project.slug}`} className='group relative'>
       <h2 className='text-[#f2f2f2] p-6 text-2xl font-bold absolute bottom-0 z-10 opacity-0 group-hover:opacity-100 transition-opacity ease-in duration-300'>
