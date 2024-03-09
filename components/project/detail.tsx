@@ -1,7 +1,7 @@
 import Icon from "@/components/icon"
-import { Detail } from "@/lib/definitions"
+import { Detail as DetailType } from "@/lib/definitions"
 
-export default function Detail({ detail }: { detail: Detail }) {
+export default function Detail({ detail }: { detail: DetailType }) {
   return (
     <div className="flex">
       <div className="flex items-center justify-center xl:w-20 mr-9 xl:mr-0">
