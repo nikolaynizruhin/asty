@@ -1,7 +1,7 @@
-import { Image as ProjectImage } from "@/lib/definitions";
+import { Image as ProjectImageType } from "@/lib/definitions";
 import Image from "next/image";
 
-export default function ProjectImage({ image }: { image: ProjectImage}) {
+export default function ProjectImage({ image }: { image: ProjectImageType }) {
   return (
     <div className={`size-full overflow-hidden ${image.isLandscape ? 'aspect-[3/2] md:col-span-2' : 'aspect-[2/3]'}`}>
       <Image
