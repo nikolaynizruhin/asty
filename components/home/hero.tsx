@@ -2,6 +2,7 @@ import Header from "@/components/header"
 import Image from "next/image"
 import SocialIcons from "../social-icons"
 import { addMetadata } from "@/lib/utils"
+import Container from "../container"
 
 export default function Hero() {
   return (
@@ -16,15 +17,15 @@ export default function Hero() {
           priority={true}
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-50"
         />
-        <div className="mx-auto max-w-3xl px-4 py-52 md:py-24 xl:py-48">
+        <Container className="py-52 md:py-24 xl:py-48">
           <h1 className="text-4xl font-semibold text-white md:text-5xl xl:text-7xl text-balance">
             Дизайн інтерʼєру та архітектурні рішення від ASTY
           </h1>
           <p className="mt-8 font-light text-sm text-gray-300">
             Коли кожний квадратний метр має значення
           </p>
-        </div>
-        <SocialIcons className="flex gap-8 p-4 lg:py-12 lg:px-16 text-white" />
+        </Container>
+        <SocialIcons className="flex gap-8 p-4 md:px-8 lg:py-8 xl:px-16 text-white max-w-[550px] mx-auto md:max-w-none" />
       </div>
     </div>
   )
