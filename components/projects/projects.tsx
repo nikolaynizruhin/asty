@@ -1,10 +1,10 @@
 import Title from '@/components/title'
 import Link from 'next/link'
-import { Category, Filter, Project } from '@/lib/definitions'
+import { Category, Filter as FilterType, Project } from '@/lib/definitions'
 import { getProjectsByCategory } from '@/lib/projects'
 import ProjectComponent from './project'
 
-const filters: Filter[] = [
+const filters: FilterType[] = [
   { name: 'Всі', href: '/projects', isActive: (category?: Category) => !category },
   { name: 'Архітектура', href: '/projects/architecture', isActive: (category?: Category) => category === 'architecture' },
   { name: 'Інтерʼєр', href: '/projects/interior', isActive: (category?: Category) => category === 'interior' },
@@ -27,7 +27,7 @@ export default function Projects({ category }: { category?: Category }) {
   )
 }
 
-function Filter({ filter, category, isLast }: { filter: Filter, category?: Category, isLast: boolean }) {
+function Filter({ filter, category, isLast }: { filter: FilterType, category?: Category, isLast: boolean }) {
   return (
     <Link href={filter.href} scroll={false} className={`${filter.isActive(category) ? 'text-[#121212]' : '' } ${isLast ? '' : 'mr-5 md:mr-12 xl:mr-24 pr-4'} xl:uppercase font-semibold`}>
       {filter.name}
