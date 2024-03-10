@@ -46,7 +46,7 @@ export default function Services() {
               Ми ретельно продумуємо всі технічні аспекти проєкту пропонуючи, сучасні та функціональні рішення, які ми можемо реалізувати з нашими партнерами.
             </p>
           </div>
-          <div className="mx-auto mt-12 md:mt-16 max-w-2xl sm:mt-20 lg:mt-20 lg:max-w-none">
+          <div className="mx-auto mt-12 md:mt-20 max-w-2xl lg:max-w-none">
             <dl className="grid max-w-xl grid-cols-1 gap-x-20 xl:gap-x-32 gap-y-6 md:gap-y-16 xl:gap-y-32 lg:max-w-none md:grid-cols-2">
               {services.map((service, index) => <MediaObject key={index} media={service} />)}
             </dl>

@@ -52,7 +52,7 @@ export default function Steps() {
             Ми любимо сприймати ваше бачення, створюючи елегантний, оригінальний і розумний спосіб втілення ваших задумів у життя.
           </p>
         </div>
-        <div className="mx-auto mt-12 md:mt-16 max-w-2xl sm:mt-20 lg:mt-20 lg:max-w-none">
+        <div className="mx-auto mt-12 md:mt-20 max-w-2xl lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 md:grid-cols-2 gap-x-20 xl:gap-x-32 gap-y-6 md:gap-y-16 xl:gap-y-32 lg:max-w-none xl:grid-cols-3">
             {steps.map(step => <MediaObject key={step.id} media={step} isDark />)}
           </dl>
