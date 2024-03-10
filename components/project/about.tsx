@@ -23,7 +23,7 @@ export default function About({ project }: { project: Project }) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7 xl:grid-cols-1">
             {details.map((detail, index) => <Detail key={index} detail={detail} />)}
           </div>
-          <div className="text-base font-light text-[#666] flex items-center mt-16 xl:mt-24">
+          <div className="text-base font-light text-[#666] flex items-center mt-14 md:mt-16 xl:mt-24">
             Підпишись:
             <SocialIcons className="flex gap-6 ml-7" size={12} />
           </div>
