@@ -17,7 +17,7 @@ export default function Hero() {
           priority={true}
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-50"
         />
-        <Container className="py-52 md:py-24 xl:py-48">
+        <Container className="py-52 md:py-24 xl:py-52">
           <h1 className="text-4xl font-semibold text-white md:text-5xl xl:text-7xl text-balance">
             Дизайн інтерʼєру та архітектурні рішення від ASTY
           </h1>
