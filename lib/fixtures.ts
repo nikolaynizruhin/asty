@@ -243,6 +243,20 @@ const projects: Project[] = [
   },
   {
     id: 17,
+    slug: 'river-garden',
+    name: 'River Garden',
+    title: 'Архітектура та дизайн будинку River Garden',
+    description: 'Оазис в парку серед міста',
+    concept: "Елегантний, функціональний та вишуканий будинок, побудований з природних матеріалів — це місце, в якому ви відчуєте гармонію із собою і світом навколо. Два просторих поверхи, літня тераса для душевних бесід, лаконічний фасад з панорамними вікнами і розумне планування — все це гарантує комфорт новим власникам. Особливим завданням було створити дивовижну атмосферу, куди хочеться повертатися, адже тут завжди буде панувати затишок і умиротворення.",
+    category: 'architecture',
+    location: "Kyiv, Ukraine",
+    area: "1450 кв.м",
+    date: "12 місяців",
+    style: "Модернізм",
+    updatedAt: "2024-04-20",
+  },
+  {
+    id: 18,
     slug: 'riviera-2',
     name: 'Riviera Village 2',
     title: 'Елегантний дизайн будинку Riviera Village',
@@ -256,7 +270,7 @@ const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 18,
+    id: 19,
     slug: 'svitanok',
     name: 'Svitanok',
     title: 'Архітектура та дизайн будинку в стилі модернізм в Карпатах',
@@ -270,7 +284,7 @@ const projects: Project[] = [
     updatedAt: "2024-03-02",
   },
   {
-    id: 19,
+    id: 20,
     slug: 'boat-house',
     name: 'Boathouse',
     title: 'Архітектура та дизайн елінгу на Дніпрі',
@@ -284,7 +298,7 @@ const projects: Project[] = [
     updatedAt: "2024-03-02",
   },
   {
-    id: 20,
+    id: 21,
     slug: 'kozyn-2',
     name: 'Kozyn 2',
     title: 'Архітектура будинку в стилі мінімалізм Kozyn',
@@ -298,7 +312,7 @@ const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 21,
+    id: 22,
     slug: 'goodlife-park-14',
     name: 'Goodlife Park 14',
     title: 'Дизайн приватного будинку в лісі Goodlife Park',
@@ -312,7 +326,7 @@ const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 22,
+    id: 23,
     slug: 'goodlife-park-15',
     name: 'Goodlife Park 15',
     title: 'Архітектура будинку в стилі модернізм Goodlife Park',
@@ -326,7 +340,7 @@ const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 23,
+    id: 24,
     slug: 'goodlife-park-13',
     name: 'Goodlife Park 13',
     title: 'Лаконічний дизайн двоповерхового будинку Goodlife Park',
@@ -340,7 +354,7 @@ const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 24,
+    id: 25,
     slug: 'goodlife-park-10',
     name: 'Goodlife Park 10',
     title: 'Дизайн будинку в котеджному містечку Goodlife Park',
@@ -354,7 +368,7 @@ const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 25,
+    id: 26,
     slug: 'bars',
     name: 'Gas Station BARS',
     title: 'Архітектура та дизайн для АЗК Gas Station BARS',
@@ -368,7 +382,7 @@ const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 26,
+    id: 27,
     slug: 'goodlife-park-11',
     name: 'Goodlife Park 11',
     title: 'Функціональний та мінімалістичний дизайн будинку Goodlife Park',
@@ -382,7 +396,7 @@ const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 27,
+    id: 28,
     slug: 'goodlife-park-12',
     name: 'Goodlife Park 12',
     title: 'Дизайн-концепт будинку в лісі Goodlife Park',
@@ -396,7 +410,7 @@ const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 28,
+    id: 29,
     slug: 'riverstone',
     name: 'Riverstone',
     title: 'Дизайн затишної квартири в ЖК Riverstone',
@@ -411,7 +425,7 @@ const projects: Project[] = [
     updatedAt: "2024-03-02",
   },
   {
-    id: 29,
+    id: 30,
     slug: 'park-avenue-vip',
     name: 'Park Avenue Vip',
     title: "Вишуканий дизайн інтерʼєру в ЖК Park Avenue Vip",
