@@ -3,7 +3,7 @@
 import { useFormState } from 'react-dom'
 import Modal from "@/components/modal"
 import Input from "@/components/input"
-import { Dialog } from '@headlessui/react'
+import { DialogTitle } from '@headlessui/react'
 import { sendContactEmail } from "../lib/actions"
 import { useThankModal } from '../lib/hooks'
 import Heading from './heading'
@@ -18,9 +18,9 @@ export default function ContactModal({ open, setOpen, setOpenThank }: { open: bo
   return (
     <Modal open={open} setOpen={setOpen}>
       <form action={action}>
-        <Dialog.Title as='div'>
+        <DialogTitle>
           <Heading className='md:max-w-[350px] mb-9 xl:mb-20'>Напишіть нам</Heading>
-        </Dialog.Title>
+        </DialogTitle>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-7 gap-x-10 xl:gap-x-40 md:mr-6 xl:mr-24">
           <Input name="name" label="Імʼя" required errors={state.errors?.name} />
           <Input name="message" label="Повідомлення" required errors={state.errors?.message} />

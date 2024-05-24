@@ -1,6 +1,6 @@
 'use client'
 
-import { Dialog } from '@headlessui/react'
+import { Dialog, DialogPanel } from '@headlessui/react'
 import { useState } from 'react'
 import Icon from './icon'
 import Link from 'next/link'
@@ -57,9 +57,9 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
           </Link>
         </div>
       </nav>
-      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+      <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-20" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-[rgba(31,31,31,0.99)] px-4 py-4 sm:max-w-sm">
+        <DialogPanel className="fixed inset-y-0 right-0 z-20 w-full overflow-y-auto bg-[rgba(31,31,31,0.99)] px-4 py-4 sm:max-w-sm">
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5 outline-none">
               <span className="sr-only">ASTY</span>
@@ -87,7 +87,7 @@ export default function Header({ isDark = false }: { isDark?: boolean }) {
               <SocialIcons className="mt-2 flex justify-center gap-7 px-3 py-6 text-[#f2f2f2]" />
             </div>
           </div>
-        </Dialog.Panel>
+        </DialogPanel>
       </Dialog>
     </header>
   )
