@@ -10,7 +10,11 @@ import { addRobots, getSentence } from '@/lib/utils'
 import app from '@/config/app'
 import Contact from '@/components/contact'
 
-export function generateMetadata({ params, searchParams }: { params: { slug: string }, searchParams: object }): Metadata {
+export async function generateMetadata(
+  props: { params: Promise<{ slug: string }>, searchParams: Promise<object> }
+): Promise<Metadata> {
+  const searchParams = await props.searchParams;
+  const params = await props.params;
   const project = getProjectBySlug(params.slug)
 
   const metadata: Metadata = {
@@ -30,9 +34,10 @@ export function generateMetadata({ params, searchParams }: { params: { slug: str
   return addRobots(metadata, searchParams)
 }
 
-export default function Project({ params }: { params: { slug: string }}) {
+export default async function Project(props: { params: Promise<{ slug: string }>}) {
+  const params = await props.params;
   const project = getProjectBySlug(params.slug)
-  
+
   if (!project) {
     notFound();
   }

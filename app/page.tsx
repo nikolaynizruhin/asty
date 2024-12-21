@@ -11,7 +11,8 @@ import { addRobots } from '@/lib/utils'
 import app from '@/config/app'
 import StructuredData from '@/components/home/structured-data'
 
-export function generateMetadata({ searchParams }: { searchParams: object }): Metadata {
+export async function generateMetadata(props: { searchParams: Promise<object> }): Promise<Metadata> {
+  const searchParams = await props.searchParams;
   const metadata: Metadata = {
     title: "Студія дизайну інтерʼєру ASTY",
     description: "ASTY – архітектурно-дизайнерське бюро, яке працює в сфері дизайну інтер’єру та архітектури по всьому світі ➣ Коли кожний квадратний метр має значення",

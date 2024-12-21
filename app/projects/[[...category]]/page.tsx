@@ -9,7 +9,11 @@ import { addRobots, isCategory } from '@/lib/utils'
 import { notFound } from 'next/navigation'
 import app from '@/config/app'
 
-export function generateMetadata({ params, searchParams }: { params: { category?: Category[] }, searchParams: object }): Metadata {
+export async function generateMetadata(
+  props: { params: Promise<{ category?: Category[] }>, searchParams: Promise<object> }
+): Promise<Metadata> {
+  const searchParams = await props.searchParams;
+  const params = await props.params;
   const category = params?.category?.[0]
   let metadata;
 
@@ -92,7 +96,8 @@ export function generateMetadata({ params, searchParams }: { params: { category?
   return addRobots(metadata, searchParams)
 }
 
-export default function Projects({ params }: { params: { category?: Category[] }}) {
+export default async function Projects(props: { params: Promise<{ category?: Category[] }>}) {
+  const params = await props.params;
   const category = params?.category?.[0]
 
   if (!isCategory(category)) {

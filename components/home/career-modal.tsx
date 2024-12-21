@@ -1,6 +1,6 @@
 'use client'
 
-import { useFormState } from 'react-dom'
+import { useActionState } from "react";
 import Modal from "@/components/modal"
 import Input from "@/components/input"
 import { DialogTitle } from '@headlessui/react'
@@ -11,7 +11,7 @@ import { SubmitButton } from '@/components/submit-button'
 import TermsCheckbox from '../terms-checkbox'
 
 export default function ThankModal({ open, setOpen, setOpenThank }: { open: boolean; setOpen: (open: boolean) => void; setOpenThank: (open: boolean) => void }) {
-  const [state, action] = useFormState(sendCareerEmail, { success: false, errors: {} })
+  const [state, action] = useActionState(sendCareerEmail, { success: false, errors: {} })
 
   useThankModal(state.success, setOpen, setOpenThank);
 
