@@ -1,6 +1,14 @@
 import Errors from "./errors";
 
-export default function Input({ name, label, type = 'text', errors, labelClasses, ...props }: { name: string, label: string, type?: string, errors?: string[], labelClasses?: string, [key: string]: any }) {
+export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+  name: string;
+  label: string;
+  type?: string;
+  errors?: string[];
+  labelClasses?: string;
+}
+
+export default function Input({ name, label, type = 'text', errors, labelClasses, ...props }: InputProps) {
   return (
     <div>
       <div className="flex items-center group">

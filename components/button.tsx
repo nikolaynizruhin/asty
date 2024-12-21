@@ -1,6 +1,12 @@
 'use client'
 
-export default function Button({ children, className, isDark = false, ...props }: { children: string, className?: string, isDark?: boolean, [key: string]: any }) {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  children: string;
+  className?: string;
+  isDark?: boolean;
+}
+
+export default function Button({ children, className = '', isDark = false, ...props }: ButtonProps) {
   const classes = `${isDark 
     ? 'border-white text-white hover:text-black hover:bg-white'
     : 'border-black text-black hover:text-white hover:bg-black'

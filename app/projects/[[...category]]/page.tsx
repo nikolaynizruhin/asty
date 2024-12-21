@@ -19,8 +19,8 @@ export async function generateMetadata(
 
   switch (category) {
     case 'architecture': {
-      let title = 'Архітектурні проекти та рішення'
-      let description = "Архітектурні проекти та рішення ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY"
+      const title = 'Архітектурні проекти та рішення'
+      const description = "Архітектурні проекти та рішення ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY"
 
       metadata = {
         title,
@@ -38,8 +38,8 @@ export async function generateMetadata(
       break
     }
     case 'interior': {
-      let title = "Дизайн-проекти інтер'єру"
-      let description = "Дизайн-проекти інтер'єру ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY"
+      const title = "Дизайн-проекти інтер'єру"
+      const description = "Дизайн-проекти інтер'єру ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY"
 
       metadata = {
         title,
@@ -57,8 +57,8 @@ export async function generateMetadata(
       break
     }
     case 'commerce': {
-      let title = "Проєкти дизайну для комерційних приміщень"
-      let description = "Дизайн-проекти інтер'єру та архітектурні рішення для комерційних приміщень ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY"
+      const title = "Проєкти дизайну для комерційних приміщень"
+      const description = "Дизайн-проекти інтер'єру та архітектурні рішення для комерційних приміщень ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY"
 
       metadata = {
         title,
@@ -76,8 +76,8 @@ export async function generateMetadata(
       break
     }
     default: {
-      let title = 'Проєкти'
-      let description = "Дизайн-проекти інтер'єру, архітектурні проекти, рішення з комплектації та меблювання ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY"
+      const title = 'Проєкти'
+      const description = "Дизайн-проекти інтер'єру, архітектурні проекти, рішення з комплектації та меблювання ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY"
 
       metadata = {
         title,
