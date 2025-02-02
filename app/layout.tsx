@@ -51,8 +51,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="uk">
-      <body className={`${circe.variable} font-sans antialiased`}>
+    <html lang="uk" className={`${circe.variable} font-sans antialiased`}>
+      <body>
         {children}
         <SpeedInsights />
         <Analytics />

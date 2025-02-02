@@ -10,7 +10,7 @@ export default function Project({ project }: { project: ProjectType }) {
         {project.name}
       </h2>
       <Image
-        className="object-cover aspect-[325/232] w-full brightness-[.8] group-hover:brightness-[0.3] transition-all ease-in duration-300"
+        className="object-cover aspect-325/232 w-full brightness-[.8] group-hover:brightness-[0.3] transition-all ease-in duration-300"
         src={`/images/projects/${project.slug}/hero.jpg`}
         width="325"
         height="232"
