@@ -1,7 +1,7 @@
 import { Suspense } from "react"
 import DynamicMarker from "@/components/dynamic-marker"
 import Footer from "@/components/footer"
-import Body, { Fallback } from "@/components/project/body"
+import Body, { Skeleton } from "@/components/project/body"
 import { projects } from "@/lib/fixtures"
 import { getProjectBySlug } from "@/lib/projects"
 import type { Metadata } from "next"
@@ -44,7 +44,7 @@ export function generateStaticParams() {
 export default function Project(props: { params: Promise<{ slug: string }> }) {
   return (
     <>
-      <Suspense fallback={<Fallback />}>
+      <Suspense fallback={<Skeleton />}>
         <Body params={props.params} />
       </Suspense>
       <Contact className="pb-20 xl:pb-32" />

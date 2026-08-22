@@ -28,7 +28,7 @@ export default async function Body({
   )
 }
 
-export function Fallback() {
+export function Skeleton() {
   return (
     <div className="bg-gray-900">
       <Header />

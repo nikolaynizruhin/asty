@@ -36,9 +36,9 @@ export default function Projects({
   params: Promise<{ category?: Category[] }>
 }) {
   return (
-    <div className="mx-auto max-w-[550px] bg-white px-4 pt-24 md:max-w-none md:px-8 xl:px-16 xl:pt-56">
+    <div className="mx-auto max-w-137.5 bg-white px-4 pt-24 md:max-w-none md:px-8 xl:px-16 xl:pt-56">
       <Title text="ПРОЄКТИ" className="hidden px-[3vw] xl:flex" />
-      <Suspense fallback={<Fallback />}>
+      <Suspense fallback={<Skeleton />}>
         <ProjectList params={params} />
       </Suspense>
     </div>
@@ -70,7 +70,7 @@ async function ProjectList({
   )
 }
 
-function Fallback() {
+function Skeleton() {
   return (
     <>
       <Filters />
@@ -85,7 +85,7 @@ function Fallback() {
 
 function Grid({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-[2px]">
+    <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-0.5">
       {children}
     </div>
   )
