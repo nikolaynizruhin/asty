@@ -1,4 +1,4 @@
-export default {
+const company = {
   name: 'ТОВ «АСТІ ЮКРЕЙН»',
   email: 'office@asty.com.ua',
   phone: '+38 067 777 74 74',
@@ -13,3 +13,5 @@ export default {
   facebook: 'https://www.facebook.com/asty.ukraine',
   map: 'https://maps.app.goo.gl/Z5FNf2bJjr85ek1t9',
 }
+
+export default company
