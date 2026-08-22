@@ -37,7 +37,7 @@ function PortraitImages({ project }: { project: Project }) {
       ))}
       <div className="flex flex-col justify-center py-10 md:px-10 md:py-0 lg:px-28">
         <Heading className="mb-7" isDark>
-          Концепт
+          Опис
         </Heading>
         <p className="font-light">{project.overview}</p>
       </div>
