@@ -2,7 +2,8 @@ import { Suspense } from "react"
 import DynamicMarker from "@/components/dynamic-marker"
 import Footer from "@/components/footer"
 import Body, { Fallback } from "@/components/project/body"
-import { getProjectBySlug, getProjectSlugs } from "@/lib/projects"
+import { projects } from "@/lib/fixtures"
+import { getProjectBySlug } from "@/lib/projects"
 import type { Metadata } from "next"
 import { addRobots, getSentence } from "@/lib/utils"
 import app from "@/config/app"
@@ -37,7 +38,7 @@ export async function generateMetadata(props: {
 }
 
 export function generateStaticParams() {
-  return getProjectSlugs().map((slug) => ({ slug }))
+  return projects.map((project) => ({ slug: project.slug }))
 }
 
 export default function Project(props: { params: Promise<{ slug: string }> }) {

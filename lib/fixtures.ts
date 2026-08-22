@@ -1,10 +1,6 @@
 import { Project, Category } from "./definitions"
 
-export const categories: Category[] = [
-  "architecture",
-  "interior",
-  "commerce",
-]
+export const categories: Category[] = ["architecture", "interior", "commerce"]
 
 export const projects: Project[] = [
   {
