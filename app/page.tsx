@@ -10,7 +10,6 @@ import Services from '@/components/home/services'
 import { addRobots } from '@/lib/utils'
 import app from '@/config/app'
 import StructuredData from '@/components/home/structured-data'
-
 export async function generateMetadata(props: { searchParams: Promise<object> }): Promise<Metadata> {
   const searchParams = await props.searchParams;
   const metadata: Metadata = {

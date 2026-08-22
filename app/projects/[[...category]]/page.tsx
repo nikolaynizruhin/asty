@@ -8,7 +8,6 @@ import { Metadata } from 'next'
 import { addRobots, isCategory } from '@/lib/utils'
 import { notFound } from 'next/navigation'
 import app from '@/config/app'
-
 export async function generateMetadata(
   props: { params: Promise<{ category?: Category[] }>, searchParams: Promise<object> }
 ): Promise<Metadata> {

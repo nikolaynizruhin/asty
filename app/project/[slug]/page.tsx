@@ -9,7 +9,6 @@ import type { Metadata } from 'next'
 import { addRobots, getSentence } from '@/lib/utils'
 import app from '@/config/app'
 import Contact from '@/components/contact'
-
 export async function generateMetadata(
   props: { params: Promise<{ slug: string }>, searchParams: Promise<object> }
 ): Promise<Metadata> {

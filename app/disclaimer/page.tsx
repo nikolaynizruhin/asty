@@ -1,7 +1,6 @@
 import Content from "@/components/content"
 import app from "@/config/app"
 import { Metadata } from "next"
-
 export const metadata: Metadata = {
   title: 'Правові застереження',
   description: 'Власником веб-сайту https://www.asty.com.ua є ТОВ "АСТІ ЮКРЕЙН" (код ЄДРПОУ 43976362), яка здійснює адміністрування цього веб-сайту. Детальіше - на сайті www.asty.com.ua',
