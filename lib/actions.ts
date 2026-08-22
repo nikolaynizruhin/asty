@@ -3,6 +3,7 @@
 import sendEmail from "./mail";
 import { careerSchema, contactSchema } from "./validations";
 import { getBuffer } from "./utils";
+import { z } from "zod";
 
 export type ContactState = {
   errors?: {
@@ -25,7 +26,7 @@ export async function sendContactEmail(prevState: ContactState, formData: FormDa
   if (!validatedFields.success) {
     return {
       success: false,
-      errors: validatedFields.error.flatten().fieldErrors,
+      errors: z.flattenError(validatedFields.error).fieldErrors,
     }
   }
 
@@ -64,7 +65,7 @@ export async function sendCareerEmail(prevState: CareerState, formData: FormData
   if (!validatedFields.success) {
     return {
       success: false,
-      errors: validatedFields.error.flatten().fieldErrors,
+      errors: z.flattenError(validatedFields.error).fieldErrors,
     }
   }
 
