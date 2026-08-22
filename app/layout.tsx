@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import localFont from "next/font/local"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import MetaPixel from "@/components/meta-pixel"
 import app from "@/config/app"
 import { addMetadata } from "@/lib/utils"
 const circe = localFont({
@@ -55,6 +56,7 @@ export default function RootLayout({
     <html lang="uk" className={`${circe.variable} font-sans antialiased`}>
       <body>
         {children}
+        <MetaPixel />
         <SpeedInsights />
         <Analytics />
       </body>
