@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import { useState } from "react"
 import CareerModal from "./career-modal"
@@ -11,9 +11,7 @@ export default function CareerButton() {
 
   return (
     <>
-      <Button onClick={() => setOpen(true)}>
-        ДАВАЙТЕ ЗНАЙОМИТИСЬ
-      </Button>
+      <Button onClick={() => setOpen(true)}>ДАВАЙТЕ ЗНАЙОМИТИСЬ</Button>
       <CareerModal open={open} setOpen={setOpen} setOpenThank={setOpenThank} />
       <ThankModal open={openThank} setOpen={setOpenThank} />
     </>

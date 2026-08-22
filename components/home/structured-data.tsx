@@ -6,9 +6,10 @@ const organization = {
   "@type": "Organization",
   name: app.name,
   legalName: company.name,
-  description: 'ASTY – архітектурно-дизайнерське бюро, яке працює в сфері дизайну інтер’єру та архітектури по всьому світі',
-  logo: app.url + '/images/logo-dark.svg',
-  image: app.url + '/images/logo-dark.svg',
+  description:
+    "ASTY – архітектурно-дизайнерське бюро, яке працює в сфері дизайну інтер’єру та архітектури по всьому світі",
+  logo: app.url + "/images/logo-dark.svg",
+  image: app.url + "/images/logo-dark.svg",
   url: app.url,
   sameAs: [company.instagram, company.facebook],
   telephone: company.phone,
@@ -23,10 +24,15 @@ const organization = {
   contactPoint: {
     "@type": "ContactPoint",
     telephone: company.phone,
-    email: company.email
-  }
+    email: company.email,
+  },
 }
 
 export default function StructuredData() {
-  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }} />
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
+    />
+  )
 }

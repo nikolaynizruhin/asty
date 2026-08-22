@@ -1,7 +1,13 @@
-import Icon from "./icon";
-import company from "@/config/company";
+import Icon from "./icon"
+import company from "@/config/company"
 
-export default function SocialIcons({ className = "", size = 18 }: { className?: string, size?: number }) {
+export default function SocialIcons({
+  className = "",
+  size = 18,
+}: {
+  className?: string
+  size?: number
+}) {
   return (
     <div className={className}>
       <a href={company.instagram}>

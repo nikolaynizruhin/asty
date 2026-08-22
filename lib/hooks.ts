@@ -1,10 +1,14 @@
-import { useEffect } from 'react';
+import { useEffect } from "react"
 
-export function useThankModal(success: boolean, setOpen: (open: boolean) => void, setOpenThank: (open: boolean) => void) {
+export function useThankModal(
+  success: boolean,
+  setOpen: (open: boolean) => void,
+  setOpenThank: (open: boolean) => void
+) {
   useEffect(() => {
     if (success) {
-      setOpen(false);
-      setOpenThank(true);
+      setOpen(false)
+      setOpenThank(true)
     }
-  }, [success, setOpen, setOpenThank]);
+  }, [success, setOpen, setOpenThank])
 }

@@ -1,11 +1,11 @@
-import app from "@/config/app";
-import { Metadata } from "next";
-import { Category } from "./definitions";
+import app from "@/config/app"
+import { Metadata } from "next"
+import { Category } from "./definitions"
 
 export async function getBuffer(file: File): Promise<Buffer> {
-  const fileBuffer = await file.arrayBuffer();
+  const fileBuffer = await file.arrayBuffer()
 
-  return Buffer.from(fileBuffer);
+  return Buffer.from(fileBuffer)
 }
 
 export function isEmpty(object: object): boolean {
@@ -13,11 +13,11 @@ export function isEmpty(object: object): boolean {
 }
 
 export function getSentence(text: string): string {
-  return text.split('. ', 1)[0]
+  return text.split(". ", 1)[0]
 }
 
 export function removeWhitespaces(text: string): string {
-  return text.replace(/\s+/g, '')
+  return text.replace(/\s+/g, "")
 }
 
 export function addRobots(metadata: Metadata, searchParams: object): Metadata {
@@ -25,17 +25,19 @@ export function addRobots(metadata: Metadata, searchParams: object): Metadata {
     metadata.robots = { index: false, follow: true }
   }
 
-  return metadata;
+  return metadata
 }
 
 export function addMetadata(text: string): string {
-  return text + ' | ' + app.name
+  return text + " | " + app.name
 }
 
-export function isCategory(category: Category | undefined): category is Category {
+export function isCategory(
+  category: Category | undefined
+): category is Category {
   if (!category) {
     return true
   }
 
-  return ['architecture', 'interior', 'commerce'].includes(category)
+  return ["architecture", "interior", "commerce"].includes(category)
 }

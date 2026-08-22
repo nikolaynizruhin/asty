@@ -1,11 +1,17 @@
-'use client'
+"use client"
 
 import { useState } from "react"
 import Button from "./button"
 import ContactModal from "./contact-modal"
 import ThankModal from "./thank-modal"
 
-export default function ContactButton({ children, isDark = false }: { children: string, isDark?: boolean }) {
+export default function ContactButton({
+  children,
+  isDark = false,
+}: {
+  children: string
+  isDark?: boolean
+}) {
   const [open, setOpen] = useState(false)
   const [openThank, setOpenThank] = useState(false)
 
