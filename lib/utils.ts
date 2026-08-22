@@ -1,6 +1,7 @@
 import app from "@/config/app"
 import { Metadata } from "next"
-import { categories, Category } from "./definitions"
+import { Category } from "./definitions"
+import { categories } from "./fixtures"
 
 export async function getBuffer(file: File): Promise<Buffer> {
   const fileBuffer = await file.arrayBuffer()

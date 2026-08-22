@@ -1,6 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server"
-import { categories } from "@/lib/definitions"
-import projects from "@/lib/fixtures"
+import { projects, categories } from "@/lib/fixtures"
 
 // The project and category pages read their params inside <Suspense> so their
 // shells can be prefetched, which means a `notFound()` there streams too late

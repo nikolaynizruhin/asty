@@ -1,6 +1,6 @@
 import fs from "fs"
 import { Category, Image, Project, Detail } from "./definitions"
-import projects from "./fixtures"
+import { projects } from "./fixtures"
 import { addMetadata } from "./utils"
 
 export function getProjectBySlug(slug: string): Project | undefined {

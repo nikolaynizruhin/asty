@@ -1,6 +1,12 @@
-import { Project } from "./definitions"
+import { Project, Category } from "./definitions"
 
-const projects: Project[] = [
+export const categories: Category[] = [
+  "architecture",
+  "interior",
+  "commerce",
+]
+
+export const projects: Project[] = [
   {
     id: 1,
     slug: "warsawa-house",
@@ -548,5 +554,3 @@ const projects: Project[] = [
     updatedAt: "2024-03-02",
   },
 ]
-
-export default projects

@@ -1,19 +1,17 @@
 import app from "@/config/app"
-import { default as projectList } from "@/lib/fixtures"
+import { projects, categories } from "@/lib/fixtures"
 import { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const projects = projectList.map((project) => ({
+  const projectPages = projects.map((project) => ({
     url: `${app.url}/project/${project.slug}`,
     lastModified: project.updatedAt,
   }))
 
-  const categories = ["architecture", "interior", "commerce"].map(
-    (category) => ({
-      url: `${app.url}/projects/${category}`,
-      lastModified: "2024-03-05",
-    })
-  )
+  const categoryPages = categories.map((category) => ({
+    url: `${app.url}/projects/${category}`,
+    lastModified: "2024-03-05",
+  }))
 
   return [
     {
@@ -28,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${app.url}/projects`,
       lastModified: "2024-03-05",
     },
-    ...categories,
-    ...projects,
+    ...categoryPages,
+    ...projectPages,
   ]
 }
