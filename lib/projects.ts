@@ -7,6 +7,10 @@ export function getProjectBySlug(slug: string): Project | undefined {
   return projects.find((project) => project.slug === slug)
 }
 
+export function getProjectSlugs(): string[] {
+  return projects.map((project) => project.slug)
+}
+
 export function getProjectsByCategory(category?: Category): Project[] {
   return category
     ? projects.filter((project) => project.category === category)

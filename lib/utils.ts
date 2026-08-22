@@ -1,6 +1,6 @@
 import app from "@/config/app"
 import { Metadata } from "next"
-import { Category } from "./definitions"
+import { categories, Category } from "./definitions"
 
 export async function getBuffer(file: File): Promise<Buffer> {
   const fileBuffer = await file.arrayBuffer()
@@ -39,5 +39,5 @@ export function isCategory(
     return true
   }
 
-  return ["architecture", "interior", "commerce"].includes(category)
+  return categories.includes(category)
 }

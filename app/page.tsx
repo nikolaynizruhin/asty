@@ -1,4 +1,6 @@
 import { Metadata } from "next"
+import { Suspense } from "react"
+import DynamicMarker from "@/components/dynamic-marker"
 import Footer from "@/components/footer"
 import Hero from "@/components/home/hero"
 import About from "@/components/home/about"
@@ -38,6 +40,9 @@ export default function Home() {
       <Contact className="py-20 xl:py-32" />
       <Footer isDark />
       <StructuredData />
+      <Suspense>
+        <DynamicMarker />
+      </Suspense>
     </>
   )
 }
