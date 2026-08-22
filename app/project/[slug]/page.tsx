@@ -1,10 +1,8 @@
+import { Suspense } from "react"
+import DynamicMarker from "@/components/dynamic-marker"
 import Footer from "@/components/footer"
-import Hero from "@/components/project/hero"
-import About from "@/components/project/about"
-import Images from "@/components/project/images"
-import Pagination from "@/components/project/pagination"
-import { notFound } from "next/navigation"
-import { getProjectBySlug } from "@/lib/projects"
+import Body, { Fallback } from "@/components/project/body"
+import { getProjectBySlug, getProjectSlugs } from "@/lib/projects"
 import type { Metadata } from "next"
 import { addRobots, getSentence } from "@/lib/utils"
 import app from "@/config/app"
@@ -38,24 +36,21 @@ export async function generateMetadata(props: {
   return addRobots(metadata, searchParams)
 }
 
-export default async function Project(props: {
-  params: Promise<{ slug: string }>
-}) {
-  const params = await props.params
-  const project = getProjectBySlug(params.slug)
+export function generateStaticParams() {
+  return getProjectSlugs().map((slug) => ({ slug }))
+}
 
-  if (!project) {
-    notFound()
-  }
-
+export default function Project(props: { params: Promise<{ slug: string }> }) {
   return (
     <>
-      <Hero project={project} />
-      <About project={project} />
-      <Images project={project} />
-      <Pagination project={project} />
+      <Suspense fallback={<Fallback />}>
+        <Body params={props.params} />
+      </Suspense>
       <Contact className="pb-20 xl:pb-32" />
       <Footer isDark />
+      <Suspense>
+        <DynamicMarker />
+      </Suspense>
     </>
   )
 }

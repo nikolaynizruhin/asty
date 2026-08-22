@@ -5,7 +5,11 @@ import Link from "next/link"
 
 export default function Project({ project }: { project: ProjectType }) {
   return (
-    <Link href={`/project/${project.slug}`} className="group relative">
+    <Link
+      href={`/project/${project.slug}`}
+      prefetch={true}
+      className="group relative"
+    >
       <h2 className="absolute bottom-0 z-10 p-6 text-2xl font-bold text-[#f2f2f2] opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100">
         {project.name}
       </h2>

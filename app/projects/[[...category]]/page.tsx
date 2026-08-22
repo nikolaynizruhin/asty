@@ -1,12 +1,13 @@
+import { Suspense } from "react"
 import Header from "@/components/header"
+import DynamicMarker from "@/components/dynamic-marker"
 import Footer from "@/components/footer"
 import Contact from "@/components/projects/contact"
 import { default as ContactFooter } from "@/components/contact"
 import ProjectList from "@/components/projects/projects"
-import { Category } from "@/lib/definitions"
+import { categories, Category } from "@/lib/definitions"
 import { Metadata } from "next"
-import { addRobots, isCategory } from "@/lib/utils"
-import { notFound } from "next/navigation"
+import { addRobots } from "@/lib/utils"
 import app from "@/config/app"
 export async function generateMetadata(props: {
   params: Promise<{ category?: Category[] }>
@@ -100,23 +101,26 @@ export async function generateMetadata(props: {
   return addRobots(metadata, searchParams)
 }
 
-export default async function Projects(props: {
+export function generateStaticParams(): { category: Category[] }[] {
+  return [
+    { category: [] },
+    ...categories.map((category) => ({ category: [category] })),
+  ]
+}
+
+export default function Projects(props: {
   params: Promise<{ category?: Category[] }>
 }) {
-  const params = await props.params
-  const category = params?.category?.[0]
-
-  if (!isCategory(category)) {
-    notFound()
-  }
-
   return (
     <>
       <Header isDark />
-      <ProjectList category={category} />
+      <ProjectList params={props.params} />
       <Contact />
       <ContactFooter className="py-20 xl:py-32" />
       <Footer isDark />
+      <Suspense>
+        <DynamicMarker />
+      </Suspense>
     </>
   )
 }

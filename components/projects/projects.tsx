@@ -1,7 +1,10 @@
 import Title from "@/components/title"
 import Link from "next/link"
+import { Suspense } from "react"
 import { Category, Filter as FilterType, Project } from "@/lib/definitions"
 import { getProjectsByCategory } from "@/lib/projects"
+import { isCategory } from "@/lib/utils"
+import { notFound } from "next/navigation"
 import ProjectComponent from "./project"
 
 const filters: FilterType[] = [
@@ -27,27 +30,78 @@ const filters: FilterType[] = [
   },
 ]
 
-export default function Projects({ category }: { category?: Category }) {
-  const projects: Project[] = getProjectsByCategory(category)
-
+export default function Projects({
+  params,
+}: {
+  params: Promise<{ category?: Category[] }>
+}) {
   return (
     <div className="mx-auto max-w-[550px] bg-white px-4 pt-24 md:max-w-none md:px-8 xl:px-16 xl:pt-56">
       <Title text="ПРОЄКТИ" className="hidden px-[3vw] xl:flex" />
-      <div className="mt-11 text-xs text-[#828282]">
-        {filters.map((filter, index) => (
-          <Filter
-            key={index}
-            filter={filter}
-            category={category}
-            isLast={index === filters.length - 1}
-          />
-        ))}
-      </div>
-      <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-[2px]">
+      <Suspense fallback={<Fallback />}>
+        <ProjectList params={params} />
+      </Suspense>
+    </div>
+  )
+}
+
+async function ProjectList({
+  params,
+}: {
+  params: Promise<{ category?: Category[] }>
+}) {
+  const category = (await params)?.category?.[0]
+
+  if (!isCategory(category)) {
+    notFound()
+  }
+
+  const projects: Project[] = getProjectsByCategory(category)
+
+  return (
+    <>
+      <Filters category={category} />
+      <Grid>
         {projects.map((project) => (
           <ProjectComponent key={project.id} project={project} />
         ))}
-      </div>
+      </Grid>
+    </>
+  )
+}
+
+function Fallback() {
+  return (
+    <>
+      <Filters />
+      <Grid>
+        {Array.from({ length: 8 }, (_, index) => (
+          <div key={index} className="aspect-325/232 w-full bg-[#f2f2f2]" />
+        ))}
+      </Grid>
+    </>
+  )
+}
+
+function Grid({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-[2px]">
+      {children}
+    </div>
+  )
+}
+
+function Filters({ category }: { category?: Category }) {
+  return (
+    <div className="mt-11 text-xs text-[#828282]">
+      {filters.map((filter, index) => (
+        <Filter
+          key={index}
+          filter={filter}
+          category={category}
+          isLast={index === filters.length - 1}
+        />
+      ))}
     </div>
   )
 }

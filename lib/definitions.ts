@@ -44,7 +44,9 @@ export interface Filter {
   isActive: (category?: Category) => boolean
 }
 
-export type Category = "architecture" | "interior" | "commerce"
+export const categories = ["architecture", "interior", "commerce"] as const
+
+export type Category = (typeof categories)[number]
 
 export interface Project {
   id: number
