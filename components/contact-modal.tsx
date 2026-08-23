@@ -30,7 +30,7 @@ export default function ContactModal({
     <Modal open={open} setOpen={setOpen}>
       <form action={action}>
         <DialogTitle as="div">
-          <Heading className="mb-9 md:max-w-[350px] xl:mb-20">
+          <Heading className="mb-9 md:max-w-87.5 xl:mb-20">
             Напишіть нам
           </Heading>
         </DialogTitle>
