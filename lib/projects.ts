@@ -66,8 +66,8 @@ export function getProjectImages(project: Project): Image[] {
       return {
         src: "/images/projects/" + project.slug + "/" + image,
         alt: addMetadata(`${project.title} - фото ${index + 1}`),
-        width: isLandscape ? 1280 : 905,
-        height: isLandscape ? 905 : 1280,
+        width: isLandscape ? 1920 : 1080,
+        height: isLandscape ? 1080 : 1920,
         isLandscape,
       }
     })
