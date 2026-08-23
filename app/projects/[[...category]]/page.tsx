@@ -47,8 +47,7 @@ export async function generateMetadata(props: {
   const searchParams = await props.searchParams
   const params = await props.params
   const category = params?.category?.[0]
-  const { title, description, image } =
-    categoryMetadata[category ?? "default"]
+  const { title, description, image } = categoryMetadata[category ?? "default"]
   const canonical = app.url + (category ? `/projects/${category}` : "/projects")
 
   const metadata = {
