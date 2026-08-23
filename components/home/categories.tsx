@@ -37,12 +37,13 @@ function Category({ category }: { category: CategoryLink }) {
       <div className="relative isolate flex flex-col justify-end overflow-hidden bg-gray-900 px-4 py-20 md:py-44 xl:py-96">
         <Image
           src={category.image}
-          width="480"
-          height="823"
+          width="720"
+          height="1280"
           alt={addMetadata(category.name)}
+          loading="eager"
           className="absolute inset-0 -z-10 h-full w-full object-cover brightness-[.3]"
         />
-        <h3 className="text-[28px] leading-[33px] font-bold text-white md:text-center md:text-2xl xl:text-4xl">
+        <h3 className="text-[28px] leading-8.25 font-bold text-white md:text-center md:text-2xl xl:text-4xl">
           {category.name}
         </h3>
       </div>
