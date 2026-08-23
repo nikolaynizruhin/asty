@@ -8,9 +8,9 @@ import { sendCareerEmail } from "@/lib/actions"
 import { useThankModal } from "@/lib/hooks"
 import Heading from "@/components/heading"
 import { SubmitButton } from "@/components/submit-button"
-import TermsCheckbox from "../terms-checkbox"
+import TermsCheckbox from "@/components/terms-checkbox"
 
-export default function ThankModal({
+export default function CareerModal({
   open,
   setOpen,
   setOpenThank,
@@ -30,7 +30,7 @@ export default function ThankModal({
     <Modal open={open} setOpen={setOpen}>
       <form action={action}>
         <DialogTitle as="div">
-          <Heading className="mb-9 md:max-w-[350px] xl:mb-20">
+          <Heading className="mb-9 md:max-w-87.5 xl:mb-20">
             Приєднуйся до нашої команди!
           </Heading>
         </DialogTitle>

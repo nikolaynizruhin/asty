@@ -1,11 +1,11 @@
-import { MediaObject as MediaOnjectType } from "@/lib/definitions"
-import Icon from "../icon"
+import { MediaObject as MediaObjectType } from "@/lib/definitions"
+import Icon from "@/components/icon"
 
 export default function MediaObject({
   media,
   isDark = false,
 }: {
-  media: MediaOnjectType
+  media: MediaObjectType
   isDark?: boolean
 }) {
   return (

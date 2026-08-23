@@ -4,7 +4,7 @@ import { Project } from "@/lib/definitions"
 import Heading from "@/components/heading"
 import Container from "@/components/container"
 import { getProjectDetails } from "@/lib/projects"
-import SocialIcons from "../social-icons"
+import SocialIcons from "@/components/social-icons"
 
 export default function About({ project }: { project: Project }) {
   const details = getProjectDetails(project)
@@ -14,7 +14,7 @@ export default function About({ project }: { project: Project }) {
       <Title text="ДЕТАЛІ" className="mx-[9vw] -mb-40 hidden md:flex" />
       <Container className="mt-3 grid grid-cols-1 gap-3 xl:grid-cols-2 xl:gap-8">
         <div>
-          <Heading className="mb-10 max-w-[330px] xl:mb-9" isDark>
+          <Heading className="mb-10 max-w-82.5 xl:mb-9" isDark>
             Концепт
           </Heading>
           <p className="text-base font-light text-[#666]">{project.concept}</p>

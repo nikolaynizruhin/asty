@@ -1,7 +1,7 @@
 import ContactButton from "@/components/contact-button"
 import Container from "@/components/container"
 import Heading from "@/components/heading"
-import { Contact as ContactInterface } from "../lib/definitions"
+import { Contact as ContactInterface } from "@/lib/definitions"
 import company from "@/config/company"
 import { removeWhitespaces } from "@/lib/utils"
 
@@ -41,7 +41,7 @@ export default function Contact({
       <Container>
         <Heading
           as={asPage ? "h1" : "h2"}
-          className="mb-12 max-w-[250px] xl:mb-14"
+          className="mb-12 max-w-62.5 xl:mb-14"
         >
           Наші контакти
         </Heading>
@@ -50,7 +50,7 @@ export default function Contact({
             <ContactDetail key={contact.index} contact={contact} />
           ))}
         </div>
-        <p className="mt-11 max-w-[350px] text-base font-light text-[#666] xl:mt-16">
+        <p className="mt-11 max-w-87.5 text-base font-light text-[#666] xl:mt-16">
           Разом ми створимо простір, в якому хочеться жити та творити.
         </p>
         <div className="mt-8 flex xl:mt-14">

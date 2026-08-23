@@ -1,8 +1,8 @@
 import Header from "@/components/header"
 import Image from "next/image"
-import SocialIcons from "../social-icons"
+import SocialIcons from "@/components/social-icons"
 import { addMetadata } from "@/lib/utils"
-import Container from "../container"
+import Container from "@/components/container"
 
 export default function Hero() {
   return (
@@ -25,7 +25,7 @@ export default function Hero() {
             Коли кожний квадратний метр має значення
           </p>
         </Container>
-        <SocialIcons className="mx-auto flex max-w-[550px] gap-8 p-4 text-white md:max-w-none md:px-8 lg:py-8 xl:px-16" />
+        <SocialIcons className="mx-auto flex max-w-137.5 gap-8 p-4 text-white md:max-w-none md:px-8 lg:py-8 xl:px-16" />
       </div>
     </div>
   )

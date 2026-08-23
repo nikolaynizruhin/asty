@@ -40,6 +40,24 @@ export const projects: Project[] = [
   },
   {
     id: 3,
+    slug: "vdng",
+    name: "VDNG",
+    title:
+      "Преміальна 2-рівнева квартира в Києві з власним входом  та outdoor-зоною",
+    description: "Дизайн — це гармонія простору, деталей і відчуттів",
+    concept:
+      "Простір, створений навколо ідеї приватності, комфорту та стриманої розкоші. Основою концепції стала тепла бежева палітра, доповнена затемненим склом, дзеркалами та натуральним оніксом із делікатною підсвіткою. Важливим прийомом стало повторення основних ліній і геометричних мотивів у різних елементах інтер’єру. Завдяки цьому простір сприймається цілісно: кожна зона має власний характер, але водночас залишається частиною єдиної композиції. Особливість квартири — власний доступ до outdoor-зони, що продовжує приватний простір за межами інтер’єру та формує відчуття заміського рівня комфорту посеред міста.",
+    overview:
+      "Приватна зона квартири побудована навколо спальні, відкритої лаунж-зони та продуманої гардеробної, організованої окремо для нього та для неї. Дерев’яні панелі з виразним візерунком, теплі природні відтінки та м’яка LED-підсвітка створюють камерну атмосферу, у якій хочеться залишатися. Це простір, у якому все працює на відчуття цілісності: теплі матеріали, м’яке світло, природні фактури та продумана геометрія створюють інтер’єр, де сучасна елегантність поєднується з особистим комфортом.",
+    category: "interior",
+    location: "VDNG, Kyiv",
+    area: "80 кв.м",
+    date: "10 місяців",
+    style: "класика",
+    updatedAt: "2026-08-23",
+  },
+  {
+    id: 4,
     slug: "warsawa-house",
     name: "Warsawa House",
     title: "Дизайн та архітектура будинку Warsawa House",
@@ -56,7 +74,7 @@ export const projects: Project[] = [
     updatedAt: "2024-04-20",
   },
   {
-    id: 4,
+    id: 5,
     slug: "warsawa-house-2",
     name: "Warsawa House 2",
     title: "Вишуканий дизайн інтерʼєру Warsawa House",
@@ -74,7 +92,7 @@ export const projects: Project[] = [
     updatedAt: "2024-04-20",
   },
   {
-    id: 5,
+    id: 6,
     slug: "praga",
     name: "Praga",
     title: "Квартира в стилі мінімалізм Praga",
@@ -92,7 +110,7 @@ export const projects: Project[] = [
     updatedAt: "2024-04-20",
   },
   {
-    id: 6,
+    id: 7,
     slug: "floating-house",
     name: "Floating House",
     title: "Дизайн будинку на воді Floating House",
@@ -109,7 +127,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 7,
+    id: 8,
     slug: "riviera",
     name: "Riviera Village",
     title: "Монохромний інтерʼєр у відтінках сірого Riviera Village",
@@ -126,7 +144,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 8,
+    id: 9,
     slug: "goodlife-park",
     name: "Goodlife Park",
     title: "Дизайн інтерʼєру у стилі модернізм Goodlife Park",
@@ -143,7 +161,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 9,
+    id: 10,
     slug: "kozyn",
     name: "Kozyn",
     title: "Дизайн-проєкт будинку в стилі модернізм Kozyn",
@@ -160,7 +178,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 10,
+    id: 11,
     slug: "park-avenue",
     name: "Park Avenue",
     title: "Дизайн сучасної квартири Park Avenue",
@@ -177,7 +195,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 11,
+    id: 12,
     slug: "park-avenue-2",
     name: "Park Avenue 2",
     title: "Дизайн затишної спальні в ЖК Park Avenue",
@@ -194,7 +212,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 12,
+    id: 13,
     slug: "sky-avenue-2",
     name: "Sky Avenue 2",
     title: "Дизайн квартири в скандинавському стилі Sky Avenue",
@@ -211,7 +229,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 13,
+    id: 14,
     slug: "sky-avenue",
     name: "Sky Avenue",
     title: "Спальна кімната у стилі модернізм Sky Avenue",
@@ -228,7 +246,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 14,
+    id: 15,
     slug: "goodlife-park-2",
     name: "Goodlife Park 2",
     title: "Дизайн спальної кімнати Goodlife Park",
@@ -245,7 +263,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 15,
+    id: 16,
     slug: "goodlife-park-3",
     name: "Goodlife Park 3",
     title: "Дизайн будинку у стилі модернізм Goodlife Park",
@@ -262,7 +280,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 16,
+    id: 17,
     slug: "goodlife-park-4",
     name: "Goodlife Park 4",
     title: "Дизайн-проєкт будинку в стилі мінімалізм Goodlife Park",
@@ -279,7 +297,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 17,
+    id: 18,
     slug: "goodlife-park-5",
     name: "Goodlife Park 5",
     title: "Дизайн кухні-вітальні Goodlife Park",
@@ -296,7 +314,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 18,
+    id: 19,
     slug: "goodlife-park-6",
     name: "Goodlife Park 6",
     title: "Сучасна та мінімалістична спальня Goodlife Park",
@@ -313,7 +331,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 19,
+    id: 20,
     slug: "goodlife-park-7",
     name: "Goodlife Park 7",
     title: "Архітектура та дизайн для Goodlife Park",
@@ -330,7 +348,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 20,
+    id: 21,
     slug: "goodlife-park-8",
     name: "Goodlife Park 8",
     title: "Дизайн дитячої в стилі модернізм Goodlife Park",
@@ -347,7 +365,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 21,
+    id: 22,
     slug: "goodlife-park-9",
     name: "Goodlife Park 9",
     title: "Дизайн тераси Goodlife Park",
@@ -364,7 +382,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 22,
+    id: 23,
     slug: "river-garden",
     name: "River Garden",
     title: "Архітектура та дизайн ресторану River Garden",
@@ -379,7 +397,7 @@ export const projects: Project[] = [
     updatedAt: "2024-04-20",
   },
   {
-    id: 23,
+    id: 24,
     slug: "riviera-2",
     name: "Riviera Village 2",
     title: "Елегантний дизайн будинку Riviera Village",
@@ -395,7 +413,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 24,
+    id: 25,
     slug: "svitanok",
     name: "Svitanok",
     title: "Архітектура та дизайн будинку в стилі модернізм в Карпатах",
@@ -411,7 +429,7 @@ export const projects: Project[] = [
     updatedAt: "2024-03-02",
   },
   {
-    id: 25,
+    id: 26,
     slug: "boat-house",
     name: "Boathouse",
     title: "Архітектура та дизайн елінгу на Дніпрі",
@@ -427,7 +445,7 @@ export const projects: Project[] = [
     updatedAt: "2024-03-02",
   },
   {
-    id: 26,
+    id: 27,
     slug: "kozyn-2",
     name: "Kozyn 2",
     title: "Архітектура будинку в стилі мінімалізм Kozyn",
@@ -442,7 +460,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 27,
+    id: 28,
     slug: "goodlife-park-14",
     name: "Goodlife Park 14",
     title: "Дизайн приватного будинку в лісі Goodlife Park",
@@ -458,7 +476,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 28,
+    id: 29,
     slug: "goodlife-park-15",
     name: "Goodlife Park 15",
     title: "Архітектура будинку в стилі модернізм Goodlife Park",
@@ -473,7 +491,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 29,
+    id: 30,
     slug: "goodlife-park-13",
     name: "Goodlife Park 13",
     title: "Лаконічний дизайн двоповерхового будинку Goodlife Park",
@@ -488,7 +506,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 30,
+    id: 31,
     slug: "goodlife-park-10",
     name: "Goodlife Park 10",
     title: "Дизайн будинку в котеджному містечку Goodlife Park",
@@ -503,7 +521,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 31,
+    id: 32,
     slug: "bars",
     name: "Gas Station BARS",
     title: "Архітектура та дизайн для АЗК BARS",
@@ -518,7 +536,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 32,
+    id: 33,
     slug: "goodlife-park-11",
     name: "Goodlife Park 11",
     title: "Функціональний та мінімалістичний дизайн будинку Goodlife Park",
@@ -534,7 +552,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 33,
+    id: 34,
     slug: "goodlife-park-12",
     name: "Goodlife Park 12",
     title: "Дизайн-концепт будинку в лісі Goodlife Park",
@@ -549,7 +567,7 @@ export const projects: Project[] = [
     updatedAt: "2024-01-01",
   },
   {
-    id: 34,
+    id: 35,
     slug: "riverstone",
     name: "Riverstone",
     title: "Дизайн затишної квартири в ЖК Riverstone",
@@ -567,7 +585,7 @@ export const projects: Project[] = [
     updatedAt: "2024-03-02",
   },
   {
-    id: 35,
+    id: 36,
     slug: "park-avenue-vip",
     name: "Park Avenue Vip",
     title: "Вишуканий дизайн інтерʼєру в ЖК Park Avenue Vip",

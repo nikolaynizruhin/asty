@@ -4,8 +4,8 @@ import { useActionState } from "react"
 import Modal from "@/components/modal"
 import Input from "@/components/input"
 import { DialogTitle } from "@headlessui/react"
-import { sendContactEmail } from "../lib/actions"
-import { useThankModal } from "../lib/hooks"
+import { sendContactEmail } from "@/lib/actions"
+import { useThankModal } from "@/lib/hooks"
 import Heading from "./heading"
 import { SubmitButton } from "./submit-button"
 import TermsCheckbox from "./terms-checkbox"
@@ -30,7 +30,7 @@ export default function ContactModal({
     <Modal open={open} setOpen={setOpen}>
       <form action={action}>
         <DialogTitle as="div">
-          <Heading className="mb-9 md:max-w-[350px] xl:mb-20">
+          <Heading className="mb-9 md:max-w-87.5 xl:mb-20">
             Напишіть нам
           </Heading>
         </DialogTitle>
