@@ -10,6 +10,36 @@ import { categories } from "@/lib/fixtures"
 import { Metadata } from "next"
 import { addRobots } from "@/lib/utils"
 import app from "@/config/app"
+
+const categoryMetadata: Record<
+  Category | "default",
+  { title: string; description: string; image?: string }
+> = {
+  architecture: {
+    title: "Архітектурні проекти та рішення",
+    description:
+      "Архітектурні проекти та рішення ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY",
+    image: "architecture.jpg",
+  },
+  interior: {
+    title: "Дизайн-проекти інтер'єру",
+    description:
+      "Дизайн-проекти інтер'єру ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY",
+    image: "interior.jpg",
+  },
+  commerce: {
+    title: "Проєкти дизайну для комерційних приміщень",
+    description:
+      "Дизайн-проекти інтер'єру та архітектурні рішення для комерційних приміщень ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY",
+    image: "commerce.jpg",
+  },
+  default: {
+    title: "Проєкти",
+    description:
+      "Дизайн-проекти інтер'єру, архітектурні проекти, рішення з комплектації та меблювання ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY",
+  },
+}
+
 export async function generateMetadata(props: {
   params: Promise<{ category?: Category[] }>
   searchParams: Promise<object>
@@ -17,86 +47,23 @@ export async function generateMetadata(props: {
   const searchParams = await props.searchParams
   const params = await props.params
   const category = params?.category?.[0]
-  let metadata
+  const { title, description, image } =
+    categoryMetadata[category ?? "default"]
+  const canonical = app.url + (category ? `/projects/${category}` : "/projects")
 
-  switch (category) {
-    case "architecture": {
-      const title = "Архітектурні проекти та рішення"
-      const description =
-        "Архітектурні проекти та рішення ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY"
-
-      metadata = {
-        title,
-        description,
-        alternates: {
-          canonical: app.url + "/projects/architecture",
-        },
-        openGraph: {
-          title,
-          description,
-          images: [{ url: app.url + "/images/categories/architecture.jpg" }],
-        },
-      }
-
-      break
-    }
-    case "interior": {
-      const title = "Дизайн-проекти інтер'єру"
-      const description =
-        "Дизайн-проекти інтер'єру ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY"
-
-      metadata = {
-        title,
-        description,
-        alternates: {
-          canonical: app.url + "/projects/interior",
-        },
-        openGraph: {
-          title,
-          description,
-          images: [{ url: app.url + "/images/categories/interior.jpg" }],
-        },
-      }
-
-      break
-    }
-    case "commerce": {
-      const title = "Проєкти дизайну для комерційних приміщень"
-      const description =
-        "Дизайн-проекти інтер'єру та архітектурні рішення для комерційних приміщень ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY"
-
-      metadata = {
-        title,
-        description,
-        alternates: {
-          canonical: app.url + "/projects/commerce",
-        },
-        openGraph: {
-          title,
-          description,
-          images: [{ url: app.url + "/images/categories/commerce.jpg" }],
-        },
-      }
-
-      break
-    }
-    default: {
-      const title = "Проєкти"
-      const description =
-        "Дизайн-проекти інтер'єру, архітектурні проекти, рішення з комплектації та меблювання ➣ Дивитись проекти архітектурно-дизайнерського бюро ASTY"
-
-      metadata = {
-        title,
-        description,
-        alternates: {
-          canonical: app.url + "/projects",
-        },
-        openGraph: {
-          title,
-          description,
-        },
-      }
-    }
+  const metadata = {
+    title,
+    description,
+    alternates: {
+      canonical,
+    },
+    openGraph: {
+      title,
+      description,
+      ...(image && {
+        images: [{ url: app.url + "/images/categories/" + image }],
+      }),
+    },
   }
 
   return addRobots(metadata, searchParams)

@@ -1,7 +1,7 @@
 import ContactButton from "@/components/contact-button"
 import Container from "@/components/container"
 import Heading from "@/components/heading"
-import { Contact as ContactInterface } from "../lib/definitions"
+import { Contact as ContactInterface } from "@/lib/definitions"
 import company from "@/config/company"
 import { removeWhitespaces } from "@/lib/utils"
 

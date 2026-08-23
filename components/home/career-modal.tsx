@@ -8,9 +8,9 @@ import { sendCareerEmail } from "@/lib/actions"
 import { useThankModal } from "@/lib/hooks"
 import Heading from "@/components/heading"
 import { SubmitButton } from "@/components/submit-button"
-import TermsCheckbox from "../terms-checkbox"
+import TermsCheckbox from "@/components/terms-checkbox"
 
-export default function ThankModal({
+export default function CareerModal({
   open,
   setOpen,
   setOpenThank,
