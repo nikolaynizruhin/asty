@@ -51,7 +51,7 @@ export const projects: Project[] = [
     category: "interior",
     location: "Warsawa, Poland",
     area: "1200 кв.м",
-    date: "12 місяці",
+    date: "12 місяців",
     style: "Модернізм",
     updatedAt: "2024-04-20",
   },
