@@ -6,7 +6,7 @@ import { getProjectImages } from "@/lib/projects"
 export default function Images({ project }: { project: Project }) {
   return (
     <div className="bg-white pt-3 pb-12 md:pt-0 xl:pb-20">
-      <div className="mx-auto grid max-w-[550px] grid-cols-1 justify-items-center gap-y-4 px-4 text-[#666] md:max-w-full md:grid-cols-2 md:gap-x-5 md:gap-y-10 xl:gap-x-10 xl:gap-y-16 xl:px-16">
+      <div className="mx-auto grid max-w-137.5 grid-cols-1 justify-items-center gap-y-4 px-4 text-[#666] md:max-w-full md:grid-cols-2 md:gap-x-5 md:gap-y-10 xl:gap-x-10 xl:gap-y-16 xl:px-16">
         {project.category === "interior" ? (
           <PortraitImages project={project} />
         ) : (
@@ -37,7 +37,7 @@ function PortraitImages({ project }: { project: Project }) {
       ))}
       <div className="flex flex-col justify-center py-10 md:px-10 md:py-0 lg:px-28">
         <Heading className="mb-7" isDark>
-          Концепт
+          Опис
         </Heading>
         <p className="font-light">{project.overview}</p>
       </div>
